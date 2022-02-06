@@ -506,36 +506,6 @@
 
 }
 
-/* @media screen and (max-width: 990px) {
-    .bus {
-        width: 100%;
-        margin: auto;
-        text-align: center !important;
-    }
-    .bus-details {
-        border: none;
-        width: 100%;
-        margin: auto;
-    }
-
-    .bus-image {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .bus {
-        width: 100%;
-        margin: auto;
-        text-align: center !important;
-    }
-    .bus-details {
-        border: none;
-    }
-} */
-
-
 /* Admin Bus section */
 .bus-container {
     width: 100%;
