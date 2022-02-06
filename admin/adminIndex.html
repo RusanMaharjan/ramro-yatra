@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Bus Ticketing System | Admin Home</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
+      <div class="container">
+        <a href="adminIndex.html" class="navbar-brand font"
+          >Bus Ticketing System</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="adminIndex.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#whyUs" class="nav-link">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#stats" class="nav-link">Our Stats</a>
+            </li>
+            <li class="nav-item">
+              <a href="#routes" class="nav-link">All Routes</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                24x7 Support
+              </a>
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">9840539880</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">rusanmhz789@gmail.com</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Action
+              </a>
+              <ul
+                class="dropdown-menu text-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item" href="addRoute.html">Manage Route</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="addBus.html">Manage Bus</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="addSeat.html">Manage Seat</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="addOperator.html"
+                    >Manage Bus Operator</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Showcase -->
+    <div class="showcase">
+      <div class="container">
+        <div class="text">
+          <h1 class="text-center fs-1 text-uppercase">
+            Need A Ticket For a Tour?
+          </h1>
+          <br />
+          <h2 class="text-center fs-4">YOU'VE COME TO THE RIGHT PLACE.</h2>
+          <hr style="width: 30%; margin: auto; color: #fff; height: 3px" />
+        </div>
+
+        <div class="buttons">
+          <div class="container d-flex justify-content-center mt-3">
+            <button
+              type="button"
+              class="btn btn-primary butn p-2 mr-5 buton button-hover text-uppercase"
+            >
+              <a href="#searchBus" class="text-decoration-none searchBusLink"
+                >Search Buses</a
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-light buton text-uppercase why-us"
+            >
+              <a href="#whyUs" class="text-decoration-none">Why Us</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Bus Form -->
+    <div class="search-bus" id="searchBus">
+      <div class="container-fluid">
+        <h2 class="searchBus pt-5 text-uppercase">Search Bus</h2>
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
+        <form action="" class="p-4">
+          <div class="row g-3">
+            <div class="m-3 col-lg">
+              <label for="exampleFormControlInput1" class="form-label bus-label"
+                >From</label
+              >
+              <input
+                type="text"
+                class="form-control p-2"
+                id="exampleFormControlInput1"
+                placeholder="Travelling From"
+              />
+            </div>
+            <div class="m-3 col-lg">
+              <label for="exampleFormControlInput1" class="form-label bus-label"
+                >To</label
+              >
+              <input
+                type="text"
+                class="form-control p-2"
+                id="exampleFormControlInput1"
+                placeholder="Travelling To"
+              />
+            </div>
+            <div class="m-3 col-lg">
+              <label for="exampleFormControlInput1" class="form-label bus-label"
+                >Date</label
+              >
+              <input
+                type="date"
+                class="form-control p-2"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary bus-btn p-2">
+                <a href="pages/searchBus.html">Search Bus &rarr;</a>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- #0d6efd blue color as button primary color-->
+    <!-- Why Us -->
+    <div class="whyUs" id="whyUs">
+      <div class="container g-3">
+        <h2 class="text-center mt-5">Why Purchase Ticket From Us</h2>
+        <h3 class="text-center">A Smart Way To Travel</h3>
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
+        <div class="row">
+          <div class="col-lg mt-5 text-center">
+            <div class="easy">
+              <i class="far fa-clock wu"></i>
+              <br />
+              <h3 class="text-center pb-3">Quick And Easy</h3>
+            </div>
+          </div>
+
+          <div class="col-lg mt-5 text-center">
+            <div class="choices">
+              <i class="fas fa-map-signs wu"></i>
+              <br />
+              <h3 class="text-center">Plenty of Choices</h3>
+            </div>
+          </div>
+
+          <div class="col-lg mt-5 text-center">
+            <div class="prices">
+              <i class="fas fa-dollar-sign wu"></i>
+              <br />
+              <h3 class="text-center">Unbeatable Prices</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Stats -->
+    <div class="stats" id="stats">
+      <div class="container">
+        <h2 class="text-center mt-5 pt-3">Our Stats</h2>
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
+        <div class="row g-3 pb-5">
+          <div class="col-lg mt-3 stat-text">
+            <div class="name text-center fs-1">Routes</div>
+            <div class="number text-center fs-2">30+</div>
+            <div class="description text-center fs-5">Routes Available</div>
+          </div>
+
+          <div class="col-lg mt-3 stat-text">
+            <div class="name text-center fs-1">Buses</div>
+            <div class="number text-center fs-2">50+</div>
+            <div class="description text-center fs-5">Bus Available</div>
+          </div>
+
+          <div class="col-lg mt-3 stat-text">
+            <div class="name text-center fs-1">Customers</div>
+            <div class="number text-center fs-2">1000+</div>
+            <div class="description text-center fs-5">
+              Happy Customers Using Our System
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- All Routes -->
+    <div class="routes" id="routes">
+      <h2 class="text-center mt-5">All Routes</h2>
+      <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
+      <div class="container">
+        <div class="row g-4 text-center mt-3 mb-5">
+          <div class="col-lg-4">
+            <div class="addresses fs-5">Kathmandu-Pokhara</div>
+            <div class="addresses fs-5">Kathmandu-Chitwan</div>
+            <div class="addresses fs-5">Kathmandu-Birgunj</div>
+            <div class="addresses fs-5">Pokhara-Chitwan</div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="addresses fs-5">Pokhara-Bandipur</div>
+            <div class="addresses fs-5">Hetauda-Pokhara</div>
+            <div class="addresses fs-5">Kathmandu-Mustang</div>
+            <div class="addresses fs-5">Rasuwa-Kathmandu</div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="addresses fs-5">TatoPani-pokhara</div>
+            <div class="addresses fs-5">Chitwan-Palpa</div>
+            <div class="addresses fs-5">Kathmandu-Palpa</div>
+            <div class="addresses fs-5">Kathmandu-Dhading</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-3 bg-secondary text-white position-relative">
+      <div class="container">
+        <div class="footer text-center g-3">
+          <div class="row">
+            <div class="about col-lg-6 mb-sm-3">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                doloremque tenetur fugiat reiciendis quos similique vero eveniet
+                perferendis cupiditate. Possimus fugit incidun soluta eveniet
+                nesciunt dolor obcaecati eius voluptatem!
+              </p>
+            </div>
+
+            <div class="contact col-lg-3 mb-sm-3">
+              <h3>NEED HELP?</h3>
+              <h6>Contact us via phone or email</h6>
+              <i class="bi bi-telephone-fill">+977-9840539880</i><br />
+              <i class="bi bi-envelope-fill">rusanmhz789@gmail.com</i>
+            </div>
+
+            <div class="social-media col-lg-3">
+              <h3>FOLLOW US</h3>
+              <i class="bi bi-facebook fs-3"></i> &nbsp;&nbsp;&nbsp;
+              <i class="bi bi-instagram fs-3"></i>&nbsp;&nbsp;&nbsp;
+              <i class="bi bi-twitter fs-3"></i>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="position-absolute bottom-0 end-0 p-3">
+          <i class="bi bi-arrow-up-circle h1 color"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

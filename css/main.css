@@ -1,0 +1,361 @@
+/* Navbar */
+.nav-item:hover {
+    border-bottom: 1px solid rgb(59, 57, 57);
+}
+
+/*Showcase*/
+.showcase {
+    background: url(../img/night-road.jpeg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    font-family: sans-serif;
+    color: #fff;
+    padding-top: 290px;
+}
+
+.butn {
+    margin-right: 20px;
+}
+
+.buton {
+    width: 150px;
+    font-family: sans-serif;
+}
+
+
+/*Bus*/
+
+.search-bus {
+    background-color: rgb(171, 174, 184);
+}
+
+.bus-label {
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+.bus-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.searchBus {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.bus-btn {
+    width: 200px;
+    padding: 0;
+}
+
+.bus-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bus-btn a:hover {
+    color: #fff;
+}
+
+.searchBusLink {
+    color: #fff;
+}
+
+.searchBusLink:hover {
+    color: #fff;
+}
+
+
+/*why Us*/
+
+.wu {
+    justify-content: center;
+    font-size: 10em;
+}
+
+.why-us {
+    color: #fff;
+}
+
+.why-us:hover {
+    color: #000;
+}
+
+.far {
+    color: #0d6efd;
+}
+
+.fas {
+    color: #0d6efd;
+}
+
+.easy {
+    transition: .5s;
+}
+
+.easy:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.choices {
+    transition: .5s;
+}
+
+.choices:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.prices {
+    transition: .5s;
+}
+
+.prices:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+
+/* Our Stats */
+
+.stats {
+    background-color: rgb(171, 174, 184);
+}
+
+.stat-text {
+    transition: .5s;
+}
+
+.stat-text:hover {
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+
+.lead {
+    color: #000;
+}
+
+.color {
+    color: #000;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer.contact {
+    flex: 30%;
+}
+
+.footer.about {
+    flex: 20%;
+}
+
+.footer.social-media {
+    flex: 50%;
+}
+
+
+/* Signup */
+
+.signup {
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 50px !important;
+}
+
+.signup-container {
+    border: 1px solid #acacac;
+    width: 600px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.password-field {
+    margin-left: 20px !important;
+}
+
+.password {
+    margin-right: 115px !important;
+}
+
+.login-text {
+    color: #000;
+    text-decoration: none;
+}
+
+.login-text:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Search Bus Page */
+.section-bus {
+    background-color: rgb(236, 236, 236);
+}
+
+.flex-price {
+    border-left: 1px solid #b4b2b2;
+}
+
+.list-of-bus {
+    padding: 10px !important;
+    border: 1px solid rgb(211, 211, 211); 
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+}
+
+.location-span {
+    color: #000;
+    font-size: 1em;
+}
+
+.price-operator {
+    margin-right: 50px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 10px 200px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+}
+
+.btnBus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnBus:hover {
+    color: #fff;
+}
+
+@media (min-width: 780px) {
+    .price-operator {
+        width: 100%;
+        margin: auto !important;
+    }
+}
+
+/* Bus Details */
+.busDetails {
+    background-color: rgb(236, 236, 236);
+}
+
+.detail {
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+}
+
+.bus-details {
+    border-left: 1px solid #b4b2b2;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Admin */
+.route {
+    background-color: rgb(236, 236, 236);
+}
+
+.route-container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.btnAdmin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-a-btn {
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-a-btn:hover {
+    color: #fff;
+}
+
+.admin-a-action {
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-a-action:hover {
+    color: #fff;
+}
+
+.admin-fa {
+    color: #fff;
+    padding-left: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .route-container {
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .bus {
+        width: 100%;
+        margin: auto;
+        text-align: center !important;
+    }
+    .bus-details {
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .bus-image {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bus {
+        width: 100%;
+        margin: auto;
+        text-align: center !important;
+    }
+    .bus-details {
+        border: none;
+    }
+}
+
+
+/* Admin Bus section */
+.bus-container {
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;   
+}
+
+/* .side-nav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #0d6efd;
+    transition: 0.4s;
+} */

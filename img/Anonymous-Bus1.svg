@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg2"
+    sodipodi:docname="bus1_jarno_vasamaa_01.svg"
+    viewBox="0 0 976.05 501.06"
+    sodipodi:version="0.32"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    y="0"
+    x="0"
+    inkscape:version="0.46"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      guidetolerance="10.0"
+      pagecolor="#ffffff"
+      gridtolerance="10.0"
+      inkscape:zoom="0.51313132"
+      objecttolerance="10.0"
+      borderopacity="1.0"
+      inkscape:current-layer="svg2"
+      inkscape:cx="526.18109"
+      inkscape:cy="372.04724"
+      inkscape:window-y="25"
+      inkscape:window-x="0"
+      inkscape:window-height="715"
+      showgrid="false"
+      inkscape:pageopacity="0.0"
+      inkscape:window-width="641"
+  />
+  <defs
+      id="defs3"
+    >
+    <linearGradient
+        id="linearGradient2260"
+      >
+      <stop
+          id="stop2262"
+          style="stop-color:#000000"
+          offset="0"
+      />
+      <stop
+          id="stop2268"
+          style="stop-color:#000000;stop-opacity:.82653"
+          offset=".26087"
+      />
+      <stop
+          id="stop2264"
+          style="stop-color:#000000;stop-opacity:0"
+          offset="1"
+      />
+    </linearGradient
+    >
+    <linearGradient
+        id="linearGradient2165"
+      >
+      <stop
+          id="stop2167"
+          style="stop-color:#8aa1c1"
+          offset="0"
+      />
+      <stop
+          id="stop2173"
+          style="stop-color:#5b97b6"
+          offset=".78261"
+      />
+      <stop
+          id="stop2169"
+          style="stop-color:#0a244e"
+          offset="1"
+      />
+    </linearGradient
+    >
+    <radialGradient
+        id="radialGradient2352"
+        xlink:href="#linearGradient2260"
+        gradientUnits="userSpaceOnUse"
+        cy="1178.5"
+        cx="125.73"
+        gradientTransform="scale(2.5128 .39796)"
+        r="49.884"
+    />
+    <radialGradient
+        id="radialGradient2366"
+        xlink:href="#linearGradient2165"
+        gradientUnits="userSpaceOnUse"
+        cy="370.41"
+        cx="538.37"
+        gradientTransform="scale(.79612 1.2561)"
+        r="16.066"
+    />
+    <radialGradient
+        id="radialGradient2368"
+        xlink:href="#linearGradient2165"
+        gradientUnits="userSpaceOnUse"
+        cy="308.37"
+        cx="342.17"
+        gradientTransform="scale(.69267 1.4437)"
+        r="10.219"
+    />
+    <linearGradient
+        id="linearGradient2414"
+        y2="501"
+        gradientUnits="userSpaceOnUse"
+        y1="482.34"
+        gradientTransform="matrix(2.7043 0 0 1.3282 -273.95 -360.08)"
+        x2="138.55"
+        x1="457.62"
+      >
+      <stop
+          id="stop2125"
+          style="stop-color:#ff0000"
+          offset="0"
+      />
+      <stop
+          id="stop2127"
+          style="stop-color:#870000"
+          offset="1"
+      />
+    </linearGradient
+    >
+    <linearGradient
+        id="linearGradient2423"
+        y2="1424.1"
+        gradientUnits="userSpaceOnUse"
+        y1="1273.3"
+        gradientTransform="matrix(5.3886 0 0 .66654 -273.95 -360.08)"
+        x2="108.87"
+        x1="137.31"
+      >
+      <stop
+          id="stop2289"
+          style="stop-color:#000000"
+          offset="0"
+      />
+      <stop
+          id="stop2291"
+          style="stop-color:#000000;stop-opacity:0"
+          offset="1"
+      />
+    </linearGradient
+    >
+  </defs
+  >
+  <g
+      id="layer1"
+      transform="translate(-48.537 -121.23)"
+    >
+    <path
+        id="path2374"
+        style="stroke:#000000;stroke-width:8.75;fill:none"
+        d="m926.55 245s13.36-4.45 19.09-1.27c5.72 3.18 13.36 5.09 14 11.46 0.63 6.36 7.63 0.63 7.63 0.63"
+    />
+    <rect
+        id="rect2372"
+        style="fill-rule:evenodd;fill:#000000"
+        rx="9.1201"
+        ry="25.844"
+        transform="matrix(.99742 .071794 .071048 .99747 0 0)"
+        width="29.242"
+        y="185.77"
+        x="933.77"
+        height="110.7"
+    />
+    <path
+        id="path2274"
+        style="opacity:.37173;fill-rule:evenodd;fill:url(#radialGradient2352)"
+        transform="matrix(1.8952 0 0 1.8952 188.28 -304.18)"
+        d="m441.28 469c0 10.97-56.12 19.86-125.35 19.86s-125.35-8.89-125.35-19.86c0-10.96 56.12-19.85 125.35-19.85s125.35 8.89 125.35 19.85z"
+    />
+    <path
+        id="path2282"
+        style="opacity:.37173;fill:url(#radialGradient2352);fill-rule:evenodd"
+        transform="matrix(1.8952 0 0 1.8952 -5.2102 -321.38)"
+        d="m441.28 469c0 10.97-56.12 19.86-125.35 19.86s-125.35-8.89-125.35-19.86c0-10.96 56.12-19.85 125.35-19.85s125.35 8.89 125.35 19.85z"
+    />
+    <path
+        id="path2270"
+        style="opacity:.37173;fill:url(#radialGradient2352);fill-rule:evenodd"
+        transform="matrix(1.8952 0 0 1.8952 -160 -349.33)"
+        d="m441.28 469c0 10.97-56.12 19.86-125.35 19.86s-125.35-8.89-125.35-19.86c0-10.96 56.12-19.85 125.35-19.85s125.35 8.89 125.35 19.85z"
+    />
+    <path
+        id="path2258"
+        style="opacity:.37173;fill:url(#radialGradient2352);fill-rule:evenodd"
+        transform="matrix(1.8952 0 0 1.8952 -312.64 -366.53)"
+        d="m441.28 469c0 10.97-56.12 19.86-125.35 19.86s-125.35-8.89-125.35-19.86c0-10.96 56.12-19.85 125.35-19.85s125.35 8.89 125.35 19.85z"
+    />
+    <path
+        id="path2284"
+        style="fill-rule:evenodd;fill:url(#linearGradient2423)"
+        d="m168.31 528.83l66.65-27.95 582.62 51.6s-137.6 38.69-202.09 36.54c-64.5-2.15-221.44-32.24-281.64-40.84s-249.39-10.75-227.89-15.05 62.35-4.3 62.35-4.3z"
+    />
+    <path
+        id="path2278"
+        style="opacity:.37173;fill:url(#radialGradient2352);fill-rule:evenodd"
+        transform="matrix(1.8952 0 0 1.8952 -5.2102 -321.38)"
+        d="m441.28 469c0 10.97-56.12 19.86-125.35 19.86s-125.35-8.89-125.35-19.86c0-10.96 56.12-19.85 125.35-19.85s125.35 8.89 125.35 19.85z"
+    />
+    <path
+        id="path2183"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:3.7904;fill:#000000"
+        d="m148.41 495.92c0.37 6.42 1.89 14.74 0.37 17.76-1.51 3.02 9.83 0 9.83 0s3.4 8.31 6.8 10.95c3.4 2.65 5.66 3.78 10.95 4.16s16.25 0 20.78-0.38 7.56 0 9.82-3.78c2.27-3.77 5.67-10.57 7.93-17.37 2.27-6.8 0.38-62.34 0.38-62.34s-32.86-28.71-43.82-28.33c-10.95 0.38-26.82 22.67-26.82 27.2s3.78 54.02 3.78 54.02v-1.89z"
+    />
+    <path
+        id="path2157"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:3.7904;fill:#000000"
+        d="m537.56 583.36l43.98-4.25s7.09-1.42 12.76-11.35c5.68-9.93 5.68-36.89 5.68-36.89l-5.68-85.12s-19.86-19.86-58.16-14.19c-38.31 5.68-56.75 28.37-55.33 56.75 1.42 28.37 2.84 53.91 2.84 53.91s2.83 19.86-1.42 26.96c-4.26 7.09 34.05 0 34.05 0s4.25 5.67 12.76 9.93l8.52 4.25z"
+    />
+    <path
+        id="path2181"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.19459"
+        d="m547.04 582.7c19.92 0.37 32.89-17.3 33.5-51.18 0.32-17.15-8.71-39.99-15.19-51.26 5.1 10.78 8.88 28.12 8.6 43.17-0.62 33.88-15.81 58.87-35.73 58.51-9.9-0.18-20.88-8.62-27.2-19.74 6.38 13.58 24.91 20.3 36.02 20.5z"
+    />
+    <path
+        id="path2149"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:3.7904;fill:#000000"
+        d="m746.11 415.95l-25.54-106.4-28.37-129.1 21.28-24.12 174.5 18.44 15.6 9.93s29.8 73.78 39.73 107.83 22.7 75.19 24.12 90.79c1.41 15.61 5.67 41.15 4.25 49.66s-89.38 21.28-89.38 21.28l-119.17-15.61-17.02-22.7z"
+    />
+    <path
+        id="path2145"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:3.7904;fill:#5f0000"
+        d="m728.47 574.01s218.48-12.12 226.92-18.03c8.45-5.92 13.87-18.91 13.87-18.91s-144.14 11.86-178.34 16.93-62.45 20.01-62.45 20.01z"
+    />
+    <path
+        id="path1358"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:1.8952;fill:url(#linearGradient2414)"
+        d="m52.361 474.38s3.417-162.3 3.417-182.8 3.417-32.46 5.125-44.42c1.709-11.96 13.668-22.21 13.668-22.21l551.82-97.38s27.33-6.83 41-5.12 123.01 10.25 123.01 10.25 47.83 8.54 64.92 13.67c17.08 5.12 27.33 8.54 37.58 20.5s13.67 18.79 13.67 18.79-37.59-6.83-80.3-11.96c-42.71-5.12-68.33-6.83-87.13-6.83-18.79 0-25.62 6.83-32.46 10.25-6.83 3.41-6.83 18.79-6.83 18.79s44.42 184.51 46.13 193.05 10.25 27.34 18.79 30.75c8.54 3.42 20.5 8.55 29.04 11.96 8.55 3.42 70.05 5.13 93.97 5.13 23.91 0 52.96 1.71 64.92 0s20.5-8.54 20.5-8.54v47.83s-1.71 63.21-5.13 68.34c-3.41 5.12-198.17 18.79-210.13 22.21-11.96 3.41-20.5 6.83-32.46 6.83s-141.8-20.5-141.8-20.5l-6.83 6.83s0-34.17-1.71-52.96-10.25-35.87-23.92-51.25-34.17-10.25-34.17-10.25-10.25 1.71-17.08 11.96c-6.84 10.25-11.96 25.62-11.96 37.58s-3.42 32.46-3.42 39.3c0 6.83-1.71 8.54-1.71 8.54l-5.12-5.13s-254.56-34.16-268.22-29.04c-13.67 5.13-11.96-3.42-11.96-3.42v-34.16c0-13.67-8.55-34.17-11.96-37.59-3.42-3.42-11.96-10.25-17.09-8.54-5.12 1.71-11.96 8.54-15.37 18.79-3.42 10.25-5.13 20.5-5.13 30.75s1.71 25.63 1.71 25.63l-6.83-6.84s-27.34 3.42-47.838-3.41c-20.501-6.84-42.711-15.38-42.711-15.38z"
+    />
+    <path
+        id="path2119"
+        style="fill-rule:evenodd;fill:#000000;fill-opacity:.51351"
+        d="m848.48 518.8l-6.83-30.75s90.55-6.83 97.38-3.42c6.83 3.42 1.71 30.75 1.71 30.75l-78.59 6.84 77.17-8.71-3.71-26.96c-5.25-0.5-89.38-2.71-91.09 4.12-1.71 6.84 3.96 28.13 3.96 28.13z"
+    />
+    <path
+        id="path2121"
+        style="stroke:#000000;stroke-width:1.8952px;fill:none"
+        d="m880.94 517.09l25.63-30.75"
+    />
+    <path
+        id="path2131"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:1.8952px;fill:#000000"
+        d="m723.77 501.72s-29.04-3.42-46.13-22.21c-17.08-18.8-30.75-44.42-39.29-80.3-8.54-35.87-17.09-99.09-17.09-99.09l-553.52 27.34c-0.003 0-5.128-13.67-5.128-35.88s6.833-46.13 6.833-46.13l555.24-82s25.63-5.12 41 5.13c15.38 10.25 20.5 23.91 23.92 34.16s30.75 129.84 32.46 150.34c1.71 20.51 3.42 29.05 3.42 29.05l-1.71 119.59z"
+    />
+    <path
+        id="path2133"
+        style="stroke:#000000;stroke-width:3.4113;fill:none"
+        d="m643.47 421.42l1.71 136.67 80.3 10.26 1.71-5.13-1.71-124.71"
+    />
+    <path
+        id="path2135"
+        style="stroke:#000000;stroke-width:3.2218;fill:none"
+        d="m265.91 507.6v-177.77l41.01-2.37v184.7"
+    />
+    <path
+        id="path2137"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.18919"
+        d="m585.39 518.8s1.71-35.88-11.96-52.96-11.96-27.33-29.04-35.88c-17.09-8.54-29.05-6.83-29.05-6.83s39.3-10.25 56.38 25.63c17.08 35.87 13.67 70.04 13.67 70.04z"
+    />
+    <path
+        id="path2139"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.18919"
+        d="m204.41 474.38s0-23.92-6.83-34.17c-6.84-10.25-15.38-23.91-15.38-23.91s17.09 13.66 20.5 25.62c3.42 11.96 1.71 32.46 1.71 32.46z"
+    />
+    <path
+        id="path2141"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.18919"
+        d="m648.6 129.28s17.08-6.83 32.46 5.13c15.37 11.96 29.04 29.04 29.04 29.04s-13.67 1.71-13.67 10.25 1.71-6.83-11.95-22.21c-13.67-15.37-8.55-11.96-17.09-15.37-8.54-3.42-18.79-6.84-18.79-6.84z"
+    />
+    <path
+        id="path2143"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.18919"
+        d="m768.19 424.84s5.12 6.83 15.37 8.54 13.67 3.42 13.67 3.42 3.42 17.08-5.12 34.17c-8.55 17.08-10.25 105.92-13.67 78.58-3.42-27.33-1.71-76.88-3.42-93.96s-6.83-30.75-6.83-30.75z"
+    />
+    <path
+        id="path2151"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.78919"
+        d="m642.72 419.58l-2.16-171.67 52.39-4.37 1.58 5.63s-41.25-3.05-45.3 4.16c-4.04 7.22-4.13 4.38-3.71 18.56 0.41 14.18-2.8 147.69-2.8 147.69z"
+    />
+    <path
+        id="path2153"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:1.8952px;fill:#d6ec54"
+        d="m747.53 492.57l1.41 18.44s12.77 4.25 24.12 4.25 43.98-1.41 43.98-1.41l-2.83-24.12h-31.22c-9.93 0-18.44 0-25.53 1.42-7.1 1.42-9.93 1.42-9.93 1.42z"
+    />
+    <path
+        id="path2155"
+        style="fill-rule:evenodd;stroke:#000000;stroke-width:1.8952px;fill:#d6ec54"
+        d="m957.5 484.05l-1.42 25.54 12.76-4.26 2.84-24.11s0-1.42-5.67 1.41c-5.68 2.84-8.51 1.42-8.51 1.42z"
+    />
+    <path
+        id="path2163"
+        style="stroke-linejoin:round;stroke-opacity:.38378;fill-rule:evenodd;stroke:#ffffff;stroke-linecap:round;stroke-width:1.0318;fill:url(#radialGradient2366)"
+        transform="matrix(1.7249 0 0 1.8952 -203.16 -360.08)"
+        d="m441.4 465.27c0 11.15-5.73 20.18-12.79 20.18-7.07 0-12.79-9.03-12.79-20.18 0-11.14 5.72-20.18 12.79-20.18 7.06 0 12.79 9.04 12.79 20.18z"
+    />
+    <path
+        id="path2175"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.40541"
+        d="m536.6 460c-19.92 0-36.07 27.54-36.07 61.42 0 17.15 4.16 32.57 10.84 43.71-5.29-10.68-9.38-27.96-9.38-43.01 0-33.88 14.73-59.15 34.65-59.15 9.91 0 21.04 8.25 27.56 19.24-6.62-13.46-16.48-22.21-27.6-22.21z"
+    />
+    <path
+        id="path2185"
+        style="stroke-linejoin:round;stroke-opacity:.40541;fill-rule:evenodd;stroke:#ffffff;stroke-linecap:round;stroke-width:.5;fill:url(#radialGradient2368)"
+        transform="matrix(1.8952 0 0 1.8952 -274.7 -363.87)"
+        d="m243.59 445.19c0 7.87-2.95 14.25-6.58 14.25s-6.58-6.38-6.58-14.25 2.95-14.25 6.58-14.25 6.58 6.38 6.58 14.25z"
+    />
+    <path
+        id="path2199"
+        style="opacity:.37173;fill-rule:evenodd;fill:#ffffff;fill-opacity:.62703"
+        d="m173.93 432.86c-11.78 0-21.38 20.14-21.38 44.95 0 7.47 1.13 14.18 2.66 20.37-0.85-4.86-0.78-17.14-0.78-22.63 0-24.82 8.46-38.97 20.25-38.97 8.22 0 15.53 11.29 19.09 25.66-3.02-17.1-10.68-29.38-19.84-29.38z"
+    />
+    <path
+        id="path2295"
+        style="fill-rule:evenodd;fill-opacity:.41622;stroke:#000000;stroke-width:1.8952px;fill:#ffffff"
+        d="m846.15 181.56l53.74 8.6s21.5 45.15 23.65 55.9 17.2 51.6 17.2 51.6-38.7-88.15-43-94.6-51.59-21.5-51.59-21.5z"
+    />
+    <rect
+        id="rect2378"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.82703"
+        rx="12.197"
+        ry="26.336"
+        transform="matrix(.99851 .054603 .093347 .99563 0 0)"
+        width="39.109"
+        y="211.65"
+        x="709.01"
+        height="112.8"
+    />
+    <rect
+        id="rect2370"
+        style="fill-rule:evenodd;fill:#000000"
+        rx="11.34"
+        ry="25.88"
+        transform="matrix(.99833 .057740 .088301 .99609 0 0)"
+        width="36.36"
+        y="209.71"
+        x="711.99"
+        height="110.85"
+    />
+    <path
+        id="path2376"
+        style="fill-rule:evenodd;fill:#ffffff;fill-opacity:.58378"
+        d="m752.82 250.55s-3.18-6.36-9.55-8.91c-8.91-1.91-27.36-2.55-29.91-1.91-2.54 0.64 27.37-3.18 33.73-0.64 6.36 2.55 5.73 11.46 5.73 11.46z"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Bus1</dc:title
+        >
+        <dc:date
+          >2006-12-26T00:00:00</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/24476/-by--24476</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
