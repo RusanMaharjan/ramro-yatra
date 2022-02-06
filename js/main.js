@@ -17,6 +17,4 @@ $(".carousel").owlCarousel({
             nav: false
         }
     }
-})
-
-document.getAnimations
+});
