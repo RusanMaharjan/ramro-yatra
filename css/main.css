@@ -3,6 +3,19 @@
     border-bottom: 1px solid rgb(59, 57, 57);
 }
 
+.ramro {
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.4em;
+}
+
+.y {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #0072bc;
+    font-size: 1.6em;
+}
+
 /*Showcase*/
 .showcase {
     background: url(../img/night-road.jpeg) no-repeat fixed;
@@ -27,7 +40,89 @@
 }
 
 /* Bus Slider */
+.wrap {
+    background-color: rgb(171, 174, 184);
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+}
 
+.wrapper{
+    width: 100%;
+}
+
+.wrapper .carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.carousel .card {
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .card-1 {
+    background:  rgb(98, 99, 104);
+}
+
+.slider-img {
+    border-radius: 10px;
+}
+
+.carousel .card-2 {
+    background: #0072bc;
+}
+
+.carousel .card-3 {
+    background: #39b54a;
+}
+
+.carousel .card-4 {
+    background: #f26522;
+}
+
+.carousel .card-5 {
+    background: #630460;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid #0072bc !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: #0072bc !important;
+}
+
+@media (max-width: 999px) {
+    .owl-dot {
+        display: none;
+    }
+    
+    .owl-dot:hover,
+    .owl-dot.active {
+        display: none;
+    }
+}
 
 /*Bus*/
 
@@ -177,12 +272,13 @@
 
 .signup-container {
     border: 1px solid #acacac;
-    width: 600px;
+    width: 45%;
     margin: auto;
     border-radius: 5px;
 }
 
 .password-field {
+    display: flex;
     margin-left: 20px !important;
 }
 
@@ -198,6 +294,39 @@
 .login-text:hover {
     color: #000;
     text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .signup-container {
+        border: 1px solid #acacac;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .password {
+        margin-right: 0 !important;
+    }
+
+    .password-field {
+        flex: none !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .password {
+        margin-right: 20px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .password {
+        margin-right: 0px !important;
+    }
+
+    .password-field {
+        display: block;
+        margin-left: 0px !important;
+    }
 }
 
 /* Search Bus Page */
@@ -353,11 +482,3 @@
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;   
 }
-
-/* .side-nav {
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    background-color: #0d6efd;
-    transition: 0.4s;
-} */
