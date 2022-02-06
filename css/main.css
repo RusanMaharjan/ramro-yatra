@@ -375,23 +375,84 @@
 }
 
 /* Bus Details */
-.busDetails {
-    background-color: rgb(236, 236, 236);
-}
-
-.detail {
-    border: 1px solid rgb(160, 160, 160);
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
-}
-
 .bus-details {
-    border-left: 1px solid #b4b2b2;
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 10px;
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
+.bus {
+    display: flex;
+}
+
+.details {
+    border: 1px solid  rgb(153, 147, 147);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+    width: 50%;
+    margin: auto;
+    flex: 49%;
+    margin-right: 10px;
+    margin-top: 69px !important;
+}
+
+.bus-image {
+    width: 80%;
+    margin: auto !important;
+}
+
+.seat {
+    border: 1px solid  rgb(153, 147, 147);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+    width: 50%;
+    margin: auto;
+    flex: 49%;
+    margin-left: 10px;
+    margin-top: 67px !important;
+}
+
+.seatForm {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .bus-details {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .bus {
+        display: block;
+    }
+
+    .details {
+        border: 1px solid  rgb(153, 147, 147);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+        width: 100%;
+    }
+
+    .seat {
+        border: 1px solid  rgb(153, 147, 147);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+        width: 100%;
+    }
+
+    .seatForm {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .details {
+        margin-top: 50px !important;
+    }
+
+    .seat {
+        margin-top: 50px !important;
+    }
 }
 
 /* Admin */
@@ -445,7 +506,7 @@
 
 }
 
-@media screen and (max-width: 990px) {
+/* @media screen and (max-width: 990px) {
     .bus {
         width: 100%;
         margin: auto;
@@ -472,7 +533,7 @@
     .bus-details {
         border: none;
     }
-}
+} */
 
 
 /* Admin Bus section */
