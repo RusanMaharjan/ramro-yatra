@@ -53,16 +53,27 @@
                 Manage
               </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="addRoute.html">Manage Route</a></li>
                             <li>
-                                <a class="dropdown-item" href="addBus.html">Manage Bus</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addSeat.html">Manage Seat</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addOperator.html">Manage Bus Operator</a>
-                            </li>
+                                <a class="dropdown-item" href="allBus.html">Manage Bus</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allOperator.html">Manage Operator</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allRoute.html">Manage Route</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allUsers.html">Manage Users</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="../pages/paymentDetails.html">Payment details</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="">Logout</a>
+                              </li>
                         </ul>
                     </li>
                 </ul>
@@ -80,7 +91,7 @@
                 <div class="heading fs-3">
                     All Route
                 </div>
-                <button type="button" class="btn btn-success"><a href="addRoute.html" class="admin-a-btn">Create Route &rarr;</a></button>
+                <a href="addRoute.html" class="admin-a-btn btn btn-success">Create Route &rarr;</a>
             </div>  
             <hr style="color: #000; height: 3px" />
             
@@ -88,51 +99,57 @@
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Date</th>
+                        <th>Location</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Kathmandu</td>
-                        <td>Pokhara</td>
-                        <td>2021-12-01</td>
+                        <td>Kathmandu - Pokhara</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editRoute.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Kathmandu</td>
-                        <td>Pokhara</td>
-                        <td>2021-12-01</td>
+                        <td>Kathmandu - Pokhara</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editRoute.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Kathmandu</td>
-                        <td>Pokhara</td>
-                        <td>2021-12-01</td>
+                        <td>Kathmandu - Pokhara</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editRoute.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Kathmandu</td>
-                        <td>Pokhara</td>
-                        <td>2021-12-01</td>
+                        <td>Kathmandu - Pokhara</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editRoute.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Kathmandu - Pokhara</td>
+                        <td>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Kathmandu - Pokhara</td>
+                        <td>
+                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
                         </td>
                     </tr>
                 </tbody>

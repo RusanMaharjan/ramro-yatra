@@ -53,16 +53,27 @@
                             Manage
                         </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="addRoute.html">Manage Route</a></li>
                             <li>
-                                <a class="dropdown-item" href="addBus.html">Manage Bus</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addSeat.html">Manage Seat</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addOperator.html">Manage Bus Operator</a>
-                            </li>
+                                <a class="dropdown-item" href="allBus.html">Manage Bus</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allOperator.html">Manage Operator</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allRoute.html">Manage Route</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allUsers.html">Manage Users</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="../pages/paymentDetails.html">Payment details</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="">Logout</a>
+                              </li>
                         </ul>
                     </li>
                 </ul>
@@ -92,6 +103,7 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Bus Name"
+                    name=""
                     required
                     />
                 </div>
@@ -103,17 +115,28 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Facilities"
+                    name=""
                     required
                     />
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Location</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" name="" aria-label="Default select example">
                         <option selected>----- Select Locations -----</option>
                         <option value="1">Kathmandu-Chitwan</option>
                         <option value="2">Hetauda-Pokhara</option>
                         <option value="3">Kathmandu-Pokhara</option>
+                      </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Operator</label>
+                    <select class="form-select" name="" aria-label="Default select example">
+                        <option selected>----- Select Operators  -----</option>
+                        <option value="1">Kathmandu Yatayat</option>
+                        <option value="2">Hetauda Yatayat</option>
+                        <option value="3">Kathmandu Fast Track</option>
                       </select>
                 </div>
 
@@ -124,6 +147,29 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Time"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Seat</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Seat"
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Date</label>
+                    <input
+                    type="date"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    name=""
                     required
                     />
                 </div>
@@ -135,6 +181,7 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Price"
+                    name=""
                     required
                     />
                 </div>
@@ -145,6 +192,7 @@
                     type="file"
                     class="form-control"
                     id="exampleFormControlInput1"
+                    name=""
                     required
                     />
                 </div>
@@ -156,6 +204,7 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Driver Name"
+                    name=""
                     required
                     />
                 </div>
@@ -167,6 +216,7 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Bus Number"
+                    name=""
                     required
                     />
                 </div>

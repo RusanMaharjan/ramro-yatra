@@ -53,16 +53,27 @@
                 Manage
               </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="addRoute.html">Manage Route</a></li>
                             <li>
-                                <a class="dropdown-item" href="addBus.html">Manage Bus</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addSeat.html">Manage Seat</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="addOperator.html">Manage Bus Operator</a>
-                            </li>
+                                <a class="dropdown-item" href="allBus.html">Manage Bus</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allOperator.html">Manage Operator</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allRoute.html">Manage Route</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="allUsers.html">Manage Users</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="../pages/paymentDetails.html">Payment details</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Profile</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="">Logout</a>
+                              </li>
                         </ul>
                     </li>
                 </ul>
@@ -72,15 +83,14 @@
 
     <!-- all route Page -->
     <div class="route pt-5 pb-5">
-        <div class="fs-2 text-center mt-5">All Seat</div>
+        <div class="fs-2 text-center mt-5">All Users</div>
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
         <div class="container route-container">
             <div class="route-hb d-flex justify-content-between pt-4">
                 <div class="heading fs-3">
-                    All Seat
+                    All Users
                 </div>
-                <button type="button" class="btn btn-success"><a href="addSeat.html" class="admin-a-btn">Create Seat &rarr;</a></button>
             </div>  
             <hr style="color: #000; height: 3px" />
             
@@ -88,44 +98,64 @@
                 <thead>
                     <tr>
                         <th>id</th>
-                        <th>Seat Number</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Roles</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>A1</td>
+                        <td>ABC</td>
+                        <td>ABC@gmail.com</td>
+                        <td>9840539880</td>
+                        <td>ADM</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editSeat.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>A1</td>
+                        <td>ABC</td>
+                        <td>ABC@gmail.com</td>
+                        <td>9840539880</td>
+                        <td>ADM</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editSeat.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>A1</td>
+                        <td>ABC</td>
+                        <td>ABC@gmail.com</td>
+                        <td>9840539880</td>
+                        <td>ADM</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editSeat.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>A1</td>
+                        <td>ABC</td>
+                        <td>ABC@gmail.com</td>
+                        <td>9840539880</td>
+                        <td>USR</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editSeat.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>
-                    
+                    <tr>
+                        <td>1</td>
+                        <td>ABC</td>
+                        <td>ABC@gmail.com</td>
+                        <td>9840539880</td>
+                        <td>USR</td>
+                        <td>
+                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                        </td>
+                    </tr>
                 </tbody>
                 
             </table>
