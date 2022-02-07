@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Bus Ticketing System | Admin Edit Route</title>
+    <title>Bus Ticketing System | Admin Add Route</title>
 </head>
 
 <body>
@@ -81,67 +81,133 @@
         </div>
     </nav>
 
-    <!-- edit route Page -->
+    <!-- add route Page -->
     <div class="route pt-5 pb-4">
-      <div class="fs-2 text-center mt-5">Update Users</div>
-      <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
+        <div class="fs-2 text-center mt-5">Payment</div>
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
-      <div class="container route-container mb-5">
-          <form action="" method="post" class="pb-4">
-              <div class="route-hb d-flex justify-content-between pt-4">
-                  <div class="heading fs-3">
-                      Update User
-                  </div>
-                  <a href="allUsers.html" class="admin-a-btn btn btn-success">All Users &rarr;</a>
-              </div>  
-              <hr style="color: #000; height: 3px" class="mb-5" />
-              
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Name</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  name=""
-                  required
-                  />
-              </div>
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  name=""
-                  required
-                  />
-              </div>
+        <div class="container route-container mb-5">
+            <form action="" method="post" class="pb-4">
+                <div class="route-hb d-flex justify-content-between pt-4">
+                    <div class="heading fs-3">
+                        Pay Here &rarr;
+                    </div>
+                </div>  
+                <hr style="color: #000; height: 3px" class="mb-5" />
+                
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">User Id</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="1"
+                    name=""
+                    required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="name"
+                    name=""
+                    required
+                    />
+                </div>
 
-              <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                  <input
-                  type="text"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  name=""
-                  required
-                  />
-              </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="email"
+                    name=""
+                    required
+                    />
+                </div>
 
-              <div class="mb-3">
-                <label for="operator_id" class="form-label">Roles</label>
-                <select class="form-select" name="roles" aria-label="Default select example">
-                    <option selected>----- Select Roles -----</option>
-                    <option value="ADM">Admin</option>
-                    <option value="USR">User</option>
-                  </select>
-            </div>
-              <div class="btnAdmin">
-                  <button type="submit" class="btn btn-success">Update User &rarr;</button>
-              </div>
-          </form>
-      </div>
-  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="phone"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="seat number"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Price</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="price"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Bus name</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="busname"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Route</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="route"
+                    name=""
+                    required
+                    />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Operator</label>
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    value="operator"
+                    name=""
+                    required
+                    />
+                </div>
+                <div class="btnAdmin">
+                    <button type="submit" class="btn btn-success">Pay &rarr;</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="p-3 bg-secondary text-white position-relative">
