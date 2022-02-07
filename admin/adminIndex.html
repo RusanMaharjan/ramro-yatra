@@ -4,33 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap min css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap icons css link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+
+    <!-- Fontawesome icons css link -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
+    <!-- jquery min js -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl carosel min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- owl carosel css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom Css -->
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Bus Ticketing System | Admin Home</title>
+    <title>ramroYatra | Home</title>
+    <link rel="shortcut icon" href="../img/Anonymous-Bus1.svg">
   </head>
 
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
       <div class="container">
-        <a href="adminIndex.html" class="navbar-brand font"
-          >Bus Ticketing System</a
-        >
+        <a href="../index.html" class="navbar-brand font"><span class="ramro">ramro</span><span class="y">Yatra<img src="../img/Anonymous-Bus1.svg" width="80px" height="50px"></span></a>
 
         <button
           class="navbar-toggler"
@@ -44,10 +75,10 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="adminIndex.html" class="nav-link">Home</a>
+              <a href="../index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#whyUs" class="nav-link">Why Us</a>
+              <a href="#allBus" class="nav-link">All Bus</a>
             </li>
             <li class="nav-item">
               <a href="#stats" class="nav-link">Our Stats</a>
@@ -94,18 +125,10 @@
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a class="dropdown-item" href="addRoute.html">Manage Route</a>
+                  <a class="dropdown-item" href="../pages/login.html">Login</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="addBus.html">Manage Bus</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="addSeat.html">Manage Seat</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="addOperator.html"
-                    >Manage Bus Operator</a
-                  >
+                  <a class="dropdown-item" href="../pages/signup.html">Signup</a>
                 </li>
               </ul>
             </li>
@@ -132,7 +155,9 @@
               type="button"
               class="btn btn-primary butn p-2 mr-5 buton button-hover text-uppercase"
             >
-              <a href="#searchBus" class="text-decoration-none searchBusLink"
+              <a
+                href="../pages/searchBus.html"
+                class="text-decoration-none searchBusLink"
                 >Search Buses</a
               >
             </button>
@@ -147,53 +172,98 @@
       </div>
     </div>
 
-    <!-- Search Bus Form -->
-    <div class="search-bus" id="searchBus">
-      <div class="container-fluid">
-        <h2 class="searchBus pt-5 text-uppercase">Search Bus</h2>
-        <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
-        <form action="" class="p-4">
-          <div class="row g-3">
-            <div class="m-3 col-lg">
-              <label for="exampleFormControlInput1" class="form-label bus-label"
-                >From</label
-              >
-              <input
-                type="text"
-                class="form-control p-2"
-                id="exampleFormControlInput1"
-                placeholder="Travelling From"
-              />
-            </div>
-            <div class="m-3 col-lg">
-              <label for="exampleFormControlInput1" class="form-label bus-label"
-                >To</label
-              >
-              <input
-                type="text"
-                class="form-control p-2"
-                id="exampleFormControlInput1"
-                placeholder="Travelling To"
-              />
-            </div>
-            <div class="m-3 col-lg">
-              <label for="exampleFormControlInput1" class="form-label bus-label"
-                >Date</label
-              >
-              <input
-                type="date"
-                class="form-control p-2"
-                id="exampleFormControlInput1"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-primary bus-btn p-2">
-                <a href="pages/searchBus.html">Search Bus &rarr;</a>
-              </button>
-            </div>
+    <!-- All Bus slider-->
+    <div class="wrap">
+      <div class="wrapper">
+        <h2 class="text-center mt-2" id="allBus">All Buses</h2>
+        <hr
+          style="width: 20%; margin: auto; color: #000; height: 3px"
+          class="mb-4"
+        />
+        <div class="carousel owl-carousel">
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
           </div>
-        </form>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Today's Bus slider-->
+    <div class="wrap">
+      <div class="wrapper">
+        <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
+        <hr
+          style="width: 20%; margin: auto; color: #000; height: 3px"
+          class="mb-4"
+        />
+        <div class="carousel owl-carousel">
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+
+          <div class="card card-1">
+            <img class="slider-img" src="../img/bus.jfif" alt="img1">
+            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
+            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
+            <a href="../pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -266,7 +336,7 @@
       <h2 class="text-center mt-5">All Routes</h2>
       <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
       <div class="container">
-        <div class="row g-4 text-center mt-3 mb-5">
+        <div class="row g-4 text-center mt-3 mb-4">
           <div class="col-lg-4">
             <div class="addresses fs-5">Kathmandu-Pokhara</div>
             <div class="addresses fs-5">Kathmandu-Chitwan</div>
@@ -288,6 +358,17 @@
             <div class="addresses fs-5">Kathmandu-Dhading</div>
           </div>
         </div>
+        <div class="buttons mb-5">
+          <div class="container d-flex justify-content-center">
+            
+              <a
+                href="./pages/searchBus.html"
+                class="btn btn-primary"
+                >All Routes &rarr;</a
+              >
+          </div>
+        </div>
+               
       </div>
     </div>
 
@@ -325,11 +406,27 @@
           <i class="bi bi-arrow-up-circle h1 color"></i>
         </a>
       </div>
+
+      <div class="copyright text-center bg-secondary">
+        &copy;Copyright 2022 - ramroYatra. All rights reserved
+      </div>
     </footer>
-    <script src="js/main.js"></script>
+
+    <!-- Javascript Section -->
+    <!-- Custom Javascript -->
+    <script src="../js/main.js"></script>
+
+    <!-- Bootstrap popper javascript -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap min javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
   </body>
