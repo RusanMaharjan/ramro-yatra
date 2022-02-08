@@ -1,0 +1,524 @@
+/* Navbar */
+.nav-item:hover {
+    border-bottom: 1px solid rgb(59, 57, 57);
+}
+
+.ramro {
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.4em;
+}
+
+.y {
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #0072bc;
+    font-size: 1.6em;
+}
+
+/*Showcase*/
+.showcase {
+    background: url(../img/night-road.jpeg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    font-family: sans-serif;
+    color: #fff;
+    padding-top: 290px;
+}
+
+.butn {
+    margin-right: 20px;
+}
+
+.buton {
+    width: 150px;
+    font-family: sans-serif;
+}
+
+/* Bus Slider */
+.wrap {
+    background-color: rgb(171, 174, 184);
+    display: flex;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.wrapper .carousel {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.carousel .card {
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .card-1 {
+    background:  rgb(98, 99, 104);
+}
+
+.slider-img {
+    border-radius: 10px;
+}
+
+.carousel .card-2 {
+    background: #0072bc;
+}
+
+.carousel .card-3 {
+    background: #39b54a;
+}
+
+.carousel .card-4 {
+    background: #f26522;
+}
+
+.carousel .card-5 {
+    background: #630460;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owl-dot {
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5px;
+    border: 2px solid #0072bc !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: #0072bc !important;
+}
+
+@media (max-width: 999px) {
+    .owl-dot {
+        display: none;
+    }
+    
+    .owl-dot:hover,
+    .owl-dot.active {
+        display: none;
+    }
+}
+
+/*Bus*/
+
+.search-bus {
+    background-color: rgb(171, 174, 184);
+}
+
+.bus-label {
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+.bus-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.searchBus {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.bus-btn {
+    width: 200px;
+    padding: 0;
+}
+
+.bus-btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bus-btn a:hover {
+    color: #fff;
+}
+
+.searchBusLink {
+    color: #fff;
+}
+
+.searchBusLink:hover {
+    color: #fff;
+}
+
+
+/*why Us*/
+
+.wu {
+    justify-content: center;
+    font-size: 10em;
+}
+
+.why-us {
+    color: #fff;
+}
+
+.why-us:hover {
+    color: #000;
+}
+
+.far {
+    color: #0d6efd;
+}
+
+.fas {
+    color: #0d6efd;
+}
+
+.easy {
+    transition: .5s;
+}
+
+.easy:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.choices {
+    transition: .5s;
+}
+
+.choices:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.prices {
+    transition: .5s;
+}
+
+.prices:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+
+/* Our Stats */
+
+.stats {
+    background-color: rgb(171, 174, 184);
+}
+
+.stat-text {
+    transition: .5s;
+}
+
+.stat-text:hover {
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+
+.lead {
+    color: #000;
+}
+
+.color {
+    color: #000;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer.contact {
+    flex: 30%;
+}
+
+.footer.about {
+    flex: 20%;
+}
+
+.footer.social-media {
+    flex: 50%;
+}
+
+
+/* Signup */
+
+.signup {
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 50px !important;
+}
+
+.signup-container {
+    border: 1px solid #acacac;
+    width: 45%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.password-field {
+    display: flex;
+    margin-left: 20px !important;
+}
+
+.password {
+    margin-right: 115px !important;
+}
+
+.login-text {
+    color: #000;
+    text-decoration: none;
+}
+
+.login-text:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .signup-container {
+        border: 1px solid #acacac;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .password {
+        margin-right: 0 !important;
+    }
+
+    .password-field {
+        flex: none !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .password {
+        margin-right: 20px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .password {
+        margin-right: 0px !important;
+    }
+
+    .password-field {
+        display: block;
+        margin-left: 0px !important;
+    }
+}
+
+/* Search Bus Page */
+.section-bus {
+    background-color: rgb(236, 236, 236);
+}
+
+.flex-price {
+    border-left: 1px solid #b4b2b2;
+}
+
+.list-of-bus {
+    padding: 10px !important;
+    border: 1px solid rgb(211, 211, 211); 
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+}
+
+.location-span {
+    color: #000;
+    font-size: 1em;
+}
+
+.price-operator {
+    margin-right: 50px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 10px 10px 50px 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+}
+
+.btnBus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnBus:hover {
+    color: #fff;
+}
+
+@media (min-width: 780px) {
+    .price-operator {
+        width: 100%;
+        margin: auto !important;
+    }
+}
+
+/* Bus Details */
+.bus-details {
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 10px;
+}
+
+.bus {
+    display: flex;
+}
+
+.details {
+    border: 1px solid  rgb(153, 147, 147);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+    width: 50%;
+    margin: auto;
+    flex: 49%;
+    margin-right: 10px;
+    margin-top: 69px !important;
+}
+
+.busImg {
+    width: 80%;
+    margin: auto !important;
+}
+
+.seat {
+    border: 1px solid  rgb(153, 147, 147);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+    width: 50%;
+    margin: auto;
+    flex: 49%;
+    margin-left: 10px;
+    margin-top: 67px !important;
+}
+
+.seatForm {
+    width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .bus-details {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .bus {
+        display: block;
+    }
+
+    .details {
+        border: 1px solid  rgb(153, 147, 147);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+        width: 100%;
+    }
+
+    .seat {
+        border: 1px solid  rgb(153, 147, 147);
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
+        width: 100%;
+    }
+
+    .seatForm {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .details {
+        margin-top: 50px !important;
+    }
+
+    .seat {
+        margin-top: 50px !important;
+    }
+}
+
+/* Admin */
+.route {
+    background-color: rgb(236, 236, 236);
+}
+
+.route-container {
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+.btnAdmin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-a-btn {
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-a-btn:hover {
+    color: #fff;
+}
+
+.admin-a-action {
+    color: #fff;
+    text-decoration: none;
+}
+
+.admin-a-action:hover {
+    color: #fff;
+}
+
+.admin-fa {
+    color: #fff;
+    padding-left: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .route-container {
+        width: 100%;
+        margin: auto;
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 5px;
+    }
+
+}
+
+/* Admin Bus section */
+.bus-container {
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;   
+}
+
+/* Ticket */
+.ticket {
+    font-family: sans-serif;
+}
+
+.qrcode {
+    margin: 50px 0 0 60px;
+}
