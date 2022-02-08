@@ -277,6 +277,11 @@
     border-radius: 5px;
 }
 
+.signup-btn {
+    color: #000;
+    font-family: sans-serif;
+}
+
 .password-field {
     display: flex;
     margin-left: 20px !important;
