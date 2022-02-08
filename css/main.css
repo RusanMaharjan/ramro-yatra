@@ -353,7 +353,7 @@
 .price-operator {
     margin-right: 50px;
     border: 1px solid rgb(211, 211, 211);
-    padding: 10px 10px 200px 10px;
+    padding: 10px 10px 50px 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px 3px rgb(153, 147, 147);
 }
