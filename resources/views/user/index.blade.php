@@ -34,35 +34,35 @@
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="carousel owl-carousel">
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
@@ -79,35 +79,35 @@
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="carousel owl-carousel">
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
-                    <img class="slider-img" src="./img/bus.jfif" alt="img1">
+                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>

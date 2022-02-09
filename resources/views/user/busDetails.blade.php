@@ -9,7 +9,7 @@
                 <div class="details text-center">
                     <h2>Bus Details</h2>
                     <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
-                    <img src="../img/bus.jfif" alt="bus" class="busImg" width="500px" height="300px" />
+                    <img src="{{ url('frontend/img/bus.jfif') }}" alt="bus" class="busImg" width="500px" height="300px" />
                     <div class="bd">
                         <h3>Tourist Bus By Pokhara Yatayat</h3>
                         <h4>Facilities:</h4>
