@@ -12,7 +12,7 @@
                 <div class="heading fs-3">
                     All Operator
                 </div>
-                <a href="addOperator.html" class="admin-a-btn btn btn-success">Create Operator &rarr;</a>
+                <a href="{{ route('admin.addOperator') }}" class="admin-a-btn btn btn-success">Create Operator &rarr;</a>
             </div>  
             <hr style="color: #000; height: 3px" />
             
@@ -29,8 +29,8 @@
                         <td>1</td>
                         <td>Pokhara Yatayat</td>
                         <td>
-                            <button type="button" class="btn btn-primary"><a href="editOperator.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
+                            <a href="{{ route('admin.editOperator') }}" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
                         </td>
                     </tr>
                     <tr>

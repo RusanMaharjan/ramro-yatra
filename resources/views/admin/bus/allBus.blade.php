@@ -12,8 +12,8 @@
                 <div class="heading fs-3">
                     All Bus
                 </div>
-                <button type="button" class="btn btn-success"><a href="addBus.html" class="admin-a-btn">Create Bus
-                        &rarr;</a></button>
+                <a href="{{ route('admin.addBus') }}" class="admin-a-btn btn btn-success">Create Bus
+                        &rarr;</a>
             </div>
             <hr style="color: #000; height: 3px" />
 
@@ -50,7 +50,27 @@
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
+                            <a href="{{ route('admin.editBus') }}"
+                                    class="admin-a-action mb-2 btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
+                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
+                                        class="fas fa-trash-alt admin-fa"></i></a></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Tour Bus By Pokhara Yatayat</td>
+                        <td>WiFi, AC, Music System</td>
+                        <td>6:30 AM</td>
+                        <td>7/02/2022</td>
+                        <td>Kathmandu-Pokhara</td>
+                        <td>Kathmandu Yatayat</td>
+                        <td>47</td>
+                        <td>Rs: 800</td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td>Ram Bahadur</td>
+                        <td>Ba 29 Cha 2160</td>
+                        <td>
+                            <button type="button" class="btn btn-primary mb-2"><a href="{{ route('admin.editBus') }}"
                                     class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
                             <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
                                         class="fas fa-trash-alt admin-fa"></i></a></button>
@@ -70,7 +90,7 @@
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
+                            <button type="button" class="btn btn-primary mb-2"><a href="{{ route('admin.editBus') }}"
                                     class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
                             <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
                                         class="fas fa-trash-alt admin-fa"></i></a></button>
@@ -90,7 +110,7 @@
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
+                            <button type="button" class="btn btn-primary mb-2"><a href="{{ route('admin.editBus') }}"
                                     class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
                             <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
                                         class="fas fa-trash-alt admin-fa"></i></a></button>
@@ -110,7 +130,7 @@
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
+                            <button type="button" class="btn btn-primary mb-2"><a href="{{ route('admin.editBus') }}"
                                     class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
                             <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
                                         class="fas fa-trash-alt admin-fa"></i></a></button>
@@ -130,27 +150,7 @@
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
-                                    class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
-                                        class="fas fa-trash-alt admin-fa"></i></a></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Tour Bus By Pokhara Yatayat</td>
-                        <td>WiFi, AC, Music System</td>
-                        <td>6:30 AM</td>
-                        <td>7/02/2022</td>
-                        <td>Kathmandu-Pokhara</td>
-                        <td>Kathmandu Yatayat</td>
-                        <td>47</td>
-                        <td>Rs: 800</td>
-                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
-                        <td>Ram Bahadur</td>
-                        <td>Ba 29 Cha 2160</td>
-                        <td>
-                            <button type="button" class="btn btn-primary mb-2"><a href="editBus.html"
+                            <button type="button" class="btn btn-primary mb-2"><a href="{{ route('admin.editBus') }}"
                                     class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
                             <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
                                         class="fas fa-trash-alt admin-fa"></i></a></button>

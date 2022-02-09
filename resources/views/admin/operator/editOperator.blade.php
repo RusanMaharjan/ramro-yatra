@@ -13,7 +13,7 @@
                     <div class="heading fs-3">
                         Update Seat
                     </div>
-                    <a href="allOperator.html" class="admin-a-btn btn btn-success">All Operator &rarr;</a>
+                    <a href="{{ route('admin.getOperator') }}" class="admin-a-btn btn btn-success">All Operator &rarr;</a>
                 </div>  
                 <hr style="color: #000; height: 3px" class="mb-5" />
                 

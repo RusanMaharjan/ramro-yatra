@@ -7,13 +7,21 @@
         <div class="fs-2 text-center mt-5">All Payment Details</div>
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
+        
+        
+
         <div class="container">
             <div class="route-hb d-flex justify-content-between pt-4">
                 <div class="heading fs-3">
                     All Payments
                 </div>
+
+                <div class="references text-center">
+                    <h6>Hint: Recent Payment will be on top</h6>
+                </div>
             </div>
             <hr style="color: #000; height: 3px" />
+
 
             <table class="table table-striped text-center" style="width: 100%; margin: auto;">
                 <thead>

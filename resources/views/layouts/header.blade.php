@@ -90,19 +90,19 @@
                                         {{ Auth::user()->name }}
                                     </a>
                                     <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Manage Bus</a>
+                                        <li><a class="dropdown-item" href="{{ route('admin.getBus') }}">Manage Bus</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Manage
+                                            <a class="dropdown-item" href="{{ route('admin.getOperator') }}">Manage
                                                 Operator</a>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">Manage
+                                            <a class="dropdown-item" href="{{ route('admin.getRoute') }}">Manage
                                                 Route</a>
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item" href="#">Manage Users</a>
+                                            <a class="dropdown-item" href="{{ route('admin.getUsers') }}">Manage Users</a>
                                         </li>
 
                                         <li>

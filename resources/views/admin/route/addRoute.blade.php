@@ -13,7 +13,7 @@
                     <div class="heading fs-3">
                         Create Route
                     </div>
-                    <a href="allRoute.html" class="admin-a-btn btn btn-success">All Route &rarr;</a>
+                    <a href="{{ route('admin.getRoute') }}" class="admin-a-btn btn btn-success">All Route &rarr;</a>
                 </div>  
                 <hr style="color: #000; height: 3px" class="mb-5" />
                 

@@ -12,7 +12,7 @@
                 <div class="heading fs-3">
                     All Route
                 </div>
-                <a href="addRoute.html" class="admin-a-btn btn btn-success">Create Route &rarr;</a>
+                <a href="{{ route('admin.addRoute') }}" class="admin-a-btn btn btn-success">Create Route &rarr;</a>
             </div>
             <hr style="color: #000; height: 3px" />
 
@@ -29,7 +29,7 @@
                         <td>1</td>
                         <td>Kathmandu - Pokhara</td>
                         <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
+                            <a href="{{ route('admin.editRoute') }}" class="admin-a-action btn btn-primary">Edit<i
                                     class="fas fa-edit admin-fa"></i></a>
                             <a href="#" class="admin-a-action btn btn-danger">Delete<i
                                     class="fas fa-trash-alt admin-fa"></i></a>

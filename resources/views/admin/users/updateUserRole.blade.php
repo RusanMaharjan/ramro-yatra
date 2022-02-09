@@ -13,7 +13,7 @@
                     <div class="heading fs-3">
                         Update User
                     </div>
-                    <a href="allUsers.html" class="admin-a-btn btn btn-success">All Users &rarr;</a>
+                    <a href="{{ route('admin.getUsers') }}" class="admin-a-btn btn btn-success">All Users &rarr;</a>
                 </div>
                 <hr style="color: #000; height: 3px" class="mb-5" />
 

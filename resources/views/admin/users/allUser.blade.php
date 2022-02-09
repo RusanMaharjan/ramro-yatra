@@ -34,7 +34,7 @@
                         <td>9840539880</td>
                         <td>ADM</td>
                         <td>
-                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i
+                            <a href="{{ route('admin.editUsers') }}" class="admin-a-action btn btn-primary">Edit<i
                                     class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>

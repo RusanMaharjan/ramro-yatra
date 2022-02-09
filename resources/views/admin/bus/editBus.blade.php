@@ -11,9 +11,9 @@
             <form action="" method="post" class="pb-4">
                 <div class="route-hb d-flex justify-content-between pt-4">
                     <div class="heading fs-3">
-                        Create Bus
+                        Update Bus
                     </div>
-                    <a href="allBus.html" class="admin-a-btn btn btn-success">All Bus &rarr;</a>
+                    <a href="{{ route('admin.getBus') }}" class="admin-a-btn btn btn-success">All Bus &rarr;</a>
                 </div>  
                 <hr style="color: #000; height: 3px" class="mb-5" />
                 
