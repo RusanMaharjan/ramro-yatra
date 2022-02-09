@@ -40,7 +40,7 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="../img/night-road.jpeg" alt="bus" width="100px"
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
                                                         height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">
@@ -79,7 +79,7 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="../img/night-road.jpeg" alt="bus" width="100px"
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
                                                         height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">
@@ -118,7 +118,7 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="../img/night-road.jpeg" alt="bus" width="100px"
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
                                                         height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">

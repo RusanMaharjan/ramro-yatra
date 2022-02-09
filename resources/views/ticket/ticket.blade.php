@@ -22,7 +22,7 @@
             </div>
 
             <div class="qrcode">
-                <img src="../img/qrcode.png" alt="qrcode" width="200px" height="200px">
+                <img src="{{ url('frontend/img/qrcode.png') }}" alt="qrcode" width="200px" height="200px">
             </div>
         </div>
 

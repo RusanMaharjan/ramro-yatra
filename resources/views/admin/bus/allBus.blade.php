@@ -46,7 +46,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
@@ -66,7 +66,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
@@ -86,7 +86,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
@@ -106,7 +106,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
@@ -126,7 +126,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
@@ -146,7 +146,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>47</td>
                         <td>Rs: 800</td>
-                        <td><img src="../img/night-road.jpeg" alt="bus" srcset="" width="100px" height="100px"></td>
+                        <td><img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" srcset="" width="100px" height="100px"></td>
                         <td>Ram Bahadur</td>
                         <td>Ba 29 Cha 2160</td>
                         <td>
