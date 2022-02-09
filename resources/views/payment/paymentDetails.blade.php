@@ -46,7 +46,7 @@
                         <td>Kathmandu Yatayat</td>
                         <td>7/02/2022</td>
                         <td>
-                            <a href="ticket.html" class="admin-a-action btn btn-primary">Get Ticket<i
+                            <a href="{{ route('ticket') }}" class="admin-a-action btn btn-primary">Get Ticket<i
                                     class="fas fa-edit admin-fa"></i></a>
                         </td>
                     </tr>

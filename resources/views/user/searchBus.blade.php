@@ -3,6 +3,34 @@
 @section('content')
 
     <!-- Search Bus main body section -->
+    <div class="search-bus mt-5 pt-2" id="searchBus">
+        <div class="container-fluid">
+            <h2 class="searchBus pt-5 text-uppercase text-center">Search Bus</h2>
+            <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
+            <form action="" class="p-4">
+                <div class="row g-3">
+                    <div class="m-3 col-lg">
+                        <label for="bus_name" class="form-label bus-label">Bus Name</label>
+                        <input type="search" class="form-control p-2" id="bus_name"
+                            placeholder="Search from bus name: like - Pokhara Yatayat, Kathmandu yatayat" name="search" />
+
+                    </div>
+                    <div class="m-3 col-lg">
+                        <label for="time" class="form-label bus-label">Time</label>
+                        <input type="search" class="form-control p-2" id="time"
+                            placeholder="Search from time: like - 6:00 AM, 5:00 AM" name="search1" />
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary bus-btn p-2">
+                            Search Bus &rarr;
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <div class="section-bus">
         <div class="container">
             <h2 class="text-center pt-4">All Bus</h2>
@@ -40,8 +68,8 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
-                                                        height="100px" />
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
+                                                        width="100px" height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">
                                                     <h4>Tourist Bus By Pokhara Yatayat</h4>
@@ -55,7 +83,7 @@
                                             <h4>Price</h4>
                                             <h5 class="mb-3">Rs. 800</h5>
                                             <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="details.html">Select &rarr;</a>
+                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
                                             </button>
                                         </div>
                                     </div>
@@ -79,8 +107,8 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
-                                                        height="100px" />
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
+                                                        width="100px" height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">
                                                     <h4>Tourist Bus By Pokhara Yatayat</h4>
@@ -94,7 +122,7 @@
                                             <h4>Price</h4>
                                             <h5 class="mb-3">Rs. 800</h5>
                                             <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="details.html">Select &rarr;</a>
+                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
                                             </button>
                                         </div>
                                     </div>
@@ -118,8 +146,8 @@
                                         <div class="bus-image col-lg-9">
                                             <div class="row">
                                                 <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus" width="100px"
-                                                        height="100px" />
+                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
+                                                        width="100px" height="100px" />
                                                 </div>
                                                 <div class="desc col-lg-9">
                                                     <h4>Tourist Bus By Pokhara Yatayat</h4>
@@ -133,7 +161,7 @@
                                             <h4>Price</h4>
                                             <h5 class="mb-3">Rs. 800</h5>
                                             <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="details.html">Select &rarr;</a>
+                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
                                             </button>
                                         </div>
                                     </div>

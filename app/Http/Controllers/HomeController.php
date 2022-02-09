@@ -8,4 +8,8 @@ class HomeController extends Controller
     {
         return view('user.index');
     }
+
+    public function searchBus() {
+        return view('user.searchBus');
+    }
 }

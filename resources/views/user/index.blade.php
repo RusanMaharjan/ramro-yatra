@@ -17,7 +17,7 @@
             <div class="buttons">
                 <div class="container d-flex justify-content-center mt-3">
                     <button type="button" class="btn btn-primary butn p-2 mr-5 buton button-hover text-uppercase">
-                        <a href="./pages/searchBus.html" class="text-decoration-none searchBusLink">Search Buses</a>
+                        <a href="{{ route('searchBus') }}" class="text-decoration-none searchBusLink">Search Buses</a>
                     </button>
                     <button type="button" class="btn btn-light buton text-uppercase why-us">
                         <a href="#whyUs" class="text-decoration-none">Why Us</a>
@@ -37,35 +37,35 @@
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
             </div>
         </div>
@@ -82,35 +82,35 @@
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="./pages/details.html" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div>
             </div>
         </div>

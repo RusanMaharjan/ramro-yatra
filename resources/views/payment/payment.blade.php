@@ -67,7 +67,7 @@
                         required />
                 </div>
                 <div class="btnAdmin">
-                    <a href="ticket.html" class="btn btn-success">Pay &rarr;</a>
+                    <a href="{{ route('paymentDetails') }}" class="btn btn-success">Pay &rarr;</a>
                     <button type="submit" class="btn btn-success">Pay &rarr;</button>
                 </div>
 

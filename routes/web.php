@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\BusDetailsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InvoiceController;
+use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -19,9 +23,23 @@ use Illuminate\Support\Facades\Route;
 // });
 // Auth::routes();
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//User Routes
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/search-bus', [HomeController::class, 'searchBus'])->name('searchBus');
+
+Route::get('/bus-details',[BusDetailsController::class, 'index'])->name('busDetails');
+
+Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
+Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
+
+Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
+
+//Admin Routes
 
 
+
+
+//Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

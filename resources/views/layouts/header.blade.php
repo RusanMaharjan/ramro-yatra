@@ -106,7 +106,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="dropdown-item" href="#">Payment
+                                            <a class="dropdown-item" href="{{ route('paymentDetails') }}">Payment
                                                 details</a>
                                         </li>
 
@@ -132,7 +132,7 @@
                                     </a>
                                     <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                                         <li>
-                                            <a href="#" class="dropdown-item">Payment
+                                            <a href="{{ route('paymentDetails') }}" class="dropdown-item">Payment
                                                 details</a>
                                         </li>
 
