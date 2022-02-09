@@ -61,14 +61,14 @@
                 <form action="" method="post" class="pb-4">
                     <div class="heading fs-3">Login to your account</div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email.."
+                        <label for="exampleFormControlInput1" class="form-label" value="{{ __('Email') }}">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="Enter email.."
                             required />
                     </div>  
 
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                        <label for="exampleFormControlInput1" class="form-label" value="{{ __('Password') }}">Password</label>
+                        <input type="password" class="form-control" name="password" id="exampleFormControlInput1"
                             placeholder="Enter Password.." required />
                     </div>
 
@@ -77,12 +77,18 @@
                             Login &rarr;
                         </button>
                     </div>
-                    <input type="checkbox" name="remember"> Remember me
+                    
+                    <div class="block mt-4">
+                        <label for="remember_me" class="flex items-center">
+                            <x-jet-checkbox id="remember_me" name="remember" />
+                            <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                        </label>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-8">
                             Don't have an account?<a class="login-text text-decoration-underline"
-                                href="signup.html">Register</a>
+                                href="{{ route('register') }}">Register</a>
                         </div>
                         <div class="col-md-4">
                             <a href="#" class="text-decoration-underline login-text">Forgot Password?</a>

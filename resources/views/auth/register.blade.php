@@ -74,31 +74,31 @@
                 <form action="" method="post" class="pb-4">
                     <div class="heading fs-3">Personal Information</div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter name.."
+                        <label for="exampleFormControlInput1" class="form-label" value="{{ __('Name') }}">Name</label>
+                        <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Enter name.."
                             required />
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email.."
+                        <label for="exampleFormControlInput1" class="form-label" value="{{ __('Email') }}">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="Enter email.."
                             required />
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        <label for="exampleFormControlInput1" class="form-label" value="{{ __('Phone') }}">Phone</label>
+                        <input type="text" class="form-control" name="phone" id="exampleFormControlInput1"
                             placeholder="Enter phone number.." required />
                     </div>
 
                     <div class="heading fs-3">Login Information</div>
                     <div class="password-field align-items-center">
                         <div class="mb-3 password">
-                            <label for="exampleFormControlInput1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                            <label for="exampleFormControlInput1" class="form-label" value="{{ __('Password') }}">Password</label>
+                            <input type="password" class="form-control" name="password" id="exampleFormControlInput1"
                                 placeholder="Enter Password.." required />
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                            <label for="exampleFormControlInput1" class="form-label" value="{{ __('Confirm Password') }}">Confirm Password</label>
+                            <input type="password" class="form-control" name="password_confirmation" id="exampleFormControlInput1"
                                 placeholder="Conrifm Password.." required />
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                         </button>
                     </div>
                     <div>
-                        Already have an account?<a class="login-text" href="login.html ">login</a>
+                        Already have an account?<a class="login-text" href="{{ route('login') }}">login</a>
                     </div>
                 </form>
             </div>
