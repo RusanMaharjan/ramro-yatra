@@ -42,9 +42,9 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
         <div class="container">
             <div class="header-logo d-flex">
-                <a href="index.html" class="navbar-brand font"><span class="ramro">ramro</span><span
+                <a href="{{ route('home') }}" class="navbar-brand font"><span class="ramro">ramro</span><span
                         class="y">Yatra</span></a>
-                <a href="index.html" class="navbar-brand font"><img src="{{ url('frontend/img/Anonymous-Bus1.svg') }}"
+                <a href="{{ route('home') }}" class="navbar-brand font"><img src="{{ url('frontend/img/Anonymous-Bus1.svg') }}"
                         alt="" width="80px" height="50px"></a>
             </div>
 
