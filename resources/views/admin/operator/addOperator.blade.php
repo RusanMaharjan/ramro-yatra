@@ -34,6 +34,13 @@
                     name="operator_name"
                     />
                 </div>
+
+                @error('operator_name')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="btnAdmin">
                     <button type="submit" class="btn btn-success">Add Operator &rarr;</button>
                 </div>

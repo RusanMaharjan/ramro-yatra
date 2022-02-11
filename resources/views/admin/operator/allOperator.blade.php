@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('pageTitle', 'Admin Edit Operator')
 @section('content')
-    
+
     <!-- all operator Page -->
     <div class="route pt-5 pb-5">
         <div class="fs-2 text-center mt-5">All Operator</div>
@@ -13,9 +13,9 @@
                     All Operator
                 </div>
                 <a href="{{ route('admin.addOperator') }}" class="admin-a-btn btn btn-success">Create Operator &rarr;</a>
-            </div>  
+            </div>
             <hr style="color: #000; height: 3px" />
-            
+
             <table class="table table-striped text-center" style="width: 100%; margin: auto;">
                 <thead>
                     <tr>
@@ -25,42 +25,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Pokhara Yatayat</td>
-                        <td>
-                            <a href="{{ route('admin.editOperator') }}" class="admin-a-action btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Pokhara Yatayat</td>
-                        <td>
-                            <button type="button" class="btn btn-primary"><a href="editOperator.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Pokhara Yatayat</td>
-                        <td>
-                            <button type="button" class="btn btn-primary"><a href="editOperator.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Pokhara Yatayat</td>
-                        <td>
-                            <button type="button" class="btn btn-primary"><a href="editOperator.html" class="admin-a-action">Edit<i class="fas fa-edit admin-fa"></i></a></button>
-                            <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i class="fas fa-trash-alt admin-fa"></i></a></button>
-                        </td>
-                    </tr>
-                    
-                    
+                    @foreach ($operators as $operator)
+                        <tr>
+                            <td>{{ $operator->operator_id }}</td>
+                            <td>{{ $operator->operator_name }}</td>
+                            <td>
+                                <a href="/edit-Operator/{{ $operator->operator_id }}" class="admin-a-action btn btn-primary">Edit<i
+                                        class="fas fa-edit admin-fa"></i></a>
+                                <a href="/delete-Operator/{{ $operator->operator_id }}" onclick="return confirm('Are you sure want to delete this operator?')" class="admin-a-action btn btn-danger">Delete<i
+                                        class="fas fa-trash-alt admin-fa"></i></a>
+                            </td>
+                        </tr>
+                    @endforeach
+
                 </tbody>
-                
+
             </table>
         </div>
     </div>

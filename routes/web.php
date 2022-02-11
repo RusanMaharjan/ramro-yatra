@@ -50,7 +50,7 @@ Route::post('create-Operator',[OperatorController::class, 'createOperator'])->na
 Route::get('get-Operator',[OperatorController::class, 'getOperator'])->name('admin.getOperator');
 Route::get('edit-Operator/{operator_id}',[OperatorController::class, 'editOperator'])->name('admin.editOperator');
 Route::post('update-operator',[OperatorController::class, 'updateOperator'])->name('admin.updateOperator');
-Route::get('delete-operator/{operator_id}',[OperatorController::class, 'deleteOperator'])->name('admin.deleteOperator');
+Route::get('delete-Operator/{operator_id}',[OperatorController::class, 'deleteOperator'])->name('admin.deleteOperator');
 
 //Route Management
 Route::get('add-route',[RouteController::class, 'addRoute'])->name('admin.addRoute');
