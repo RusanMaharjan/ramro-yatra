@@ -69,7 +69,6 @@ Route::get('edit-Users/{id}',[EditUserController::class, 'editUser'])->name('adm
 Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admin.updateUser');
 
 
-
 //Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
