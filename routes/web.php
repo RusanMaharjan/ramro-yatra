@@ -53,7 +53,9 @@ Route::get('edit-Operator',[OperatorController::class, 'editOperator'])->name('a
 Route::get('add-route',[RouteController::class, 'addRoute'])->name('admin.addRoute');
 Route::post('create-route',[RouteController::class, 'createRoute'])->name('admin.createRoute');
 Route::get('get-route',[RouteController::class, 'getRoute'])->name('admin.getRoute');
-Route::get('edit-route',[RouteController::class, 'editRoute'])->name('admin.editRoute');
+Route::get('edit-route/{route_id}',[RouteController::class, 'editRoute'])->name('admin.editRoute');
+Route::post('update-route',[RouteController::class, 'updateRoute'])->name('admin.updateRoute');
+Route::get('delete-route/{route_id}',[RouteController::class, 'deleteRoute'])->name('admin.deleteRoute');
 
 //user Management
 Route::get('get-users',[EditUserController::class, 'getUsers'])->name('admin.getUsers');
