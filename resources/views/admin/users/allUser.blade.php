@@ -35,7 +35,7 @@
                             <td>{{ $user->phone }}</td>
                             <td>{{ $user->roles }}</td>
                             <td>
-                                <a href="{{ route('admin.editUsers') }}" class="admin-a-action btn btn-primary">Edit<i
+                                <a href="/edit-Users/{{ $user->id }}" class="admin-a-action btn btn-primary">Edit<i
                                         class="fas fa-edit admin-fa"></i></a>
                             </td>
                         </tr>

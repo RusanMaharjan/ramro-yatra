@@ -23,6 +23,8 @@
                 </div>
                 <hr style="color: #000; height: 3px" class="mb-5" />
 
+                <input type="hidden" name="id" value="{{ $user->id }}">
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Name</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" name="name" value="{{ $user->name }}"/>
