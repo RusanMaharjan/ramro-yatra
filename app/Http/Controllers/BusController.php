@@ -19,7 +19,7 @@ class BusController extends Controller
     //function for adding bus data in database
     public function createBus(Request $request) {
         $request->validate([
-            'bus_name' => 'required',
+            'bus_name' => 'required|unique:buses,bus_id',
             'facilities' => 'required',
             'time' => 'required',
             'bus_number' => 'required',
@@ -46,7 +46,7 @@ class BusController extends Controller
         $img = $request->file;
         $imageName = time().'.'.$img->getClientoriginalExtension();
         $request->file->move('img',$imageName);
-        $buses->img = $imageName;
+        $buses->img=$imageName;
 
         $buses->save();
         return back()->with('message', 'Bus added successfully;');

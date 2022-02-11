@@ -41,6 +41,7 @@ Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
 //Admin Routes
 //Bus Management
 Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus');
+Route::post('create-bus',[BusController::class, 'createBus'])->name('admin.createBus');
 Route::get('get-bus',[BusController::class, 'getBus'])->name('admin.getBus');
 Route::get('edit-bus',[BusController::class, 'editBus'])->name('admin.editBus');
 
