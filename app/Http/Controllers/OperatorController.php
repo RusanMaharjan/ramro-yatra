@@ -41,6 +41,7 @@ class OperatorController extends Controller
         $request->validate([
             'operator_name' => 'required'
         ]);
+
         $operator = Operator::find($request->operator_id);
         $operator->operator_name = $request->operator_name;
         $operator->save();

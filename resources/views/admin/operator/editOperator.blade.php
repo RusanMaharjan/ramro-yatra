@@ -22,6 +22,8 @@
                     <a href="{{ route('admin.getOperator') }}" class="admin-a-btn btn btn-success">All Operator &rarr;</a>
                 </div>  
                 <hr style="color: #000; height: 3px" class="mb-5" />
+
+                <input type="hidden" name="operator_id" value="{{ $operator->operator_id }}">
                 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Bus Operator Name</label>
