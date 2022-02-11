@@ -8,7 +8,13 @@
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
         <div class="container route-container">
-            <form action="" method="post" class="pb-4">
+            <form action="{{ route('admin.updateBus') }}" method="post" class="pb-4" enctype="multipart/form-data">
+                @csrf
+                @if (Session::has('message'))
+                    <div class="alert alert-success mt-2" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <div class="route-hb d-flex justify-content-between pt-4">
                     <div class="heading fs-3">
                         Update Bus
@@ -17,6 +23,8 @@
                 </div>  
                 <hr style="color: #000; height: 3px" class="mb-5" />
                 
+                <input type="hidden" name="bus_id" value="{{ $bus->bus_id }}">
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Bus Name</label>
                     <input
@@ -24,8 +32,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Bus Name"
-                    name=""
-                    required
+                    name="bus_name"
+                    value="{{ $bus->bus_name }}"
                     />
                 </div>
 
@@ -36,29 +44,29 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Facilities"
-                    name=""
-                    required
+                    name="facilities"
+                    value="{{ $bus->facilities }}"
                     />
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Location</label>
-                    <select class="form-select" name="" aria-label="Default select example">
-                        <option selected>----- Select Locations -----</option>
-                        <option value="1">Kathmandu-Chitwan</option>
-                        <option value="2">Hetauda-Pokhara</option>
-                        <option value="3">Kathmandu-Pokhara</option>
-                      </select>
+                    <select class="form-select" name="route_id" aria-label="Default select example" aria-valuetext="{{ $bus->route->from }} - {{ $bus->route->to }}">
+                        <option selected value="{{ $bus->route->route_id }}">{{ $bus->route->from }} - {{ $bus->route->to }}</option>
+                        @foreach ($routes as $route)
+                            <option value="{{ $route->route_id }}">{{ $route->from }} - {{ $route->to }}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Operator</label>
-                    <select class="form-select" name="" aria-label="Default select example">
-                        <option selected>----- Select Operators  -----</option>
-                        <option value="1">Kathmandu Yatayat</option>
-                        <option value="2">Hetauda Yatayat</option>
-                        <option value="3">Kathmandu Fast Track</option>
-                      </select>
+                    <select class="form-select" name="operator_id" aria-label="Default select example">
+                        <option selected value="{{ $bus->operator->operator_id }}">{{ $bus->operator->operator_name }}</option>
+                        @foreach ($operators as $operator)
+                            <option value="{{ $operator->operator_id }}">{{ $operator->operator_name }}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="mb-3">
@@ -68,8 +76,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Time"
-                    name=""
-                    required
+                    name="time"
+                    value="{{ $bus->time }}"
                     />
                 </div>
 
@@ -80,7 +88,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Seat"
-                    required
+                    name="seat"
+                    value="{{ $bus->seat }}"
                     />
                 </div>
 
@@ -90,8 +99,8 @@
                     type="date"
                     class="form-control"
                     id="exampleFormControlInput1"
-                    name=""
-                    required
+                    name="date"
+                    value="{{ $bus->date }}"
                     />
                 </div>
 
@@ -102,8 +111,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Price"
-                    name=""
-                    required
+                    name="price"
+                    value="{{ $bus->price }}"
                     />
                 </div>
 
@@ -113,8 +122,7 @@
                     type="file"
                     class="form-control"
                     id="exampleFormControlInput1"
-                    name=""
-                    required
+                    name="file"
                     />
                 </div>
 
@@ -125,8 +133,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Driver Name"
-                    name=""
-                    required
+                    name="driver_name"
+                    value="{{ $bus->driver_name }}"
                     />
                 </div>
 
@@ -137,8 +145,8 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Bus Number"
-                    name=""
-                    required
+                    name="bus_number"
+                    value="{{ $bus->bus_number }}"
                     />
                 </div>
                 <div class="btnAdmin">

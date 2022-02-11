@@ -8,6 +8,11 @@
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
         <div class="container bus-container">
+            @if (Session::has('message'))
+                <div class="alert alert-danger mt-2" role="alert">
+                    {{ Session::get('message') }}
+                </div>
+            @endif
             <div class="route-hb d-flex justify-content-between pt-4">
                 <div class="heading fs-3">
                     All Bus
@@ -51,10 +56,10 @@
                             <td>{{ $bus->driver_name }}</td>
                             <td>{{ $bus->bus_number }}</td>
                             <td>
-                                <a href="{{ route('admin.editBus') }}"
+                                <a href="/edit-bus/{{ $bus->bus_id }}"
                                         class="admin-a-action mb-2 btn btn-primary">Edit<i class="fas fa-edit admin-fa"></i></a>
-                                <button type="button" class="btn btn-danger"><a href="#" class="admin-a-action">Delete<i
-                                            class="fas fa-trash-alt admin-fa"></i></a></button>
+                                <a href="/delete-bus/{{ $bus->bus_id }}" onclick="return confirm('Are you sure want to delete this bus?')" class="admin-a-action btn btn-danger">Delete<i
+                                            class="fas fa-trash-alt admin-fa"></i></a>
                             </td>
                         </tr>
                     @endforeach

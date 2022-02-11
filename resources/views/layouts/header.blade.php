@@ -56,7 +56,7 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="{{ route('home') }}" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#allBus" class="nav-link">All Bus</a>

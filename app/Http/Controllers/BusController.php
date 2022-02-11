@@ -57,7 +57,54 @@ class BusController extends Controller
         return view('admin.bus.allBus',compact('buses'));
     }
 
-    public function editBus() {
-        return view('admin.bus.editBus');
+    //function to edit bus
+    public function editBus($bus_id) {
+        $bus = Bus::find($bus_id);
+        $routes = Route::all();
+        $operators = Operator::all();
+        return view('admin.bus.editBus', compact('bus', 'routes', 'operators'));
+    }
+
+    //function to update bus details
+    public function updateBus(Request $request) {
+        $request->validate([
+            'bus_name' => 'required',
+            'facilities' => 'required',
+            'time' => 'required',
+            'bus_number' => 'required',
+            'date' => 'required',
+            'price' => 'required',
+            'driver_name' => 'required',
+            'seat' => 'required',
+            'route_id' => 'required',
+            'operator_id' => 'required',
+        ]);
+        $bus = Bus::find($request->bus_id);
+        $bus->bus_name = $request->bus_name;
+        $bus->facilities = $request->facilities;
+        $bus->time = $request->time;
+        $bus->bus_number = $request->bus_number;
+        $bus->date = $request->date;
+        $bus->price = $request->price;
+        $bus->driver_name = $request->driver_name;
+        $bus->seat = $request->seat;
+        $bus->route_id = $request->route_id;
+        $bus->operator_id = $request->operator_id;
+
+        $img = $request->file;
+        if($img) {
+            $imageName=time().'.'.$img->getClientoriginalExtension();
+            $request->file->move('img',$imageName);
+            $bus->img=$imageName;
+        }
+
+        $bus->save();
+        return back()->with('message', 'Bus updated successfully.');
+    }
+
+    //function for deleting bus data
+    public function deleteBus($bus_id) {
+        Bus::where('bus_id', $bus_id)->delete();
+        return back()->with('message', 'Bus deleted successfully.');
     }
 }

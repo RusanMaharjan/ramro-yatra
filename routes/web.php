@@ -43,7 +43,9 @@ Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
 Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus');
 Route::post('create-bus',[BusController::class, 'createBus'])->name('admin.createBus');
 Route::get('get-bus',[BusController::class, 'getBus'])->name('admin.getBus');
-Route::get('edit-bus',[BusController::class, 'editBus'])->name('admin.editBus');
+Route::get('edit-bus/{bus_id}',[BusController::class, 'editBus'])->name('admin.editBus');
+Route::post('update-bus', [BusController::class, 'updateBus'])->name('admin.updateBus');
+Route::get('delete-bus/{bus_id}',[BusController::class, 'deleteBus'])->name('admin.deleteBus');
 
 //Operator Management
 Route::get('add-Operator',[OperatorController::class, 'addOperator'])->name('admin.addOperator');
