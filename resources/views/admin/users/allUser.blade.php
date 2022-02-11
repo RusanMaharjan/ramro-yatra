@@ -27,61 +27,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>ADM</td>
-                        <td>
-                            <a href="{{ route('admin.editUsers') }}" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>ADM</td>
-                        <td>
-                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>ADM</td>
-                        <td>
-                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>USR</td>
-                        <td>
-                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>USR</td>
-                        <td>
-                            <a href="editUser.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
+                    @foreach ($users as $user)
+                        <tr>
+                            <td>{{ $user->id }}</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>{{ $user->phone }}</td>
+                            <td>{{ $user->roles }}</td>
+                            <td>
+                                <a href="{{ route('admin.editUsers') }}" class="admin-a-action btn btn-primary">Edit<i
+                                        class="fas fa-edit admin-fa"></i></a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
 
             </table>

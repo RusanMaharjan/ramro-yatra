@@ -65,7 +65,8 @@ Route::get('delete-route/{route_id}',[RouteController::class, 'deleteRoute'])->n
 
 //user Management
 Route::get('get-users',[EditUserController::class, 'getUsers'])->name('admin.getUsers');
-Route::get('edit-Users',[EditUserController::class, 'editUser'])->name('admin.editUsers');
+Route::get('edit-Users/{id}',[EditUserController::class, 'editUser'])->name('admin.editUsers');
+Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admin.updateUser');
 
 
 
