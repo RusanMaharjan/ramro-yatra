@@ -8,7 +8,13 @@
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
         <div class="container route-container mb-5">
-            <form action="" method="post" class="pb-4">
+            <form action="{{ route('admin.createRoute') }}" method="post" class="pb-4">
+                @csrf
+                @if (Session::has('message'))
+                    <div class="alert alert-success mt-2" role="alert">
+                        {{ Session::get('message') }}
+                    </div>
+                @endif
                 <div class="route-hb d-flex justify-content-between pt-4">
                     <div class="heading fs-3">
                         Create Route
@@ -24,10 +30,16 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Travelling From..."
-                    name=""
-                    required
+                    name="from"
                     />
                 </div>
+
+                @error('from')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Travelling To</label>
                     <input
@@ -35,10 +47,15 @@
                     class="form-control"
                     id="exampleFormControlInput1"
                     placeholder="Travelling To"
-                    name=""
-                    required
+                    name="to"
                     />
                 </div>
+
+                @error('to')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
                 <div class="btnAdmin">
                     <button type="submit" class="btn btn-success">Add Route &rarr;</button>
                 </div>

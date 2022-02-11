@@ -51,6 +51,7 @@ Route::get('edit-Operator',[OperatorController::class, 'editOperator'])->name('a
 
 //Route Management
 Route::get('add-route',[RouteController::class, 'addRoute'])->name('admin.addRoute');
+Route::post('create-route',[RouteController::class, 'createRoute'])->name('admin.createRoute');
 Route::get('get-route',[RouteController::class, 'getRoute'])->name('admin.getRoute');
 Route::get('edit-route',[RouteController::class, 'editRoute'])->name('admin.editRoute');
 
