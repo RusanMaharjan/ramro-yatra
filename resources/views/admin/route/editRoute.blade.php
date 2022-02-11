@@ -37,7 +37,7 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Travelling To</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" {{ $route->to }}
+                    <input type="text" class="form-control" id="exampleFormControlInput1" value="{{ $route->to }}"
                         name="to"/>
                 </div>
 
