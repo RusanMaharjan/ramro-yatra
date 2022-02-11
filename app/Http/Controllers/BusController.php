@@ -19,19 +19,18 @@ class BusController extends Controller
     //function for adding bus data in database
     public function createBus(Request $request) {
         $request->validate([
-            'bus_name' => 'required|unique:buses,bus_id',
+            'bus_name' => 'required|unique:buses',
             'facilities' => 'required',
             'time' => 'required',
-            'bus_number' => 'required',
+            'bus_number' => 'required|unique:buses',
             'date' => 'required',
             'price' => 'required',
             'driver_name' => 'required',
             'seat' => 'required',
             'route_id' => 'required',
             'operator_id' => 'required',
-            'img' => 'required'
         ]);
-        $buses = new Bus();
+        $buses = new bus();
         $buses->bus_name = $request->bus_name;
         $buses->facilities = $request->facilities;
         $buses->time = $request->time;
@@ -39,22 +38,23 @@ class BusController extends Controller
         $buses->price = $request->price;
         $buses->driver_name = $request->driver_name;
         $buses->bus_number = $request->bus_number;
-        $buses->seat = $request->seat;
         $buses->route_id = $request->route_id;
         $buses->operator_id = $request->operator_id;
-
+        $buses->seat = $request->seat;
+        
         $img = $request->file;
-        $imageName = time().'.'.$img->getClientoriginalExtension();
+        $imageName=time().'.'.$img->getClientoriginalExtension();
         $request->file->move('img',$imageName);
         $buses->img=$imageName;
 
         $buses->save();
-        return back()->with('message', 'Bus added successfully;');
-
+        return back()->with('message', 'Bus added successfully.');
     }
 
+    //function to get data of all bus
     public function getBus() {
-        return view('admin.bus.allBus');
+        $buses = Bus::orderBy('bus_id', 'Asc')->get();
+        return view('admin.bus.allBus',compact('buses'));
     }
 
     public function editBus() {

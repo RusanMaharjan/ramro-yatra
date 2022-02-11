@@ -129,15 +129,9 @@
 
                 <div class="mb-3">
                     <label for="img" class="form-label">Bus Image</label>
-                    <input type="file" class="form-control" id="img" name="file" />
+                    <input type="file" class="form-control" id="img" name="file" required/>
                 </div>
-
-                @error('img')
-                    <div class="text-danger pb-2">
-                        {{ $message }}
-                    </div>
-                @enderror
-
+                
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Driver's Name</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Driver Name"
