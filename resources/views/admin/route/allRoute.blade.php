@@ -25,68 +25,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="{{ route('admin.editRoute') }}" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>
-                            <a href="editRoute.html" class="admin-a-action btn btn-primary">Edit<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                            <a href="#" class="admin-a-action btn btn-danger">Delete<i
-                                    class="fas fa-trash-alt admin-fa"></i></a>
-                        </td>
-                    </tr>
+                    @foreach ($routes as $route)
+                        <tr>
+                            <td>{{ $route->route_id }}</td>
+                            <td>{{ $route->from }} - {{ $route->to }}</td>
+                            <td>
+                                <a href="{{ route('admin.editRoute') }}" class="admin-a-action btn btn-primary">Edit<i
+                                        class="fas fa-edit admin-fa"></i></a>
+                                <a href="#" class="admin-a-action btn btn-danger">Delete<i
+                                        class="fas fa-trash-alt admin-fa"></i></a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
-
             </table>
         </div>
     </div>

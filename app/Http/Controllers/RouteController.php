@@ -27,8 +27,8 @@ class RouteController extends Controller
     }
 
     public function getRoute() {
-        // $routes = Route::orderBy('route_id', 'ASC')->get();
-        return view('admin.route.allRoute');
+        $routes = Route::orderBy('route_id', 'ASC')->get();
+        return view('admin.route.allRoute',compact('routes'));
     }
 
     public function editRoute() {
