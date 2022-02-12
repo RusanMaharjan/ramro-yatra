@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/search-bus', [HomeController::class, 'searchBus'])->name('searchBus');
 
-Route::get('/bus-details',[BusDetailsController::class, 'index'])->name('busDetails');
+Route::get('/bus-details/{bus_id}',[BusDetailsController::class, 'index'])->name('busDetails');
 
 Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
 Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');

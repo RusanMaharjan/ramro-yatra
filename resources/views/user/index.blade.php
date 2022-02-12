@@ -38,7 +38,26 @@
                         <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1" height="250px">
                         <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} - {{ $bus->route->to }}</i>
                         <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
-                        <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                        <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Today's Bus slider-->
+    <div class="wrap">
+        <div class="wrapper">
+            <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
+            <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
+            <div class="carousel owl-carousel">
+                @foreach ($today_bus as $tb)                    
+                    <div class="card card-1">
+                        <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1">
+                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->route->from }} - {{ $tb->route->to }}</i>
+                        <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->date }}</i>
+                        <a href="{{ route('busDetails', ['bus_id' => $tb->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                     </div>
                 @endforeach
 {{-- 
@@ -69,51 +88,6 @@
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                 </div> --}}
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Today's Bus slider-->
-    <div class="wrap">
-        <div class="wrapper">
-            <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
-            <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
-            <div class="carousel owl-carousel">
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
             </div>
         </div>
     </div>
@@ -161,19 +135,19 @@
             <div class="row g-3 pb-5">
                 <div class="col-lg mt-3 stat-text">
                     <div class="name text-center fs-1">Routes</div>
-                    <div class="number text-center fs-2">30+</div>
+                    <div class="number text-center fs-2">{{ $count_route }}</div>
                     <div class="description text-center fs-5">Routes Available</div>
                 </div>
 
                 <div class="col-lg mt-3 stat-text">
                     <div class="name text-center fs-1">Buses</div>
-                    <div class="number text-center fs-2">50+</div>
+                    <div class="number text-center fs-2">{{ $count_bus }}</div>
                     <div class="description text-center fs-5">Bus Available</div>
                 </div>
 
                 <div class="col-lg mt-3 stat-text">
                     <div class="name text-center fs-1">Customers</div>
-                    <div class="number text-center fs-2">1000+</div>
+                    <div class="number text-center fs-2">{{ $count_users }}</div>
                     <div class="description text-center fs-5">
                         Happy Customers Using Our System
                     </div>
