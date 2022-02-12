@@ -7,7 +7,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\OperatorController;
 use App\Http\Controllers\RouteController;
+use App\Http\Controllers\SeatController;
 use App\Http\Controllers\TicketController;
+use App\Models\Seat;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +39,10 @@ Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
 Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
 
 Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
+
+//seat routes
+Route::get('/add-seat/{bus_id}',[SeatController::class, 'addSeat'])->name('addSeat');
+Route::post('create-seat',[SeatController::class, 'createSeat'])->name('seat');
 
 //Admin Routes
 //Bus Management

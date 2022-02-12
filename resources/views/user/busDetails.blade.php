@@ -30,8 +30,10 @@
                         <br />
                         <i class="fas fa-rupee-sign fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">Rs. {{ $bus->price }}</span></i>
                     </div>
-                </div>
 
+                    <a href="{{ route('addSeat',['bus_id'=>$bus->bus_id]) }}" class="btn btn-success">Select Seat</a>
+                </div>
+{{-- 
                 <div class="seat">
                     <h2 class="text-center">Select Seat</h2>
                     <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
@@ -43,25 +45,31 @@
                     </div>
 
                     <!-- <label for="error" id="error" class="fw-bold" style="color: red"></label> -->
-                    <form action="" class="mt-3 seatForm">
+                    <form action="{{ route('seat') }}" class="mt-3 seatForm">
+                        @csrf
+                        <div class="alert alert-success" role="alert">
+                            @if (Session::has('message'))
+                                {{ Session::get('message') }}
+                            @endif
+                        </div>
                         <label for="busName" class="form-label">Bus Name</label>
-                        <input type="text" name="busName" value="{{ $bus->bus_name }}" class="form-control mb-3 mt-2" readonly />
+                        <input type="text" name="bus_id" value="{{ $bus->bus_name }}" class="form-control mb-3 mt-2" readonly />
                         <label for="route" class="form-label">Bus Route</label>
-                        <input type="text" name="route" value="{{ $bus->route->from }} - {{ $bus->route->to }}" class="form-control mb-3 mt-2"
+                        <input type="text" value="{{ $bus->route->from }} - {{ $bus->route->to }}" class="form-control mb-3 mt-2"
                             readonly />
                         <label for="operator" class="form-label">Bus Operator</label>
-                        <input type="text" name="operator" value="{{ $bus->operator->operator_name }}" class="form-control mb-3 mt-2"
+                        <input type="text" value="{{ $bus->operator->operator_name }}" class="form-control mb-3 mt-2"
                             readonly />
                         <label for="seatNumber" class="form-label">Select Seat</label>
-                        <input type="number" class="form-control mb-3" id="seatNumber" name="seat"
+                        <input type="number" class="form-control mb-3" id="seatNumber" name="selected_seat"
                             placeholder="Select number of seat" data-max="50" pattern="[0-9]*" />
 
                         <label for="seatPrice" class="form-label">Seat Price</label>
-                        <input type="text" class="form-control mb-3" id="seatPrice" name="price" value="Rs. {{ $bus->price }}" readonly />
+                        <input type="text" class="form-control mb-3" id="seatPrice" value="Rs. {{ $bus->price }}" readonly />
 
                         <label for="totalPrice" class="form-label">Total Price</label>
-                        <input type="text" class="form-control" id="totalPrice" name="price" value="1000" readonly />
-                        <button class="btn btn-primary mt-2" id="result" value="*" onclick="calculate()">
+                        <input type="text" class="form-control" id="totalPrice" name="total_price" value="1000" readonly />
+                        <button class="btn btn-primary mt-2">
                             Select &rarr;
                         </button>
 
@@ -101,7 +109,7 @@
                             </button>
                         </div>
                     </form>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

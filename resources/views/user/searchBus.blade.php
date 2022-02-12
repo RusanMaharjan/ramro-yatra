@@ -61,123 +61,47 @@
                     </div>
 
                     <div class="bus-lists col-lg-7 col-md-6">
-                        <div class="list-of-bus mb-4">
-                            <div class="priceFlex">
-                                <div class="bus-des">
-                                    <div class="row">
-                                        <div class="bus-image col-lg-9">
-                                            <div class="row">
-                                                <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
-                                                        width="100px" height="100px" />
-                                                </div>
-                                                <div class="desc col-lg-9">
-                                                    <h4>Tourist Bus By Pokhara Yatayat</h4>
-                                                    <h5>Facilities:</h5>
-                                                    Wifi, Ac, Music System, Charging Port
+                        @foreach ($buses as $bus)                                                  
+                            <div class="list-of-bus mb-4">
+                                <div class="priceFlex">
+                                    <div class="bus-des">
+                                        <div class="row">
+                                            <div class="bus-image col-lg-9">
+                                                <div class="row">
+                                                    <div class="image col-lg-3">
+                                                        <img src="{{ url('img') }}/{{ $bus->img }}" alt="bus"
+                                                            width="100px" height="100px" />
+                                                    </div>
+                                                    <div class="desc col-lg-9">
+                                                        <h4>Tourist Bus By {{ $bus->bus_name }}</h4>
+                                                        <h5>Facilities:</h5>
+                                                        {{ $bus->facilities }}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="flex-price col-lg-3">
-                                            <h4>Price</h4>
-                                            <h5 class="mb-3">Rs. 800</h5>
-                                            <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
-                                            </button>
+                                            <div class="flex-price col-lg-3">
+                                                <h4>Price</h4>
+                                                <h5 class="mb-3">Rs. {{ $bus->price }}</h5>
+                                                <button type="button" class="btn btn-primary mb-3">
+                                                    <a class="btnBus" href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}">Select &rarr;</a>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="main-desc">
-                                <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
-                                        pokhara</span></i>
-                                <br />
-                                <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30
-                                        AM</span></i>
-                                <br />
-                                <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">20 Available
-                                        Seats</span></i>
-                            </div>
-                        </div>
-                        <div class="list-of-bus mb-4">
-                            <div class="priceFlex">
-                                <div class="bus-des">
-                                    <div class="row">
-                                        <div class="bus-image col-lg-9">
-                                            <div class="row">
-                                                <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
-                                                        width="100px" height="100px" />
-                                                </div>
-                                                <div class="desc col-lg-9">
-                                                    <h4>Tourist Bus By Pokhara Yatayat</h4>
-                                                    <h5>Facilities:</h5>
-                                                    Wifi, Ac, Music System, Charging Port
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex-price col-lg-3">
-                                            <h4>Price</h4>
-                                            <h5 class="mb-3">Rs. 800</h5>
-                                            <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="main-desc">
+                                    <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
+                                            pokhara</span></i>
+                                    <br />
+                                    <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30
+                                            AM</span></i>
+                                    <br />
+                                    <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">20 Available
+                                            Seats</span></i>
                                 </div>
                             </div>
-                            <div class="main-desc">
-                                <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
-                                        pokhara</span></i>
-                                <br />
-                                <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30
-                                        AM</span></i>
-                                <br />
-                                <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">20 Available
-                                        Seats</span></i>
-                            </div>
-                        </div>
-                        <div class="list-of-bus mb-4">
-                            <div class="priceFlex">
-                                <div class="bus-des">
-                                    <div class="row">
-                                        <div class="bus-image col-lg-9">
-                                            <div class="row">
-                                                <div class="image col-lg-3">
-                                                    <img src="{{ url('frontend/img/night-road.jpeg') }}" alt="bus"
-                                                        width="100px" height="100px" />
-                                                </div>
-                                                <div class="desc col-lg-9">
-                                                    <h4>Tourist Bus By Pokhara Yatayat</h4>
-                                                    <h5>Facilities:</h5>
-                                                    Wifi, Ac, Music System, Charging Port
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="flex-price col-lg-3">
-                                            <h4>Price</h4>
-                                            <h5 class="mb-3">Rs. 800</h5>
-                                            <button type="button" class="btn btn-primary mb-3">
-                                                <a class="btnBus" href="{{ route('busDetails') }}">Select &rarr;</a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="main-desc">
-                                <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
-                                        pokhara</span></i>
-                                <br />
-                                <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30
-                                        AM</span></i>
-                                <br />
-                                <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">20 Available
-                                        Seats</span></i>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
