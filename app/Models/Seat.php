@@ -11,4 +11,8 @@ class Seat extends Model
 
     protected $table = 'seats';
     protected $primaryKey = 'seat_id';
+
+    public function bus() {
+        return $this->belongsTo(Bus::class, 'bus_id');
+    }
 }
