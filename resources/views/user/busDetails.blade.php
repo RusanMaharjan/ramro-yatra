@@ -9,28 +9,26 @@
                 <div class="details text-center">
                     <h2>Bus Details</h2>
                     <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
-                    <img src="{{ url('frontend/img/bus.jfif') }}" alt="bus" class="busImg" width="500px" height="300px" />
+                    <img src="{{ url('img') }}/{{ $bus->img }}" alt="bus" class="busImg" width="500px" height="300px" />
                     <div class="bd">
-                        <h3>Tourist Bus By Pokhara Yatayat</h3>
+                        <h3>Tourist Bus By {{ $bus->bus_name }}</h3>
                         <h4>Facilities:</h4>
-                        Wifi, AC, Music System, Mineral Water
+                        {{ $bus->facilities }}
 
                         <br />
                         <br />
-                        <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
-                                pokhara</span></i>
+                        <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->route->from }} - {{ $bus->route->to }}</span></i>
                         <br />
-                        <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30 AM</span></i>
+                        <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->time }}</span></i>
                         <br />
-                        <i class="fas fa-chair-office fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">20 Available
+                        <i class="fas fa-chair-office fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->seat }} Available
                                 Seats</span></i>
                         <br />
-                        <i class="fas fa-user fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">Ram Bahadur</span></i>
+                        <i class="fas fa-user fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->driver_name }}</span></i>
                         <br />
-                        <i class="fas fa-bus-school fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">Ba 26 Cha
-                                2160</span></i>
+                        <i class="fas fa-bus-school fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->bus_number }}</span></i>
                         <br />
-                        <i class="fas fa-rupee-sign fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">Rs. 800</span></i>
+                        <i class="fas fa-rupee-sign fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">Rs. {{ $bus->price }}</span></i>
                     </div>
                 </div>
 
@@ -47,19 +45,19 @@
                     <!-- <label for="error" id="error" class="fw-bold" style="color: red"></label> -->
                     <form action="" class="mt-3 seatForm">
                         <label for="busName" class="form-label">Bus Name</label>
-                        <input type="text" name="busName" value="Pokhara Yatayat" class="form-control mb-3 mt-2" readonly />
+                        <input type="text" name="busName" value="{{ $bus->bus_name }}" class="form-control mb-3 mt-2" readonly />
                         <label for="route" class="form-label">Bus Route</label>
-                        <input type="text" name="route" value="Pokhara - Kathmandu" class="form-control mb-3 mt-2"
+                        <input type="text" name="route" value="{{ $bus->route->from }} - {{ $bus->route->to }}" class="form-control mb-3 mt-2"
                             readonly />
                         <label for="operator" class="form-label">Bus Operator</label>
-                        <input type="text" name="operator" value="Pokhara Yatayat" class="form-control mb-3 mt-2"
+                        <input type="text" name="operator" value="{{ $bus->operator->operator_name }}" class="form-control mb-3 mt-2"
                             readonly />
                         <label for="seatNumber" class="form-label">Select Seat</label>
                         <input type="number" class="form-control mb-3" id="seatNumber" name="seat"
                             placeholder="Select number of seat" data-max="50" pattern="[0-9]*" />
 
                         <label for="seatPrice" class="form-label">Seat Price</label>
-                        <input type="text" class="form-control mb-3" id="seatPrice" name="price" value="1000" readonly />
+                        <input type="text" class="form-control mb-3" id="seatPrice" name="price" value="Rs. {{ $bus->price }}" readonly />
 
                         <label for="totalPrice" class="form-label">Total Price</label>
                         <input type="text" class="form-control" id="totalPrice" name="price" value="1000" readonly />
