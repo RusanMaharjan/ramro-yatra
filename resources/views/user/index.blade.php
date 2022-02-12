@@ -33,6 +33,15 @@
             <h2 class="text-center mt-2" id="allBus">All Buses</h2>
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="carousel owl-carousel">
+                @foreach ($buses as $bus)                    
+                    <div class="card card-1">
+                        <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1" height="250px">
+                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} - {{ $bus->route->to }}</i>
+                        <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
+                        <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                    </div>
+                @endforeach
+{{-- 
                 <div class="card card-1">
                     <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
@@ -59,14 +68,7 @@
                     <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
                     <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
                     <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
