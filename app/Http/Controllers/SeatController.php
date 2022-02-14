@@ -22,6 +22,7 @@ class SeatController extends Controller
         $seats->selected_seat = $request->selected_seat;
         $seats->price = $request->price;
         $seats->total_price = $request->total_price;
+        $seats->bus_id = $request->bus_id;
         $seats->save();
         return back()->with('message', 'Seat details added to your record successfully.');
     }

@@ -20,7 +20,10 @@
                         {{ Session::get('message') }}
                     </div>
                 @endif
-
+                <select class="form-select" name="bus_id" aria-label="Default select example">
+                    <option value="{{ $bus->bus_id }}" selected >{{ $bus->bus_name }}</option>
+                </select>
+                {{-- <input type="text" name="bus_id" value="{{ $bus->bus_id }}"> --}}
                 <label for="busName" class="form-label">Bus Name</label>
                 <input type="text" name="bus_name" value="{{ $bus->bus_name }}" class="form-control mb-3 mt-2" readonly />
                 <label for="route" class="form-label">Bus Route</label>
