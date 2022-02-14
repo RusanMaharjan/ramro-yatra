@@ -95,7 +95,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Pay with</label><br>
-                            <button class="btn btn-success">Pay with paypal</button>
+                            <div id="paypal-button-container"></div>
                         </div>
                     </div>
                 </div>

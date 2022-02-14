@@ -43,6 +43,8 @@ Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
 //seat routes
 Route::get('/add-seat/{bus_id}',[SeatController::class, 'addSeat'])->name('addSeat');
 Route::post('create-seat',[SeatController::class, 'createSeat'])->name('seat');
+Route::get('cancel-seat/{seat_id}',[SeatController::class, 'cancelSeat'])->name('cancelSeat');
+
 
 //Admin Routes
 //Bus Management

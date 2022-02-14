@@ -22,7 +22,9 @@ class CreateSeatsTable extends Migration
             $table->string('price');
             $table->string('total_price');
             $table->unsignedBigInteger('bus_id');
+            $table->unsignedBigInteger('user_id');
             $table->foreign('bus_id')->references('bus_id')->on('buses')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
