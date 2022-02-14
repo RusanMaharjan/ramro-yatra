@@ -74,7 +74,7 @@
 
                 <div class="payment mt-3 mb-3 text-center">
                     <button id="payment-button" class="btn btn-primary">
-                        <a class="btnBus" href="{{ route('payment') }}">Pay with Khalti &rarr;</a>
+                        <a class="btnBus" href="{{ route('payment') }}">Go to payment &rarr;</a>
                     </button>
                 </div>
             </form>
