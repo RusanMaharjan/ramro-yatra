@@ -455,6 +455,94 @@
     }
 }
 
+/* payment */
+.paymentFlex {
+    display: flex;
+}
+
+.basic-container {
+    border: 1px solid #c4c5c5;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.basic-container .flex {
+    display: flex;
+    justify-content: center;
+}
+
+.basic-container .flex .right {
+    margin-right: 20px !important;
+    width: 50%;
+}
+
+.basic-container .flex .left {
+    margin-left: 20px !important;
+    width: 50%;
+}
+
+.seat-container {
+    border: 1px solid #c4c5c5;
+    width: 40%;
+    border-radius: 10px;
+    height: auto;
+}
+
+@media screen and (max-width: 650px) {
+    .paymentFlex {
+        display: block;
+    }
+
+    .basic-container .flex {
+        display: block;
+    }
+
+    .basic-container .flex .right {
+        margin-right: 20px !important;
+        width: 90%;
+        margin: auto !important;
+    }
+
+    .basic-container .flex .left {
+        margin-left: 0px !important;
+        width: 90%;
+        margin: auto !important;
+    }
+
+    .seat-container {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .basic-container {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .basic-container .flex {
+        display: block;
+    }
+
+    .basic-container .flex .right {
+        margin-right: 20px !important;
+        width: 90%;
+        margin: auto !important;
+    }
+
+    .basic-container .flex .left {
+        margin-left: 0px !important;
+        width: 90%;
+        margin: auto !important;
+    }
+
+    .seat-container {
+        width: 90%;
+    }
+}
+
+
+
 /* Admin */
 .route {
     background-color: rgb(236, 236, 236);

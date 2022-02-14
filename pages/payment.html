@@ -83,130 +83,180 @@
 
     <!-- add route Page -->
     <div class="route pt-5 pb-4">
-        <div class="fs-2 text-center mt-5">Payment</div>
-        <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
+        <div class="fs-2 text-center mt-5">Checkout</div>
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-3" />
 
-        <div class="container route-container mb-5">
-            <form action="" method="post" class="pb-4">
-                <div class="route-hb d-flex justify-content-between pt-4">
-                    <div class="heading fs-3">
-                        Pay Here &rarr;
-                    </div>
-                </div>  
-                <hr style="color: #000; height: 3px" class="mb-5" />
-                
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">User Id</label>
+        <div class="container-fluid">
+          <form action="">
+          <div class="payment-container paymentFlex justify-content-center">
+              <div class="basic-container m-4 p-2">
+                <h3>Basic Details</h3>
+                <hr>
+                <div class="flex">
+                  <div class="mb-3 right">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Name</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="1"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter Name.."
+                      required
                     />
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                  </div>
+  
+                  <div class="mb-3 left">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="name"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter email.."
+                      required
                     />
+                  </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+  
+                <div class="flex">
+                  <div class="mb-3 right">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Phone</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="email"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter phone.."
+                      required
                     />
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Phone</label>
+                  </div>
+  
+                  <div class="mb-3 left">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Address</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="phone"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter address.."
+                      required
                     />
+                  </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
+  
+                <div class="flex">
+                  <div class="mb-3 right">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >City</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="seat number"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter city.."
+                      required
                     />
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Price</label>
+                  </div>
+  
+                  <div class="mb-3 left">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Provience</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="price"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter provience.."
+                      required
                     />
+                  </div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Bus name</label>
+  
+                <div class="flex">
+                  <div class="mb-3 right">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Country</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="busname"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter country name.."
+                      required
                     />
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Route</label>
+                  </div>
+  
+                  <div class="mb-3 left">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Pin Code</label
+                    >
                     <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="route"
-                    name=""
-                    required
+                      type="text"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Enter pin code.."
+                      required
                     />
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Operator</label>
-                    <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    value="operator"
-                    name=""
-                    required
-                    />
-                </div>
-                <div class="btnAdmin">
-                  <a href="ticket.html" class="btn btn-success">Pay &rarr;</a>
-                    <button type="submit" class="btn btn-success">Pay &rarr;</button>
+                  </div>
                 </div>
                 
-            </form>
+              </div>
+  
+              <div class="seat-container m-4 p-2">
+                <h3>Seat Details</h3>
+                <hr>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Bus Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter bus name.."
+                    required
+                  />
+                </div>
+  
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Selected Seat</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter seat.."
+                    required
+                  />
+                </div>
+  
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Total Price</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Enter total price.."
+                    required
+                  />
+                </div>
+  
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Pay with</label
+                  ><br> 
+                  <button class="btn btn-success">Pay with paypal</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
     </div>
 
