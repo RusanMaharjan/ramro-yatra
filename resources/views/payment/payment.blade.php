@@ -63,8 +63,8 @@
 
                             <div class="mb-3 left">
                                 <label for="exampleFormControlInput1" class="form-label">Provience</label>
-                                <input type="text" class="form-control province" id="exampleFormControlInput1" name="province"
-                                    placeholder="Enter provience.." required />
+                                <input type="text" class="form-control province" id="exampleFormControlInput1"
+                                    name="province" placeholder="Enter provience.." required />
                             </div>
                             @error('province')
                                 <div class="text-danger mb-1">
@@ -110,14 +110,16 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
-                            <input type="text" class="form-control selected_seat" id="exampleFormControlInput1" name="selected_seat"
-                                placeholder="Enter seat.." value="{{ $seat->selected_seat }}" readonly />
+                            <input type="text" class="form-control selected_seat" id="exampleFormControlInput1"
+                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}"
+                                readonly />
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Total Price</label>
-                            <input type="text" class="form-control total_price" id="exampleFormControlInput1" name="total_price"
-                                placeholder="Enter total price.." value="Rs. {{ $seat->total_price }}" readonly />
+                            <input type="text" class="form-control total_price" id="exampleFormControlInput1"
+                                name="total_price" placeholder="Enter total price.." value="Rs. {{ $seat->total_price }}"
+                                readonly />
                         </div>
 
                         <div class="mb-3">
@@ -133,7 +135,7 @@
     <script
         src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTlpKqS8pWCmCtaa_Jot-RevaJ2NhQxmL8iX8OuRge1Qm9hH">
     </script>
-    
+
     <script>
         paypal.Buttons({
 
@@ -190,7 +192,7 @@
                             "total_price": total_price,
                             "payment_id": orderData.id,
                         },
-                        success: function (response) {
+                        success: function(response) {
                             swal(response.status);
                             window.location.href = "/payment-details";
                         }
