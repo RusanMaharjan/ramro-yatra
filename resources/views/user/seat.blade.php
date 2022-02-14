@@ -73,13 +73,9 @@
                                     <td>Rs. {{ $seat->price }}</td>
                                     <td>Rs. {{ $seat->total_price }}</td>
                                     <td>
-                                        <button type="button" class="btn btn-danger mb-1">
-                                            <a href="/cancel-seat/{{ $seat->seat_id }}" onclick="return confirm('You really want to cancel ticket?')" class="admin-a-action">Cancel<i
+                                            <a href="/cancel-seat/{{ $seat->seat_id }}" onclick="return confirm('You really want to cancel ticket?')" class="admin-a-action btn btn-danger">Cancel<i
                                                     class="fas fa-trash-alt admin-fa"></i></a>
-                                        </button>
-                                        <button id="payment-button" class="btn btn-primary">
-                                            <a class="btnBus" href="{{ route('payment') }}">Pay &rarr;</a>
-                                        </button>
+                                            <a class="btnBus btn btn-primary" href="{{ route('user.payment', ['seat_id' => $seat->seat_id]) }}">Pay &rarr;</a>
                                     </td>
                                 </tr>
                             @endforeach

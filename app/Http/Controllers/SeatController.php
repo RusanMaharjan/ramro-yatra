@@ -46,7 +46,9 @@ class SeatController extends Controller
         return back()->with('message', 'Seat Cancelled.');
     }
 
-    public function goToPayment() {
-        
+    public function goToPayment($seat_id) {
+        $this->seat_id = $seat_id;
+        $seat = Seat::where('seat_id', $this->seat_id)->first();
+        return view('payment.payment', compact('seat'));
     }
 }

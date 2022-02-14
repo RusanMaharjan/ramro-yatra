@@ -76,6 +76,9 @@ Route::get('get-users',[EditUserController::class, 'getUsers'])->name('admin.get
 Route::get('edit-Users/{id}',[EditUserController::class, 'editUser'])->name('admin.editUsers');
 Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admin.updateUser');
 
+//payment management
+Route::get('payment/{seat_id}',[SeatController::class, 'goToPayment'])->name('user.payment');
+
 
 //Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
