@@ -46,7 +46,7 @@
                     value="{{ $bus->price }}" readonly />
 
                 <label for="totalPrice" class="form-label">Total Price</label>
-                <input type="text" class="form-control" id="totalPrice" name="total_price" readonly />
+                <input type="text" class="form-control" id="totalPrice" placeholder="total price" name="total_price" readonly />
                 @error('total_price')
                     <div class="text-danger pb-2">
                         {{ $message }}
