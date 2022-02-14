@@ -61,7 +61,8 @@
                     </div>
 
                     <div class="bus-lists col-lg-7 col-md-6">
-                        @foreach ($buses as $bus)                                                  
+                        @if ($buses->count() > 0)
+                            @foreach ($buses as $bus)                                                  
                             <div class="list-of-bus mb-4">
                                 <div class="priceFlex">
                                     <div class="bus-des">
@@ -101,7 +102,12 @@
                                             Seats</span></i>
                                 </div>
                             </div>
-                        @endforeach
+                            @endforeach
+                        @else
+                            <div class="alert alert-danger text-center" role="alert">
+                                !!! No Bus Found !!!
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -1,3 +1,4 @@
+//for owl carousel
 $(".carousel").owlCarousel({
     margin: 10,
     autoplay: true,
@@ -18,3 +19,11 @@ $(".carousel").owlCarousel({
         }
     }
 });
+
+//for calculating total price of seat
+$(".changeValue").change(function(e){
+    var a = $("#seatNumber").val();
+    var b = $("#seatPrice").val();
+    var total = a * b;
+    $("#totalPrice").val(total);
+})

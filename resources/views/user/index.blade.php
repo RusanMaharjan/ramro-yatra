@@ -54,7 +54,7 @@
             <div class="carousel owl-carousel">
                 @foreach ($today_bus as $tb)                    
                     <div class="card card-1">
-                        <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1">
+                        <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1" height="250px">
                         <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->route->from }} - {{ $tb->route->to }}</i>
                         <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->date }}</i>
                         <a href="{{ route('busDetails', ['bus_id' => $tb->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>

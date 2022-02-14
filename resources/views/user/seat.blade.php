@@ -20,6 +20,7 @@
                         {{ Session::get('message') }}
                     </div>
                 @endif
+
                 <label for="busName" class="form-label">Bus Name</label>
                 <input type="text" name="bus_name" value="{{ $bus->bus_name }}" class="form-control mb-3 mt-2" readonly />
                 <label for="route" class="form-label">Bus Route</label>
@@ -29,15 +30,15 @@
                 <input type="text" name="operator" value="{{ $bus->operator->operator_name }}"
                     class="form-control mb-3 mt-2" readonly />
                 <label for="seatNumber" class="form-label">Select Seat</label>
-                <input type="number" class="form-control mb-3" id="seatNumber" name="selected_seat"
+                <input type="number" class="form-control mb-3 changeValue" id="seatNumber" name="selected_seat"
                     placeholder="Select number of seat" data-max="50" pattern="[0-9]*" />
 
                 <label for="seatPrice" class="form-label">Seat Price</label>
-                <input type="text" class="form-control mb-3" name="price" id="seatPrice" value="Rs. {{ $bus->price }}"
+                <input type="text" class="form-control mb-3 changeValue" name="price" id="seatPrice" value="{{ $bus->price }}"
                     readonly />
 
                 <label for="totalPrice" class="form-label">Total Price</label>
-                <input type="text" class="form-control" id="totalPrice" name="total_price" value="1000" readonly />
+                <input type="text" class="form-control" id="totalPrice" name="total_price" readonly />
                 <button class="btn btn-primary mt-2">
                     Select &rarr;
                 </button>
