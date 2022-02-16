@@ -9,11 +9,11 @@ use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
 {
-    public function index() {
-        $seats = Seat::all();
-        $users = User::all();
-        return view('payment.payment', compact('seats', 'users'));
-    }
+    // public function index() {
+    //     $seats = Seat::all();
+    //     $users = User::all();
+    //     return view('payment.payment', compact('seats', 'users'));
+    // }
 
     public function createPayment(Request $request) {
         $request->validate([
@@ -21,11 +21,11 @@ class InvoiceController extends Controller
             'city' => 'required',
             'province' => 'required',
             'country' => 'required',
-            'pincode' => 'required'
+            'pincode' => 'required',
         ]);
         $payment = new Payment();
         $payment->user_id = $request->user_id;
-        $payment->seat_id = $payment->seat_id;
+        $payment->seat_id = $request->seat_id;
         $payment->name = $request->name;
         $payment->email = $request->email;
         $payment->phone = $request->phone;

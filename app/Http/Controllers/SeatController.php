@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Bus;
 use App\Models\Seat;
+use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -47,8 +48,10 @@ class SeatController extends Controller
     }
 
     public function goToPayment($seat_id) {
+        $seats = Seat::all();
+        $users = User::all();
         $this->seat_id = $seat_id;
         $seat = Seat::where('seat_id', $this->seat_id)->first();
-        return view('payment.payment', compact('seat'));
+        return view('payment.payment', compact('seat', 'seats', 'users'));
     }
 }

@@ -75,9 +75,9 @@ Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admi
 
 //payment management
 Route::get('payment/{seat_id}',[SeatController::class, 'goToPayment'])->name('user.payment');
-Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
+// Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
 Route::post('/create-payment',[InvoiceController::class, 'createPayment'])->name('createPayment');
-Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
+// Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
 
 //Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

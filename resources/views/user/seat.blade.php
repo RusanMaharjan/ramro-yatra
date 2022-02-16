@@ -60,6 +60,7 @@
                     <table class="table table-striped text-center" style="width: 100%; margin: auto">
                         <thead>
                             <tr>
+                                <th>Seat ID</th>
                                 <th>Seat number</th>
                                 <th>Seat Price</th>
                                 <th>Total Price</th>
@@ -69,13 +70,14 @@
                         <tbody>
                             @foreach ($seats as $seat)
                                 <tr>
+                                    <td>{{ $seat->seat_id }}</td>
                                     <td>{{ $seat->selected_seat }}</td>
                                     <td>Rs. {{ $seat->price }}</td>
                                     <td>Rs. {{ $seat->total_price }}</td>
                                     <td>
                                             <a href="/cancel-seat/{{ $seat->seat_id }}" onclick="return confirm('You really want to cancel ticket?')" class="admin-a-action btn btn-danger">Cancel<i
                                                     class="fas fa-trash-alt admin-fa"></i></a>
-                                            <a class="btnBus btn btn-primary" href="{{ route('user.payment', ['seat_id' => $seat->seat_id]) }}">Pay &rarr;</a>
+                                            <a class="btnBus btn btn-primary" href="{{ route('user.payment',['seat_id' => $seat->seat_id]) }}">Pay &rarr;</a>
                                     </td>
                                 </tr>
                             @endforeach
