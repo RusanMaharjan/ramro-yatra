@@ -46,61 +46,61 @@
                             <div class="mb-3 left">
                                 <label for="exampleFormControlInput1" class="form-label">Address</label>
                                 <input type="text" class="form-control address" id="exampleFormControlInput1" name="address"
-                                    placeholder="Enter address.." required />
+                                    placeholder="Enter address.."/>
+                                    @error('address')
+                                        <div class="text-danger mb-1">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                             </div>
-                            @error('address')
-                                <div class="text-danger mb-1">
-                                    {{ $message }}
-                                </div>
-                            @enderror
                         </div>
 
                         <div class="flex">
                             <div class="mb-3 right">
                                 <label for="exampleFormControlInput1" class="form-label">City</label>
                                 <input type="text" class="form-control city" id="exampleFormControlInput1" name="city"
-                                    placeholder="Enter city.." required />
+                                    placeholder="Enter city.."/>
+                                    @error('city')
+                                        <div class="text-danger mb-1">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                             </div>
-                            @error('city')
-                                <div class="text-danger mb-1">
-                                    {{ $message }}
-                                </div>
-                            @enderror
 
                             <div class="mb-3 left">
                                 <label for="exampleFormControlInput1" class="form-label">Provience</label>
                                 <input type="text" class="form-control province" id="exampleFormControlInput1"
-                                    name="province" placeholder="Enter provience.." required />
+                                    name="province" placeholder="Enter provience.."/>
+                                    @error('province')
+                                        <div class="text-danger mb-1">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                             </div>
-                            @error('province')
-                                <div class="text-danger mb-1">
-                                    {{ $message }}
-                                </div>
-                            @enderror
                         </div>
 
                         <div class="flex">
                             <div class="mb-3 right">
                                 <label for="exampleFormControlInput1" class="form-label">Country</label>
                                 <input type="text" class="form-control country" id="exampleFormControlInput1" name="country"
-                                    placeholder="Enter country name.." required />
+                                    placeholder="Enter country name.."/>
+                                    @error('country')
+                                        <div class="text-danger mb-1">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                             </div>
-                            @error('country')
-                                <div class="text-danger mb-1">
-                                    {{ $message }}
-                                </div>
-                            @enderror
 
                             <div class="mb-3 left">
                                 <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
                                 <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="pincode"
-                                    placeholder="Enter pin code.." required />
+                                    placeholder="Enter pin code.."/>
+                                    @error('pincode')
+                                        <div class="text-danger mb-1">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                             </div>
-                            @error('pincode')
-                                <div class="text-danger mb-1">
-                                    {{ $message }}
-                                </div>
-                            @enderror
                         </div>
 
                     </div>
@@ -111,22 +111,22 @@
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Bus Name</label>
                             <input type="text" class="form-control bus_name" id="exampleFormControlInput1" name="bus_name"
-                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}" readonly />
+                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}"/>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
                             <input type="text" class="form-control selected_seat" id="exampleFormControlInput1"
-                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}"
-                                readonly />
+                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}"/>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Total Price</label>
                             <input type="text" class="form-control total_price" id="exampleFormControlInput1"
-                                name="total_price" placeholder="Enter total price.." value="Rs. {{ $seat->total_price }}"
-                                readonly />
+                                name="total_price" placeholder="Enter total price.." value="Rs. {{ $seat->total_price }}"/>
                         </div>
+
+                        <input type="text" name="payment_id">
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Pay with</label><br>

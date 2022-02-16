@@ -6,6 +6,7 @@ use App\Models\Payment;
 use App\Models\Seat;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InvoiceController extends Controller
 {
@@ -39,10 +40,12 @@ class InvoiceController extends Controller
         $payment->total_price = $request->total_price;
         $payment->payment_id = $request->payment_id;
         $payment->save();
-        return back()->with('message', 'Payment Successfull.');
+        return redirect('paymentDetails');
+        // return back()->with('message', 'Payment Successfull.');
     }
 
     public function paymentDetails() {
-        return view('payment.paymentDetails');
+        $payments = Payment::orderBy('created_at','DESC')->where('user_id',Auth::user()->id)->get();
+        return view('payment.paymentDetails',compact('payments'));
     }
 }

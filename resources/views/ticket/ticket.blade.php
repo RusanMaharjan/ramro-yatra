@@ -8,17 +8,30 @@
         <hr style="width: 30%; padding: 1.3px;" />
         <div class="d-flex">
             <div class="ticket-details">
-                <h5>Ticket Id: 1</h5>
-                <h5>Tourist Bus by Kathmandu Yatayat</h5>
-                <h5>Name: Rusan Maharjan</h5>
-                <h5>Email: rusanmhz789@gmail.com</h5>
-                <h5>Phone: 9840539880</h5>
-                <h5>Selected Seat: 2</h5>
-                <h5>Price: Rs. 1000</h5>
-                <h5>Board Point: Kathmandu</h5>
-                <h5>Drop Point: Pokhara</h5>
-                <h5>Operator: Kathmandu Fast Track</h5>
-                <h5>Date: 7/02/2022</h5>
+                {{-- @foreach ($tickets as $ticket)                    
+                    <h5>Ticket Id: {{ $invoice->invoice_id }}</h5>
+                    <h5>Tourist Bus by {{ $invoice->bus_name }}</h5>
+                    <h5>Name: {{ $invoice->name }}</h5>
+                    <h5>Email: {{ $invoice->email }}</h5>
+                    <h5>Phone: {{ $invoice->phone }}</h5>
+                    <h5>Selected Seat: {{ $invoice->selected_seat }}</h5>
+                    <h5>Price: Rs. {{ $invoice->total_price }}</h5>
+                    <h5>Board Point: {{ $invoice->seat->bus->route->from }}</h5>
+                    <h5>Drop Point: {{ $invoice->seat->bus->route->to }}</h5>
+                    <h5>Operator: {{ $invoice->seat->operator->operator_name }}</h5>
+                    <h5>Date: {{ $invoice->seat->bus->date }}</h5>
+                @endforeach --}}
+                <h5>Ticket Id: 1 </h5>
+                    <h5>Tourist Bus by vfg</h5>
+                    <h5>Name: cbvnb</h5>
+                    <h5>Email: dfassdfgad</h5>
+                    <h5>Phone: fdsagds</h5>
+                    <h5>Selected Seat: gfds</h5>
+                    <h5>Price: Rs. gfd</h5>
+                    <h5>Board Point: fgd</h5>
+                    <h5>Drop Point: gh</h5>
+                    <h5>Operator: fgdhf</h5>
+                    <h5>Date: gfhdf</h5>
             </div>
 
             <div class="qrcode">

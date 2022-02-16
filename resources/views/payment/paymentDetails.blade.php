@@ -41,23 +41,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>ABC</td>
-                        <td>ABC@gmail.com</td>
-                        <td>9840539880</td>
-                        <td>2</td>
-                        <td>Rs. 800</td>
-                        <td>Kathmandu Yatayat</td>
-                        <td>Kathmandu - Pokhara</td>
-                        <td>7/02/200</td>
-                        <td>Kathmandu Yatayat</td>
-                        <td>7/02/2022</td>
-                        <td>
-                            <a href="{{ route('ticket') }}" class="admin-a-action btn btn-primary">Get Ticket<i
-                                    class="fas fa-edit admin-fa"></i></a>
-                        </td>
-                    </tr>
+                    @foreach ($payments as $payment)                        
+                        <tr>
+                            <td>{{ $payment->invoice_id }}</td>
+                            <td>{{ $payment->name }}</td>
+                            <td>{{ $payment->email }}</td>
+                            <td>{{ $payment->phone }}</td>
+                            <td>{{ $payment->selected_seat }}</td>
+                            <td>Rs. {{ $payment->total_price }}</td>
+                            <td>{{ $payment->bus_name }}</td>
+                            <td>{{ $payment->seat->route }}</td>
+                            <td>{{ $payment->seat->bus->date }}</td>
+                            <td>{{ $payment->seat->operator }}</td>
+                            <td>{{ $payment->created_at }}</td>
+                            <td>
+                                <a href="{{ route('user.ticket') }}" class="admin-a-action btn btn-primary">Get Ticket<i
+                                        class="fas fa-edit admin-fa"></i></a>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
 
             </table>

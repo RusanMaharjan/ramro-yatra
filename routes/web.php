@@ -35,8 +35,6 @@ Route::get('/search-bus', [HomeController::class, 'searchBus'])->name('searchBus
 
 Route::get('/bus-details/{bus_id}',[BusDetailsController::class, 'index'])->name('busDetails');
 
-Route::get('ticket',[TicketController::class, 'ticket'])->name('ticket');
-
 //seat routes
 Route::get('/add-seat/{bus_id}',[SeatController::class, 'addSeat'])->name('addSeat');
 Route::post('create-seat',[SeatController::class, 'createSeat'])->name('seat');
@@ -77,7 +75,10 @@ Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admi
 Route::get('payment/{seat_id}',[SeatController::class, 'goToPayment'])->name('user.payment');
 // Route::get('/payment',[InvoiceController::class, 'index'])->name('payment');
 Route::post('/create-payment',[InvoiceController::class, 'createPayment'])->name('createPayment');
-// Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
+Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->name('paymentDetails');
+
+//ticket management
+
 
 //Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

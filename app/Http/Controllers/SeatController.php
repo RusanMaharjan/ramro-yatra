@@ -48,10 +48,10 @@ class SeatController extends Controller
     }
 
     public function goToPayment($seat_id) {
-        $seats = Seat::all();
-        $users = User::all();
         $this->seat_id = $seat_id;
         $seat = Seat::where('seat_id', $this->seat_id)->first();
+        $seats = Seat::all();
+        $users = User::all();
         return view('payment.payment', compact('seat', 'seats', 'users'));
     }
 }
