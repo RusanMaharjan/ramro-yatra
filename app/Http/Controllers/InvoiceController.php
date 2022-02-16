@@ -38,6 +38,10 @@ class InvoiceController extends Controller
         $payment->bus_name = $request->bus_name;
         $payment->selected_seat = $request->selected_seat;
         $payment->total_price = $request->total_price;
+        $payment->from = $request->from;
+        $payment->to = $request->to;
+        $payment->operator = $request->operator;
+        $payment->date = $request->date;
         $payment->payment_id = $request->payment_id;
         $payment->save();
         return redirect('paymentDetails');

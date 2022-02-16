@@ -33,7 +33,8 @@
                         <th>Selected Seat</th>
                         <th>Price</th>
                         <th>Bus Name</th>
-                        <th>Route</th>
+                        <th>Board Point</th>
+                        <th>Drop Point</th>
                         <th>Departure Date</th>
                         <th>Operator</th>
                         <th>Payment Date</th>
@@ -50,12 +51,13 @@
                             <td>{{ $payment->selected_seat }}</td>
                             <td>Rs. {{ $payment->total_price }}</td>
                             <td>{{ $payment->bus_name }}</td>
-                            <td>{{ $payment->seat->route }}</td>
-                            <td>{{ $payment->seat->bus->date }}</td>
-                            <td>{{ $payment->seat->operator }}</td>
+                            <td>{{ $payment->from }}</td>
+                            <td>{{ $payment->to }}</td>
+                            <td>{{ $payment->date }}</td>
+                            <td>{{ $payment->operator }}</td>
                             <td>{{ $payment->created_at }}</td>
                             <td>
-                                <a href="{{ route('user.ticket') }}" class="admin-a-action btn btn-primary">Get Ticket<i
+                                <a href="{{ url('/getTicket', ['invoice_id' => $payment->invoice_id]) }}" class="admin-a-action btn btn-primary">Get Ticket<i
                                         class="fas fa-edit admin-fa"></i></a>
                             </td>
                         </tr>

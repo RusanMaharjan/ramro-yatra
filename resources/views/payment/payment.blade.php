@@ -103,6 +103,34 @@
                             </div>
                         </div>
 
+                        <div class="flex">
+                            <div class="mb-3 right">
+                                <label for="exampleFormControlInput1" class="form-label">Country</label>
+                                <input type="text" class="form-control country" id="exampleFormControlInput1" name="from"
+                                    value="{{ $seat->bus->route->from }}"/>
+                            </div>
+
+                            <div class="mb-3 left">
+                                <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
+                                <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="to"
+                                    value="{{ $seat->bus->route->to }}"/>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="mb-3 right">
+                                <label for="exampleFormControlInput1" class="form-label">Country</label>
+                                <input type="text" class="form-control country" id="exampleFormControlInput1" name="operator"
+                                    value="{{ $seat->bus->operator->operator_name }}"/>
+                            </div>
+
+                            <div class="mb-3 left">
+                                <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
+                                <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="date"
+                                    value="{{ $seat->bus->date }}"/>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div class="seat-container m-4 p-2">

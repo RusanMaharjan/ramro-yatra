@@ -28,6 +28,10 @@ class CreatePaymentsTable extends Migration
             $table->string('bus_name');
             $table->string('selected_seat');
             $table->string('total_price');
+            $table->string('from');
+            $table->string('to');
+            $table->string('operator');
+            $table->string('date');
             $table->unsignedBigInteger('seat_id');
             $table->unsignedBigInteger('user_id');
             $table->foreign('seat_id')->references('seat_id')->on('seats')->onDelete('cascade');
