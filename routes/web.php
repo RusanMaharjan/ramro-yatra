@@ -34,9 +34,9 @@ Route::get('/search-bus', [HomeController::class, 'searchBus'])->name('searchBus
 Route::get('/bus-details/{bus_id}',[BusDetailsController::class, 'index'])->name('busDetails');
 
 //seat routes
-Route::get('/add-seat/{bus_id}',[SeatController::class, 'addSeat'])->name('addSeat');
-Route::post('create-seat',[SeatController::class, 'createSeat'])->name('seat');
-Route::get('cancel-seat/{seat_id}',[SeatController::class, 'cancelSeat'])->name('cancelSeat');
+Route::get('/add-seat/{bus_id}',[SeatController::class, 'addSeat'])->name('addSeat')->middleware('auth', 'verified');
+Route::post('create-seat',[SeatController::class, 'createSeat'])->name('seat')->middleware('auth', 'verified');
+Route::get('cancel-seat/{seat_id}',[SeatController::class, 'cancelSeat'])->name('cancelSeat')->middleware('auth', 'verified');
 
 
 //Admin Routes
