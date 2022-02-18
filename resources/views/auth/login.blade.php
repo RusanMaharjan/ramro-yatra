@@ -92,7 +92,7 @@
                                 href="{{ route('register') }}">Register</a>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="text-decoration-underline login-text">Forgot Password?</a>
+                            <a href="{{ route('password.request') }}" class="text-decoration-underline login-text">Forgot Password?</a>
                         </div>
                     </div>
                 </form>
