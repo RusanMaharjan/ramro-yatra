@@ -60,34 +60,6 @@
                         <a href="{{ route('busDetails', ['bus_id' => $tb->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                     </div>
                 @endforeach
-{{-- 
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div>
-
-                <div class="card card-1">
-                    <img class="slider-img" src="{{ url('frontend/img/bus.jfif') }}" alt="img1">
-                    <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;Kathmandu - Pokhara</i>
-                    <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;2022/02/06</i>
-                    <a href="{{ route('busDetails') }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
-                </div> --}}
             </div>
         </div>
     </div>
@@ -161,34 +133,19 @@
         <h2 class="text-center mt-5">All Routes</h2>
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" />
         <div class="container">
-            <div class="row g-4 text-center mt-3 mb-4">
-                <div class="col-lg-4">
-                    <div class="addresses fs-5">Kathmandu-Pokhara</div>
-                    <div class="addresses fs-5">Kathmandu-Chitwan</div>
-                    <div class="addresses fs-5">Kathmandu-Birgunj</div>
-                    <div class="addresses fs-5">Pokhara-Chitwan</div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="addresses fs-5">Pokhara-Bandipur</div>
-                    <div class="addresses fs-5">Hetauda-Pokhara</div>
-                    <div class="addresses fs-5">Kathmandu-Mustang</div>
-                    <div class="addresses fs-5">Rasuwa-Kathmandu</div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="addresses fs-5">TatoPani-pokhara</div>
-                    <div class="addresses fs-5">Chitwan-Palpa</div>
-                    <div class="addresses fs-5">Kathmandu-Palpa</div>
-                    <div class="addresses fs-5">Kathmandu-Dhading</div>
-                </div>
-            </div>
-            <div class="buttons mb-5">
+            <div class="row g-4 text-center mt-3 mb-5">
+                @foreach ($routes as $route)
+                  <div class="col-lg-4">
+                    <div class="addresses fs-5">{{ $route->from }} - {{ $route->to }}</div>
+                  </div> 
+                @endforeach
+              </div>
+            {{-- <div class="buttons mb-5">
                 <div class="container d-flex justify-content-center">
 
                     <a href="./pages/searchBus.html" class="btn btn-primary">All Routes &rarr;</a>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
