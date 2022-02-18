@@ -22,9 +22,9 @@
 
           <div class="social-media col-lg-3">
             <h3>FOLLOW US</h3>
-            <i class="bi bi-facebook fs-3"></i> &nbsp;&nbsp;&nbsp;
-            <i class="bi bi-instagram fs-3"></i>&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-twitter fs-3"></i>
+            <a class="text-light" href="https://www.facebook.com/"><i class="bi bi-facebook fs-3"></i></a> &nbsp;&nbsp;&nbsp;
+            <a class="text-light" href="https://www.instagram.com/"><i class="bi bi-instagram fs-3"></i></a>&nbsp;&nbsp;&nbsp;
+            <a class="text-light" href="https://twitter.com/"><i class="bi bi-twitter fs-3"></i></a>
           </div>
         </div>
       </div>

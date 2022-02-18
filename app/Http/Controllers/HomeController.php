@@ -39,15 +39,15 @@ class HomeController extends Controller
         $search2 = $request['search2'] ?? "";
         $search3 = $request['search3'] ?? "";
         if($search != "") {
-            $buses = Bus::where('bus_name', 'LIKE', "%$search%")->get();
+            $buses = Bus::where('bus_name', 'LIKE', "%$search%")->paginate(3);
         }elseif ($search1 != "") {
-            $buses = Bus::where('time', 'LIKE', "%$search1")->get();
+            $buses = Bus::where('time', 'LIKE', "%$search1")->paginate(3);
         }elseif ($search2 != "") {
-            $buses = Bus::where('price', 'LIKE', "%$search2")->get();
+            $buses = Bus::where('price', 'LIKE', "%$search2")->paginate(3);
         }elseif ($search3 != "") {
-            $buses = Bus::where('date', 'LIKE', "%$search3")->get();
+            $buses = Bus::where('date', 'LIKE', "%$search3")->paginate(3);
         }else {
-            $buses = Bus::orderBy('bus_id', 'Asc')->get();
+            $buses = Bus::orderBy('bus_id', 'Asc')->paginate(3);
         }
         return view('user.searchBus', compact('buses'));
     }

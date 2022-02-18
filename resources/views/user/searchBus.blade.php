@@ -92,13 +92,11 @@
                                     </div>
                                 </div>
                                 <div class="main-desc">
-                                    <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">kathmandu -
-                                            pokhara</span></i>
+                                    <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->route->from }} - {{ $bus->route->to }}</span></i>
                                     <br />
-                                    <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">6:30
-                                            AM</span></i>
+                                    <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span class="location-span">{{ $bus->time }}</span></i>
                                     <br />
-                                    <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">20 Available
+                                    <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span class="location-span">{{ $bus->seat }} Available
                                             Seats</span></i>
                                 </div>
                             </div>
@@ -108,6 +106,9 @@
                                 !!! No Bus Found !!!
                             </div>
                         @endif
+                        <div class="d-flex mt-2 justify-content-center">
+                            {{ $buses->links() }}
+                        </div>
                     </div>
                 </div>
             </div>
