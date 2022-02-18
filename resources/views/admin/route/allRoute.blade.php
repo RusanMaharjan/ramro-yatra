@@ -46,6 +46,9 @@
                     @endforeach
                 </tbody>
             </table>
+            <div class="d-flex mt-2 justify-content-center">
+                {{ $routes->links() }}
+            </div>
         </div>
     </div>
 

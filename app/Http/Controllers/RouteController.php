@@ -30,7 +30,7 @@ class RouteController extends Controller
 
     //function to get all routes
     public function getRoute() {
-        $routes = Route::orderBy('route_id', 'ASC')->get();
+        $routes = Route::orderBy('route_id', 'ASC')->paginate(5);
         return view('admin.route.allRoute',compact('routes'));
     }
 

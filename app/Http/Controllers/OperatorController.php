@@ -15,7 +15,7 @@ class OperatorController extends Controller
     //function for adding route in database
     public function createOperator(Request $request) {
         $request->validate([
-            'operator_name' => 'required|unique:operators,operator_id'
+            'operator_name' => 'required|unique:operators'
         ]);
 
         $operators = new Operator();
@@ -26,7 +26,7 @@ class OperatorController extends Controller
 
     //function for getting all operator
     public function getOperator() {
-        $operators = Operator::orderBy('operator_id', 'Asc')->get();
+        $operators = Operator::orderBy('operator_id', 'Asc')->paginate(5);
         return view('admin.operator.allOperator', compact('operators'));
     }
 

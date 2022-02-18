@@ -53,7 +53,7 @@ class BusController extends Controller
 
     //function to get data of all bus
     public function getBus() {
-        $buses = Bus::orderBy('bus_id', 'Asc')->get();
+        $buses = Bus::orderBy('bus_id', 'Asc')->paginate(5);
         return view('admin.bus.allBus',compact('buses'));
     }
 

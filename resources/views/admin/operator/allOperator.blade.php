@@ -46,6 +46,9 @@
                 </tbody>
 
             </table>
+            <div class="d-flex mt-2 justify-content-center">
+                {{ $operators->links() }}
+            </div>
         </div>
     </div>
 
