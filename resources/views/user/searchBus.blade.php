@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('pageTitle', 'Search BUs')
+@section('pageTitle', 'Search Bus')
 @section('content')
 
     <!-- Search Bus main body section -->

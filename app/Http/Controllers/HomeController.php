@@ -19,7 +19,7 @@ class HomeController extends Controller
         $count_bus = DB::table('buses')->count();
 
         //get all record of route
-        $routes = Route::all();
+        $routes = DB::table('routes')->select('from', 'to', 'created_at')->orderBy('created_at', 'desc')->limit(9)->get();
         $count_route = DB::table('routes')->count();
 
         //get all record of operators
