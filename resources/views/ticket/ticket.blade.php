@@ -3,8 +3,9 @@
 @section('content')
 
     <div class="container pt-5 ticket">
+        <a href="{{ route('pdf',['invoice_id' => $invoice->invoice_id]) }}" class="btn btn-primary">Get Ticket</a>
         <h4>Thank you for choosing <span class="ramro">ramro</span><span class="y">Yatra<img
-                    src="{{ url('frontend/img/Anonymous-Bus1.svg') }}" width="80px" height="50px"></span></h4>
+                    src="{{ url('/frontend/img/Anonymous-Bus1.svg') }}" width="80px" height="50px"></span></h4>
         <hr style="width: 30%; padding: 1.3px;" />
         <div class="d-flex">
             <div class="ticket-details">              
@@ -22,13 +23,11 @@
             </div>
 
             <div class="qrcode">
-                {{-- <img src="{{ url('frontend/img/qrcode.png') }}" alt="qrcode" width="200px" height="200px"> --}}
+                {{-- <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate("Ticket Id: $invoice->invoice_id, Name: $invoice->name, Email: $invoice->email, Phone: $invoice->phone, Bus Name: Tourist Bus By $invoice->bus_name, Selected Seat: $invoice->selected_seat, Price: Rs.$invoice->total_price, Board Point: $invoice->from, Drop Point: $invoice->to, Operator: $invoice->operator, Date: $invoice->date")) !!} "> --}}
                 {!! QrCode::size(200)->generate(
-                    "Ticket Id: $invoice->invoice_id, Name: $invoice->name, Email: $invoice->email, Phone: $invoice->phone, Bus Name: Tourist Bus By $invoice->bus_name, Selected Seat: $invoice->selected_seat, Price: Rs.$invoice->total_price, Board Point: $invoice->from, Drop Point: $invoice->to, Operator: $invoice->operator, Date: $invoice->date"
+                    "Ticket Id: $invoice->invoice_id, Name: $invoice->name, Email: $invoice->email, Phone: $invoice->phone, Bus Name: Tourist Bus By $invoice->bus_name, Selected Seat: $invoice->selected_seat, Price: $invoice->total_price, Board Point: $invoice->from, Drop Point: $invoice->to, Operator: $invoice->operator, Date: $invoice->date"
                 ); !!}
             </div>
         </div>
-
     </div>
-
 @endsection

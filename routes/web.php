@@ -77,6 +77,7 @@ Route::get('/payment-details',[InvoiceController::class, 'paymentDetails'])->nam
 
 //ticket management
 Route::get('/getTicket/{invoice_id}', [TicketController::class,'index'])->name('user.ticket');
+Route::get('/getPDF/{invoice_id}',[TicketController::class, 'generatePDF'])->name('pdf');
 
 //Middleware Auth sanctum routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
