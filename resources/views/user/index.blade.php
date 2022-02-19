@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- Home Showcase -->
-        
+
     <div class="showcase">
 
         <div class="container">
@@ -149,10 +149,10 @@
         </div>
     </div>
     @if (Session::has('message'))
-    <script>
-        swal("Restricted!","{!! Session::get('message') !!}", "error", {
-            button:"OK",
-        })            
-    </script>
-@endif
+        <script>
+            swal("Restricted!", "{!! Session::get('message') !!}", "error", {
+                button: "OK",
+            })
+        </script>
+    @endif
 @endsection
