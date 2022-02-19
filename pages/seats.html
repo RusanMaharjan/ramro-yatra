@@ -144,200 +144,80 @@
       </div>
     </nav>
 
-    <!-- bus details -->
-    <div class="bus-details container-fluid mt-5 pt-5">
-      <div class="bus-details mt-5">
-        <div class="bus justify-content-center">
-          <div class="list-of-bus mb-4">
-            <h2 class="text-center">Bus Details</h2>
-            <hr class="mb-3" />
-            <div class="priceFlex text-center">
-              <div class="bus-des">
-                <div class="row">
-                  <div class="bus-image col-lg-10">
-                    <div class="row">
-                      <div class="image col-lg-6">
-                        <img
-                          src="../img/night-road.jpeg"
-                          alt="bus"
-                          width="350px"
-                          height="250px"
-                        />
-                      </div>
-                      <div class="desc col-lg-6" style="margin-left: 0px !important;">
-                        <h4>Tourist Bus By Pokhara Yatayat</h4>
-                        <h5>Facilities:</h5>
-                        Wifi, Ac, Music System, Charging Port
-                        <br>
-                        <br>
-                        <i class="fas fa-location fs-5 pb-2"
-                >&nbsp; &nbsp;<span class="location-span"
-                  >kathmandu - pokhara</span
-                ></i
-              >
-              <br />
-              <i class="fas fa-clock fs-5 pb-2"
-                >&nbsp; &nbsp;<span class="location-span">6:30 AM</span></i
-              >
-              <br />
-              <i class="fas fa-chair-office fs-5"
-                >&nbsp; &nbsp;<span class="location-span"
-                  >20 Available Seats</span
-                ></i
-              >
-              <br />
-              <i class="fas fa-user fs-5 pb-2"
-                >&nbsp; &nbsp;<span class="location-span">Ram Bahadur</span></i
-              >
-              <br />
-              <i class="fas fa-bus-school fs-5 pb-2"
-                >&nbsp; &nbsp;<span class="location-span"
-                  >Ba 26 Cha 2160</span
-                ></i
-              >
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="flex-price col-lg-2">
-                    <h4 class="text-center">Price</h4>
-                    <h5 class="mb-3 text-center">Rs. 800</h5>
-                    <button type="button" class="btn btn-primary mb-3">
-                      <a class="btnBus" href="seats.html">Select Seat &rarr;</a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="main-desc">
-              
-            </div>
-          </div>
-
-          <!-- <div class="seat">
+    <!--seat-->
+    <div class="create-seat pt-3 pb-3">
+        <div class="seat justify-content-center">
             <h2 class="text-center">Select Seat</h2>
-            <hr
-              style="width: 20%; margin: auto; color: #000; height: 3px"
-              class="mb-4"
-            />
+            <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="text-center">
-              <label for="seat" class="form-label fw-bold"
-                >Only Choose 47 seats or less than 47 seats.</label
-              ><br />
-              <b>Remaining seat: </b>
-              <label for="remSeat" id="remSeat" class="fw-bold">47</label><br />
+                <label for="seat" class="form-label fw-bold">Only Choose 47 seats or less than 47
+                    seats.</label><br />
+                <b>Remaining seat: </b>
+                <label for="remSeat" id="remSeat" class="fw-bold">47</label><br />
             </div>
 
-            <form action="" class="mt-3 seatForm">
-              <label for="busName" class="form-label">Bus Name</label>
-              <input
-                type="text"
-                name="busName"
-                value="Pokhara Yatayat"
-                class="form-control mb-3 mt-2"
-                readonly
-              />
-              <label for="route" class="form-label">Bus Route</label>
-              <input
-                type="text"
-                name="route"
-                value="Pokhara - Kathmandu"
-                class="form-control mb-3 mt-2"
-                readonly
-              />
-              <label for="operator" class="form-label">Bus Operator</label>
-              <input
-                type="text"
-                name="operator"
-                value="Pokhara Yatayat"
-                class="form-control mb-3 mt-2"
-                readonly
-              />
-              <label for="seatNumber" class="form-label">Select Seat</label>
-              <input
-                type="number"
-                class="form-control mb-3"
-                id="seatNumber"
-                name="seat"
-                placeholder="Select number of seat"
-                data-max="50"
-                pattern="[0-9]*"
-              />
+            <!-- <label for="error" id="error" class="fw-bold" style="color: red"></label> -->
+            <form action="" method="" class="mt-3 seatForm">
+                <input type="hidden" name="bus_id"  readonly>
+                <input type="hidden" name="user_id" readonly>
+                <label for="busName" class="form-label">Bus Name</label>
+                <input type="text" name="bus_name" class="form-control mb-3 mt-2" readonly />
+                <label for="route" class="form-label">Bus Route</label>
+                <input type="text" name="route"
+                    class="form-control mb-3 mt-2" readonly />
+                <label for="operator" class="form-label">Bus Operator</label>
+                <input type="text" name="operator" 
+                    class="form-control mb-3 mt-2" readonly />
 
-              <label for="seatPrice" class="form-label">Seat Price</label>
-              <input
-                type="text"
-                class="form-control mb-3"
-                id="seatPrice"
-                name="price"
-                value="1000"
-                readonly
-              />
+                <label for="seatNumber" class="form-label">Select Seat</label>
+                <input type="number" class="form-control mb-3 changeValue" id="seatNumber" name="selected_seat"
+                    placeholder="Select number of seat" data-max="50" pattern="[0-9]*" />
+               
 
-              <label for="totalPrice" class="form-label">Total Price</label>
-              <input
-                type="text"
-                class="form-control"
-                id="totalPrice"
-                name="price"
-                value="1000"
-                readonly
-              />
-              <button
-                class="btn btn-primary mt-2"
-                id="result"
-                value="*"
-                onclick="calculate()"
-              >
-                Select &rarr;
-              </button>
 
-              <div class="selected-seat mt-3 text-dark">
-                <table
-                  class="table table-striped text-center"
-                  style="width: 100%; margin: auto"
-                >
-                  <thead>
-                    <tr>
-                      <th>Seat number</th>
-                      <th>Seat Price</th>
-                      <th>Total Price</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2</td>
-                      <td>Rs. 1000</td>
-                      <td>Rs. 2000</td>
-                      <td>
-                        <button type="button" class="btn btn-primary mb-1">
-                          <a href="#" class="admin-a-action"
-                            >Edit<i class="fas fa-edit admin-fa"></i
-                          ></a>
-                        </button>
-                        <button type="button" class="btn btn-danger mb-1">
-                          <a href="#" class="admin-a-action"
-                            >Cancel<i class="fas fa-trash-alt admin-fa"></i
-                          ></a>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                <label for="seatPrice" class="form-label">Seat Price</label>
+                <input type="text" class="form-control mb-3 changeValue" name="price" id="seatPrice"
+                     readonly />
 
-              <div class="payment mt-3 mb-3 text-center">
-                <button id="payment-button" class="btn btn-primary">
-                  <a class="btnBus" href="payment.html">Pay with Khalti &rarr;</a>
+                <label for="totalPrice" class="form-label">Total Price</label>
+                <input type="text" class="form-control" id="totalPrice" placeholder="total price" name="total_price" readonly />
+                
+                <button class="btn btn-primary mt-2">
+                    Select &rarr;
                 </button>
-              </div>
+
+                <div class="selected-seat mt-3 text-dark">
+                    <table class="table table-striped text-center" style="width: 100%; margin: auto">
+                        <thead>
+                            <tr>
+                                <th>Seat number</th>
+                                <th>Seat Price</th>
+                                <th>Total Price</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Rs. 500</td>
+                                    <td>Rs. 2000</td>
+                                    <td>
+                                            <a href="#" onclick="return confirm('You really want to cancel ticket?')" class="admin-a-action btn btn-danger">Cancel<i
+                                                    class="fas fa-trash-alt admin-fa"></i></a>
+                                            <a class="btnBus btn btn-primary" href="#">Pay &rarr;</a>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="payment mt-3 mb-3 text-center">
+
+                </div>
             </form>
-          </div> -->
-          </div>
         </div>
-      </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="p-3 bg-secondary text-white position-relative">
