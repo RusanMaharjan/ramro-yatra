@@ -9,9 +9,11 @@
 
         <div class="container route-container">
             @if (Session::has('message'))
-                <div class="alert alert-danger mt-2" role="alert">
-                    {{ Session::get('message') }}
-                </div>
+                <script>
+                    swal("Deleted!!", "{!! Session::get('message') !!}", "error", {
+                        button: "OK",
+                    })
+                </script>
             @endif
             <div class="route-hb d-flex justify-content-between pt-4">
                 <div class="heading fs-3">

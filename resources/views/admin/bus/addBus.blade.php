@@ -12,9 +12,11 @@
                 enctype="multipart/form-data">
                 @csrf
                 @if (Session::has('message'))
-                    <div class="alert alert-success mt-2" role="alert">
-                        {{ Session::get('message') }}
-                    </div>
+                    <script>
+                        swal("Added!!", "{!! Session::get('message') !!}", "success", {
+                            button: "OK",
+                        })
+                    </script>
                 @endif
                 <div class="route-hb d-flex justify-content-between pt-4">
                     <div class="heading fs-3">
