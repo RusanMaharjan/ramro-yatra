@@ -41,7 +41,7 @@ Route::get('cancel-seat/{seat_id}',[SeatController::class, 'cancelSeat'])->name(
 
 //Admin Routes
 //Bus Management
-Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus');
+Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus')->middleware('authadmin');
 Route::post('create-bus',[BusController::class, 'createBus'])->name('admin.createBus');
 Route::get('get-bus',[BusController::class, 'getBus'])->name('admin.getBus');
 Route::get('edit-bus/{bus_id}',[BusController::class, 'editBus'])->name('admin.editBus');
