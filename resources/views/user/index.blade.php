@@ -3,7 +3,9 @@
 @section('content')
 
     <!-- Home Showcase -->
+        
     <div class="showcase">
+
         <div class="container">
             <div class="text">
                 <h1 class="text-center fs-1 text-uppercase">
@@ -33,12 +35,14 @@
             <h2 class="text-center mt-2" id="allBus">All Buses</h2>
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="carousel owl-carousel">
-                @foreach ($buses as $bus)                    
+                @foreach ($buses as $bus)
                     <div class="card card-1">
                         <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1" height="250px">
-                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} - {{ $bus->route->to }}</i>
+                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} -
+                            {{ $bus->route->to }}</i>
                         <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
-                        <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                        <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}"
+                            class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                     </div>
                 @endforeach
             </div>
@@ -52,12 +56,14 @@
             <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="carousel owl-carousel">
-                @foreach ($today_bus as $tb)                    
+                @foreach ($today_bus as $tb)
                     <div class="card card-1">
                         <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1" height="250px">
-                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->route->from }} - {{ $tb->route->to }}</i>
+                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->route->from }} -
+                            {{ $tb->route->to }}</i>
                         <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->date }}</i>
-                        <a href="{{ route('busDetails', ['bus_id' => $tb->bus_id]) }}" class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                        <a href="{{ route('busDetails', ['bus_id' => $tb->bus_id]) }}"
+                            class="text-light text-decoration-none btn btn-primary"> View Bus</a>
                     </div>
                 @endforeach
             </div>
@@ -135,19 +141,18 @@
         <div class="container">
             <div class="row g-4 text-center mt-3 mb-5">
                 @foreach ($routes as $route)
-                  <div class="col-lg-4">
-                    <div class="addresses fs-5">{{ $route->from }} - {{ $route->to }}</div>
-                  </div> 
+                    <div class="col-lg-4">
+                        <div class="addresses fs-5">{{ $route->from }} - {{ $route->to }}</div>
+                    </div>
                 @endforeach
-              </div>
-            {{-- <div class="buttons mb-5">
-                <div class="container d-flex justify-content-center">
-
-                    <a href="./pages/searchBus.html" class="btn btn-primary">All Routes &rarr;</a>
-                </div>
-            </div> --}}
-
+            </div>
         </div>
     </div>
-
+    @if (Session::has('message'))
+    <script>
+        swal("Restricted!","{!! Session::get('message') !!}", "error", {
+            button:"OK",
+        })            
+    </script>
+@endif
 @endsection
