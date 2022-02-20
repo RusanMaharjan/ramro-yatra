@@ -193,9 +193,9 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
             return actions.order.capture().then(function(orderData) {
                 // Successful capture! For dev/demo purposes:
                 // console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                // var transaction = orderData.purchase_units[0].payments.captures[0];
-                // alert('Transaction ' + transaction.status + ': ' + transaction.id +
-                //     '\n\nSee console for all available details');
+                var transaction = orderData.purchase_units[0].payments.captures[0];
+                alert('Transaction ' + transaction.status + ': ' + transaction.id +
+                    '\n\nSee console for all available details');
 
                 var user_id = $('user_id').val();
                 var seat_id = $('seat_id').val();
