@@ -21,8 +21,8 @@
                         <h3>Basic Details</h3>
                         <hr>
                         <div class="flex">
-                            <input type="hidden" class="user_id" name="user_id" value="{{ Auth::user()->id }}">
-                            <input type="hidden" class="seat_id" name="seat_id" value="{{ $seat->seat_id }}">
+                            <input type="text" class="user_id" name="user_id" value="{{ Auth::user()->id }}">
+                            <input type="text" class="seat_id" name="seat_id" value="{{ $seat->seat_id }}">
                             <div class="mb-3 right">
                                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                                 <input type="text" class="form-control name" id="exampleFormControlInput1" name="name"

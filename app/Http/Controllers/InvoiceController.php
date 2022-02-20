@@ -18,18 +18,14 @@ class InvoiceController extends Controller
 
     public function createPayment(Request $request) {
         $request->validate([
-            'address' => 'required',
-            'city' => 'required',
-            'province' => 'required',
-            'country' => 'required',
-            'pincode' => 'required',
+            
         ]);
         $payment = new Payment();
-        $payment->user_id = $request->user_id;
+        $payment->user_id = $request->user()->id;
         $payment->seat_id = $request->seat_id;
-        $payment->name = $request->name;
-        $payment->email = $request->email;
-        $payment->phone = $request->phone;
+        $payment->name = $request->user()->name;
+        $payment->email = $request->user()->email;
+        $payment->phone = $request->user()->phone;
         $payment->address = $request->address;
         $payment->city = $request->city;
         $payment->province = $request->province;
@@ -44,8 +40,8 @@ class InvoiceController extends Controller
         $payment->date = $request->date;
         $payment->payment_id = $request->payment_id;
         $payment->save();
-        return redirect('paymentDetails');
-        // return back()->with('message', 'Payment Successfull.');
+        // return redirect->route('paymentDetails');
+        return back()->with('message', 'Payment Successfull.');
     }
 
     public function paymentDetails() {
