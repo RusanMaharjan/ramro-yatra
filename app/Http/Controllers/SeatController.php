@@ -44,7 +44,7 @@ class SeatController extends Controller
     //function to cancel seat
     public function cancelSeat($seat_id) {
         Seat::where('seat_id',$seat_id)->delete();
-        return back()->with('message', 'Seat Cancelled.');
+        return back()->with('cancelled', 'Seat Cancelled.');
     }
 
     public function goToPayment($seat_id) {

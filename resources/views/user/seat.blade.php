@@ -6,19 +6,29 @@
             <h2 class="text-center">Select Seat</h2>
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="text-center">
-                <label for="seat" class="form-label fw-bold">Only Choose 47 seats or less than 47
+                <label for="seat" class="form-label fw-bold">Only Choose {{ $bus->seat }} seats or less than {{ $bus->seat }}
                     seats.</label><br />
                 <b>Remaining seat: </b>
-                <label for="remSeat" id="remSeat" class="fw-bold">47</label><br />
+                <label for="remSeat" id="remSeat" class="fw-bold">{{ $bus->seat }}</label><br />
             </div>
 
             <!-- <label for="error" id="error" class="fw-bold" style="color: red"></label> -->
             <form action="{{ route('seat') }}" method="post" class="mt-3 seatForm">
                 @csrf
                 @if (Session::has('message'))
-                    <div class="alert alert-success" role="alert">
-                        {{ Session::get('message') }}
-                    </div>
+                    <script>
+                        swal("Added!!", "{!! Session::get('message') !!}", "success", {
+                            button: "OK",
+                        })
+                    </script>
+                @endif
+
+                @if (Session::has('cancelled'))
+                    <script>
+                        swal("Cancelled!!", "{!! Session::get('cancelled') !!}", "error", {
+                            button: "OK",
+                        })
+                    </script>
                 @endif
                 <input type="hidden" name="bus_id" value="{{ $bus->bus_id }}" readonly>
                 <input type="hidden" name="user_id" value="{{ Auth::user()->id }}" readonly>
