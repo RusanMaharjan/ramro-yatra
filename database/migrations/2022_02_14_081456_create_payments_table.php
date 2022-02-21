@@ -18,11 +18,6 @@ class CreatePaymentsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('address');
-            $table->string('city');
-            $table->string('province');
-            $table->string('country');
-            $table->string('pincode');
             $table->string('payment_mode')->default('Paypal');
             $table->string('payment_id');
             $table->string('bus_name');

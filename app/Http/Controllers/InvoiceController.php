@@ -26,11 +26,6 @@ class InvoiceController extends Controller
         $payment->name = $request->user()->name;
         $payment->email = $request->user()->email;
         $payment->phone = $request->user()->phone;
-        $payment->address = $request->address;
-        $payment->city = $request->city;
-        $payment->province = $request->province;
-        $payment->country = $request->country;
-        $payment->pincode = $request->pincode;
         $payment->bus_name = $request->bus_name;
         $payment->selected_seat = $request->selected_seat;
         $payment->total_price = $request->total_price;

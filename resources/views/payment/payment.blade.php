@@ -21,8 +21,8 @@
                         <h3>Basic Details</h3>
                         <hr>
                         <div class="flex">
-                            <input type="text" class="user_id" name="user_id" value="{{ Auth::user()->id }}">
-                            <input type="text" class="seat_id" name="seat_id" value="{{ $seat->seat_id }}">
+                            <input type="hidden" class="user_id" name="user_id" value="{{ Auth::user()->id }}">
+                            <input type="hidden" class="seat_id" name="seat_id" value="{{ $seat->seat_id }}">
                             <div class="mb-3 right">
                                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                                 <input type="text" class="form-control name" id="exampleFormControlInput1" name="name"
@@ -44,90 +44,37 @@
                             </div>
 
                             <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">Address</label>
-                                <input type="text" class="form-control address" id="exampleFormControlInput1" name="address"
-                                    placeholder="Enter address.."/>
-                                    @error('address')
-                                        <div class="text-danger mb-1">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
+                                <label for="exampleFormControlInput1" class="form-label">PaymentId</label>
+                                <input type="text" class="form-control address" id="exampleFormControlInput1"
+                                    name="payment_id" readonly />
                             </div>
                         </div>
 
                         <div class="flex">
                             <div class="mb-3 right">
-                                <label for="exampleFormControlInput1" class="form-label">City</label>
-                                <input type="text" class="form-control city" id="exampleFormControlInput1" name="city"
-                                    placeholder="Enter city.."/>
-                                    @error('city')
-                                        <div class="text-danger mb-1">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
+                                <label for="exampleFormControlInput1" class="form-label">From</label>
+                                <input type="text" class="form-control from" id="exampleFormControlInput1" name="from"
+                                    value="{{ $seat->bus->route->from }}" readonly />
                             </div>
 
                             <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">Provience</label>
-                                <input type="text" class="form-control province" id="exampleFormControlInput1"
-                                    name="province" placeholder="Enter provience.."/>
-                                    @error('province')
-                                        <div class="text-danger mb-1">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
+                                <label for="exampleFormControlInput1" class="form-label">To</label>
+                                <input type="text" class="form-control to" id="exampleFormControlInput1" name="to"
+                                    value="{{ $seat->bus->route->to }}" readonly />
                             </div>
                         </div>
 
                         <div class="flex">
                             <div class="mb-3 right">
-                                <label for="exampleFormControlInput1" class="form-label">Country</label>
-                                <input type="text" class="form-control country" id="exampleFormControlInput1" name="country"
-                                    placeholder="Enter country name.."/>
-                                    @error('country')
-                                        <div class="text-danger mb-1">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
+                                <label for="exampleFormControlInput1" class="form-label">Operator</label>
+                                <input type="text" class="form-control operator" id="exampleFormControlInput1"
+                                    name="operator" value="{{ $seat->operator }}" readonly />
                             </div>
 
                             <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
-                                <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="pincode"
-                                    placeholder="Enter pin code.."/>
-                                    @error('pincode')
-                                        <div class="text-danger mb-1">
-                                            {{ $message }}
-                                        </div>
-                                    @enderror
-                            </div>
-                        </div>
-
-                        <div class="flex">
-                            <div class="mb-3 right">
-                                <label for="exampleFormControlInput1" class="form-label">Country</label>
-                                <input type="text" class="form-control country" id="exampleFormControlInput1" name="from"
-                                    value="{{ $seat->bus->route->from }}"/>
-                            </div>
-
-                            <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
-                                <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="to"
-                                    value="{{ $seat->bus->route->to }}"/>
-                            </div>
-                        </div>
-
-                        <div class="flex">
-                            <div class="mb-3 right">
-                                <label for="exampleFormControlInput1" class="form-label">Country</label>
-                                <input type="text" class="form-control country" id="exampleFormControlInput1" name="operator"
-                                    value="{{ $seat->bus->operator->operator_name }}"/>
-                            </div>
-
-                            <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">Pin Code</label>
-                                <input type="text" class="form-control pincode" id="exampleFormControlInput1" name="date"
-                                    value="{{ $seat->bus->date }}"/>
+                                <label for="exampleFormControlInput1" class="form-label">Date</label>
+                                <input type="text" class="form-control date" id="exampleFormControlInput1" name="date"
+                                    value="{{ $seat->bus->date }}" readonly />
                             </div>
                         </div>
 
@@ -139,26 +86,24 @@
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Bus Name</label>
                             <input type="text" class="form-control bus_name" id="exampleFormControlInput1" name="bus_name"
-                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}"/>
+                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}" />
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
                             <input type="text" class="form-control selected_seat" id="exampleFormControlInput1"
-                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}"/>
+                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}" />
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Total Price</label>
                             <input type="text" class="form-control total_price" id="exampleFormControlInput1"
-                                name="total_price" placeholder="Enter total price.." value="Rs. {{ $seat->total_price }}"/>
+                                name="total_price" placeholder="Enter total price.."
+                                value="Rs. {{ $seat->total_price }}" />
                         </div>
-
-                        <input type="text" name="payment_id">
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Pay with</label><br>
-                            <button class="btn btn-primary">Pay</button>
                             <div id="paypal-button-container"></div>
                         </div>
                     </div>
@@ -192,24 +137,27 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
         onApprove: function(data, actions) {
             return actions.order.capture().then(function(orderData) {
                 // Successful capture! For dev/demo purposes:
-                // console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-                var transaction = orderData.purchase_units[0].payments.captures[0];
-                alert('Transaction ' + transaction.status + ': ' + transaction.id +
-                    '\n\nSee console for all available details');
+                swal("Success!!", "Payment Success", "success", {
+                    button: "OK",
+                })
 
-                var user_id = $('user_id').val();
-                var seat_id = $('seat_id').val();
-                var name = $('name').val();
-                var email = $('email').val();
-                var phone = $('phone').val();
-                var address = $('address').val();
-                var city = $('city').val();
-                var province = $('province').val();
-                var country = $('country').val();
-                var pincode = $('pincode').val();
-                var bus_name = $('bus_name').val();
-                var selected_seat = $('selected_seat').val();
-                var total_price = $('total_price').val();
+                var user_id = $('.user_id').val();
+                var seat_id = $('.seat_id').val();
+                var name = $('.name').val();
+                var email = $('.email').val();
+                var phone = $('.phone').val();
+                var address = $('.address').text();
+                var city = $('.city').text();
+                var province = $('.province').text();
+                var country = $('.country').text();
+                var pincode = $('.pincode').text();
+                var from = $('.from').val();
+                var to = $('.to').val();
+                var operator = $('.operator').val();
+                var date = $('.date').val();
+                var bus_name = $('.bus_name').val();
+                var selected_seat = $('.selected_seat').val();
+                var total_price = $('.total_price').val();
 
                 $.ajax({
                     headers: {
@@ -228,6 +176,10 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
                         "province": province,
                         "country": country,
                         "pincode": pincode,
+                        "from": from,
+                        "to": to,
+                        "operator": operator,
+                        "date": date,
                         "bus_name": bus_name,
                         "selected_seat": selected_seat,
                         "total_price": total_price,
