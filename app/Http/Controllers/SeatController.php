@@ -38,6 +38,9 @@ class SeatController extends Controller
         $seats->bus_id = $request->bus_id;
         $seats->user_id = $request->user_id;
         $seats->save();
+        $bus = Bus::where('bus_id', $seats->bus_id)->first();
+        $bus->seat = $bus->seat - $request->selected_seat;
+        $bus->save();
         return back()->with('message', 'Seat details added to your record successfully.');
     }
     
