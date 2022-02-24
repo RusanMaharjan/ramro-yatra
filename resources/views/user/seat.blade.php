@@ -43,7 +43,7 @@
 
                 <label for="seatNumber" class="form-label">Select Seat</label>
                 <input type="number" class="form-control mb-3 changeValue" id="seatNumber" name="selected_seat"
-                    placeholder="Select number of seat" data-max="50" pattern="[0-9]*" />
+                    placeholder="Select number of seat" data-max="50" pattern="[0-9]*"/>
                 @error('selected_seat')
                     <div class="text-danger pb-2">
                         {{ $message }}

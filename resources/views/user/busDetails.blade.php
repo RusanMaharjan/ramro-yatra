@@ -76,19 +76,37 @@
                                 <div class="flex-price col-lg-3">
                                     <h4 class="text-center">Price</h4>
                                     <h5 class="mb-3 text-center">Rs. {{ $bus->price }}</h5>
-                                    <button type="button" class="btn btn-primary mb-3">
-                                        <a class="btnBus" href="{{ route('addSeat',['bus_id'=>$bus->bus_id]) }}">Select Seat</a>
-                                    </button>
+
+                                    <hr>
+
+                                    <div class="m-3 col-lg">
+                                        <label for="seat" class="form-label bus-label">Select Seat</label>
+                                        <input type="number" class="form-control p-2" id="select-seat"
+                                            placeholder="Select seat"/>
+                                    </div>
+                                        <a class="btnBus btn btn-primary" href="{{ route('addSeat',['bus_id'=>$bus->bus_id]) }}" onclick="valueSender() ">Select Seat &rarr;</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="main-desc">
-
-                    </div>
                 </div>
             </div>
         </div>
+        {{-- <hr>
+        <div class="select-seat">
+          <div class="seat-container container mt-5 mb-5">    
+            <h3 class="text-center mt-2">Select Seat</h3>  
+            <hr>  
+            <form action="">
+              <div class="m-3 col-lg">
+                <label for="seat" class="form-label bus-label">Select Seat</label>
+                <input type="number" class="form-control p-2" id="select-seat"
+                    placeholder="Select number of seat"/>
+            </div>
+            <a href="{{ route('addSeat',['bus_id' => $bus->bus_id]) }}" class="btn btn-primary">Select Seat</a>
+            </form>
+          </div>
+        </div> --}}
     </div>
     </div>
 

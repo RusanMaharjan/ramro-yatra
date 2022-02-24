@@ -28,3 +28,16 @@ $(".changeValue").change(function(e){
     $("#totalPrice").val(total);
 })
 
+//for seat and validation
+function valueSender() {
+    var a = document.getElementById('select-seat');
+    localStorage.setItem("myValue", a);
+    window.location.href="{ url('/add-seat/{bus_id}') }";
+}
+
+function valueReceiver() {
+    var b = localStorage.getItem("myValue");
+    alert("The value received is: "+b);
+    var resetValue = document.getElementById('seatNumber');
+    localStorage.setItem("myValue", resetValue);
+}
