@@ -3,13 +3,9 @@
 @section('content')
     <div class="create-seat pt-3 pb-3">
         <div class="seat">
-            <h2 class="text-center">Select Seat</h2>
+            <h2 class="text-center mt-3">Select Seat</h2>
             <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
             <div class="text-center">
-                <label for="seat" class="form-label fw-bold">Only Choose {{ $bus->seat }} seats or less than {{ $bus->seat }}
-                    seats.</label><br />
-                <b>Remaining seat: </b>
-                <label for="remSeat" id="remSeat" class="fw-bold">{{ $bus->seat }}</label><br />
             </div>
 
             <!-- <label for="error" id="error" class="fw-bold" style="color: red"></label> -->
@@ -41,6 +37,10 @@
                 <input type="text" name="operator" value="{{ $bus->operator->operator_name }}"
                     class="form-control mb-3 mt-2" readonly />
 
+                <label class="fw-bold mb-1">Remaining Seat: </label>
+
+                <label for="remSeat" id="remSeat" class="fw-bold mb-1">{{ $bus->seat }}</label><br />
+
                 <label for="seatNumber" class="form-label">Select Seat</label> &nbsp; &nbsp;&nbsp;<label for="error" id="error" style="color: red"></label>
                 <input type="number" class="form-control mb-3 changeValue" id="seatNumber" name="selected_seat"
                     placeholder="Select number of seat" data-max="50" pattern="[0-9]*" onkeyup="seatValidation()"/>
@@ -62,7 +62,7 @@
                         {{ $message }}
                     </div>
                 @enderror
-                <button class="btn btn-primary mt-2">
+                <button class="btn btn-primary mt-2" id="button">
                     Select &rarr;
                 </button>
 

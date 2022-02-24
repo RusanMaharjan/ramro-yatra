@@ -35,7 +35,6 @@ class InvoiceController extends Controller
         $payment->date = $request->date;
         $payment->payment_id = $request->payment_id;
         $payment->save();
-        // return redirect->route('paymentDetails');
         return back()->with('message', 'Payment Successfull.');
     }
 

@@ -31,19 +31,23 @@ $(".changeValue").change(function(e){
 //for seat validation
 function seatValidation() {
     var a = parseInt(document.getElementById('seatNumber').value);
-
-    if(a > 47) {
-        document.getElementById('error').innerHTML = "Select seat less than 47.";
+    var b = document.getElementById('remSeat').innerHTML;
+    
+    if(a > b) {
+        document.getElementById('error').innerHTML = "Select seat less than "+b;
         seatNumber.style.backgroundColor = "#ffcccc";
+        document.getElementById('button').style.visibility = 'hidden';
     }
 
     if(a < 1) {
         document.getElementById('error').innerHTML = "Select seat more than 0.";
         seatNumber.style.backgroundColor = "#ffcccc";
+        document.getElementById('button').style.visibility = 'hidden';
     }
 
-    if(a>0 && a<=47) {
+    if(a>0 && a<=b) {
         document.getElementById('error').innerHTML = "";
         seatNumber.style.backgroundColor = "#ffffff";
+        document.getElementById('button').style.visibility = 'visible';
     }
 }

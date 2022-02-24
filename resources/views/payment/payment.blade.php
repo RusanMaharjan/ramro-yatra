@@ -127,7 +127,7 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
             return actions.order.create({
                 purchase_units: [{
                     amount: {
-                        value: '{{ $seat->total_price }}' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+                        value: '{{ $seat->total_price }}' 
                     }
                 }]
             });
@@ -187,15 +187,8 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
                     },
                     success: function(response) {
                         swal(response.status);
-                        alert('Payment Success');
                     }
                 });
-
-                // When ready to go live, remove the alert and show a success message within this page. For example:
-                // var element = document.getElementById('paypal-button-container');
-                // element.innerHTML = '';
-                // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-                // Or go to another URL:  actions.redirect('thank_you.html');
             });
         }
     }).render('#paypal-button-container');
