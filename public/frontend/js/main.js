@@ -28,16 +28,22 @@ $(".changeValue").change(function(e){
     $("#totalPrice").val(total);
 })
 
-//for seat and validation
-function valueSender() {
-    var a = document.getElementById('select-seat');
-    localStorage.setItem("myValue", a);
-    window.location.href="{ url('/add-seat/{bus_id}') }";
-}
+//for seat validation
+function seatValidation() {
+    var a = parseInt(document.getElementById('seatNumber').value);
 
-function valueReceiver() {
-    var b = localStorage.getItem("myValue");
-    alert("The value received is: "+b);
-    var resetValue = document.getElementById('seatNumber');
-    localStorage.setItem("myValue", resetValue);
+    if(a > 47) {
+        document.getElementById('error').innerHTML = "Select seat less than 47.";
+        seatNumber.style.backgroundColor = "#ffcccc";
+    }
+
+    if(a < 1) {
+        document.getElementById('error').innerHTML = "Select seat more than 0.";
+        seatNumber.style.backgroundColor = "#ffcccc";
+    }
+
+    if(a>0 && a<=47) {
+        document.getElementById('error').innerHTML = "";
+        seatNumber.style.backgroundColor = "#ffffff";
+    }
 }

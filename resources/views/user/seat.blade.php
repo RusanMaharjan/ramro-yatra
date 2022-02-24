@@ -41,9 +41,9 @@
                 <input type="text" name="operator" value="{{ $bus->operator->operator_name }}"
                     class="form-control mb-3 mt-2" readonly />
 
-                <label for="seatNumber" class="form-label">Select Seat</label>
+                <label for="seatNumber" class="form-label">Select Seat</label> &nbsp; &nbsp;&nbsp;<label for="error" id="error" style="color: red"></label>
                 <input type="number" class="form-control mb-3 changeValue" id="seatNumber" name="selected_seat"
-                    placeholder="Select number of seat" data-max="50" pattern="[0-9]*"/>
+                    placeholder="Select number of seat" data-max="50" pattern="[0-9]*" onkeyup="seatValidation()"/>
                 @error('selected_seat')
                     <div class="text-danger pb-2">
                         {{ $message }}
