@@ -33,6 +33,7 @@ class HomeController extends Controller
         return view('user.index', compact('buses', 'routes', 'operators', 'today_bus', 'count_bus', 'count_route', 'count_users'));
     }
 
+    //function to search bus
     public function searchBus(Request $request) {
         $search = $request['search'] ?? "";
         $search1 = $request['search1'] ?? "";

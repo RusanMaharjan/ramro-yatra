@@ -42,6 +42,7 @@ class BusController extends Controller
         $buses->operator_id = $request->operator_id;
         $buses->seat = $request->seat;
         
+        //for requesting image type file
         $img = $request->file;
         $imageName=time().'.'.$img->getClientoriginalExtension();
         $request->file->move('img',$imageName);
@@ -91,6 +92,7 @@ class BusController extends Controller
         $bus->route_id = $request->route_id;
         $bus->operator_id = $request->operator_id;
 
+        //for requesting image type file
         $img = $request->file;
         if($img) {
             $imageName=time().'.'.$img->getClientoriginalExtension();

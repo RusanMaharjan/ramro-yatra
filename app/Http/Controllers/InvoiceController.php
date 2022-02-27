@@ -21,6 +21,7 @@ class InvoiceController extends Controller
             
         ]);
         $payment = new Payment();
+        //request payment data
         $payment->user_id = $request->user()->id;
         $payment->seat_id = $request->seat_id;
         $payment->name = $request->user()->name;
@@ -29,12 +30,13 @@ class InvoiceController extends Controller
         $payment->bus_name = $request->bus_name;
         $payment->selected_seat = $request->selected_seat;
         $payment->total_price = $request->total_price;
-        $payment->from = $request->from;
+        $payment->from = $request->from;-
         $payment->to = $request->to;
         $payment->operator = $request->operator;
         $payment->date = $request->date;
         $payment->payment_id = $request->payment_id;
         $payment->save();
+        //show message after payment is successfull.
         return back()->with('message', 'Payment Successfull.');
     }
 

@@ -38,6 +38,7 @@ class OperatorController extends Controller
 
     //function for updating operator
     public function updateOperator(Request $request) {
+        //Validate method for validating operator
         $request->validate([
             'operator_name' => 'required'
         ]);

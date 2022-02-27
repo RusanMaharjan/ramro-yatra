@@ -24,6 +24,7 @@ class SeatController extends Controller
     
     //function to add seat details of user to database
     public function createSeat(Request $request) {
+        //validate method for validating seat
         $request->validate([
             'selected_seat' => 'required',
             'total_price' => 'required'
@@ -50,6 +51,7 @@ class SeatController extends Controller
         return back()->with('cancelled', 'Seat Cancelled.');
     }
 
+    //function to go to payment page
     public function goToPayment($seat_id) {
         $this->seat_id = $seat_id;
         $seat = Seat::where('seat_id', $this->seat_id)->first();
