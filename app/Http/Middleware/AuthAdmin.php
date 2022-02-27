@@ -20,7 +20,6 @@ class AuthAdmin
             return $next($request);
         }else {
             session()->flush();
-            // return redirect()->route('login');
             return back()->with('message', 'You are not admin.');
         }
         return $next($request);
