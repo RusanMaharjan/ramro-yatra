@@ -50,11 +50,7 @@
 
                                     <hr>
 
-                                    <div class="m-3 col-lg">
-                                        <label for="seat" class="form-label bus-label">Select Seat</label>
-                                        <input type="number" class="form-control p-2" id="select-seat"
-                                            placeholder="Select seat" />
-                                    </div>
+                                    <br><br>
                                     <a class="btnBus btn btn-primary"
                                         href="{{ route('addSeat', ['bus_id' => $bus->bus_id]) }}"
                                         onclick="valueSender() ">Select Seat &rarr;</a>
