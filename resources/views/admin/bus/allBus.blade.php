@@ -33,7 +33,7 @@
                         <th>Time</th>
                         <th>Date</th>
                         <th>Route</th>
-                        <th>Location</th>
+                        <th>Operator</th>
                         <th>Seat</th>
                         <th>Price</th>
                         <th>Image</th>

@@ -4,7 +4,7 @@
     
     <!-- update bus Page -->
     <div class="route pt-5 pb-5">
-        <div class="fs-2 text-center mt-5">Add Bus</div>
+        <div class="fs-2 text-center mt-5">Edit Bus</div>
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
 
         <div class="container route-container">
