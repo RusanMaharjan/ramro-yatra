@@ -19,7 +19,7 @@
                 @endif
                 <div class="route-hb d-flex justify-content-between pt-4">
                     <div class="heading fs-3">
-                        Update Seat
+                        Update Operator
                     </div>
                     <a href="{{ route('admin.getOperator') }}" class="admin-a-btn btn btn-success">All Operator &rarr;</a>
                 </div>  
