@@ -25,7 +25,17 @@
             <div class="qrcode">
                 {{-- <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(200)->generate("Ticket Id: $invoice->invoice_id, Name: $invoice->name, Email: $invoice->email, Phone: $invoice->phone, Bus Name: Tourist Bus By $invoice->bus_name, Selected Seat: $invoice->selected_seat, Price: Rs.$invoice->total_price, Board Point: $invoice->from, Drop Point: $invoice->to, Operator: $invoice->operator, Date: $invoice->date")) !!} "> --}}
                 {!! QrCode::size(200)->generate(
-                    "Ticket Id: $invoice->invoice_id, Name: $invoice->name, Email: $invoice->email, Phone: $invoice->phone, Bus Name: Tourist Bus By $invoice->bus_name, Selected Seat: $invoice->selected_seat, Price: $invoice->total_price, Board Point: $invoice->from, Drop Point: $invoice->to, Operator: $invoice->operator, Date: $invoice->date"
+                    "Ticket Id: $invoice->invoice_id, 
+                Name: $invoice->name, 
+                Email: $invoice->email, 
+                Phone: $invoice->phone, 
+                Bus Name: Tourist Bus By $invoice->bus_name, 
+                Selected Seat: $invoice->selected_seat, 
+                Price: $invoice->total_price, 
+                Board Point: $invoice->from, 
+                Drop Point: $invoice->to, 
+                Operator: $invoice->operator, 
+                Date: $invoice->date"
                 ); !!}
             </div>
         </div>
