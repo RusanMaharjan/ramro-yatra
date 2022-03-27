@@ -3,7 +3,8 @@
 @section('content')
 
     <div class="container pt-5 ticket">
-        <a href="{{ route('pdf',['invoice_id' => $invoice->invoice_id]) }}" class="btn btn-primary">Get Ticket</a>
+        {{-- <a href="{{ route('pdf',['invoice_id' => $invoice->invoice_id]) }}" class="btn btn-primary">Get Ticket</a> --}}
+        <button class="btn btn-primary" id="getTicket" onclick="window.print();">Get Ticket</button>
         <h4>Thank you for choosing <span class="ramro">ramro</span><span class="y">Yatra<img
                     src="{{ url('/frontend/img/Anonymous-Bus1.svg') }}" width="80px" height="50px"></span></h4>
         <hr style="width: 30%; padding: 1.3px;" />
