@@ -30,7 +30,7 @@ class InvoiceController extends Controller
         $payment->bus_name = $request->bus_name;
         $payment->selected_seat = $request->selected_seat;
         $payment->total_price = $request->total_price;
-        $payment->from = $request->from;-
+        $payment->from = $request->from;
         $payment->to = $request->to;
         $payment->operator = $request->operator;
         $payment->date = $request->date;
@@ -41,7 +41,7 @@ class InvoiceController extends Controller
     }
 
     public function paymentDetails() {
-        $payments = Payment::orderBy('created_at','DESC')->where('user_id',Auth::user()->id)->get();
+        $payments = Payment::orderBy('created_at','DESC')->where('user_id',Auth::user()->id)->paginate(5);
         return view('payment.paymentDetails',compact('payments'));
     }
 }

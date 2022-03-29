@@ -146,11 +146,6 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
                 var name = $('.name').val();
                 var email = $('.email').val();
                 var phone = $('.phone').val();
-                var address = $('.address').text();
-                var city = $('.city').text();
-                var province = $('.province').text();
-                var country = $('.country').text();
-                var pincode = $('.pincode').text();
                 var from = $('.from').val();
                 var to = $('.to').val();
                 var operator = $('.operator').val();
@@ -171,11 +166,6 @@ src="https://www.paypal.com/sdk/js?client-id=AYO1XWOIGQGtU5na-g-r76Jr2HF2HTUhcTl
                         "name": name,
                         "email": email,
                         "phone": phone,
-                        "address": address,
-                        "city": city,
-                        "province": province,
-                        "country": country,
-                        "pincode": pincode,
                         "from": from,
                         "to": to,
                         "operator": operator,

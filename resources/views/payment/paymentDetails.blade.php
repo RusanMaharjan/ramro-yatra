@@ -65,6 +65,9 @@
                 </tbody>
 
             </table>
+            <div class="d-flex mt-2 justify-content-center">
+                {{ $payments->links() }}
+            </div>
         </div>
     </div>
 
