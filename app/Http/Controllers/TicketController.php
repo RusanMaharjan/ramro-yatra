@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Payment;
-use PDF;
 class TicketController extends Controller
 {
     // getting payment details id and go to ticket page
