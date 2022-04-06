@@ -40,12 +40,12 @@
 @section('pageTitle', 'forgot password')
 @section('content')
 
-    <div class="container mt-5 pt-5 pb-5" style="width: 40%;">
+    <div class="container" style="width: 40%; margin-top: 163px; padding-bottom: 35px">
 
         <div class="form-container"
             style="border: 1px solid rgb(241, 240, 240); border-radius: 10px; background: #f8f4f4; box-shadow: 5px 5px 10px 5px #cecbcb">
 
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center mt-3">
                 <span class="ramro">ramro</span><span class="y">Yatra</span></a>
                 <img src="{{ url('frontend/img/Anonymous-Bus1.svg') }}" alt="" width="80px" height="50px">
             </div>
@@ -60,8 +60,8 @@
                 </div>
             @endif
 
-            <div class="mt-4 flex items-center justify-between">
-                <form method="POST" action="{{ route('verification.send') }}">
+            <div class="mt-4 d-flex items-center justify-between">
+                <form method="POST"class="mx-5"  action="{{ route('verification.send') }}">
                     @csrf
         
                     <div class="justify-items-center pb-4">
@@ -72,7 +72,7 @@
                     </div>
                 </form>
         
-                <form method="POST" action="{{ route('logout') }}">
+                <form method="POST" class="mx-5" action="{{ route('logout') }}">
                     @csrf
                     <div class="flex items-center justify-end pb-4">
                         <button class="btn btn-secondary">
