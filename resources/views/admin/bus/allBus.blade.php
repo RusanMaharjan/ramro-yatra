@@ -50,7 +50,7 @@
                             <td>{{ $bus->facilities }}</td>
                             <td>{{ $bus->time }}</td>
                             <td>{{ $bus->date }}</td>
-                            <td>{{ $bus->route->from }} - {{ $bus->route->to }}a</td>
+                            <td>{{ $bus->route->from }} - {{ $bus->route->to }}</td>
                             <td>{{ $bus->operator->operator_name }}</td>
                             <td>{{ $bus->seat }}</td>
                             <td>Rs. {{ $bus->price }}</td>
