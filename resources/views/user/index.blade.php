@@ -51,11 +51,10 @@
 
 
     <!-- Today's Bus slider-->
-    {{-- @if ($sproducts->count() > 0 && $sale->status == 1 && $sale->sale_date > Carbon\Carbon::now()) --}}
-    @if ($bus->count() > 0 && $bus->date = Carbon\Carbon::now())        
+    <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
+    @if ($buses->count() > 0 && $buses->date = Carbon\Carbon::now())        
         <div class="wrap">
             <div class="wrapper">
-                <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
                 <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
                 <div class="carousel owl-carousel">
                     @foreach ($today_bus as $tb)
@@ -72,7 +71,7 @@
             </div>
         </div>
     @else
-        <h1 class="text-danger">No Bus for today.</h1>
+        <h3 class="alert alert-danger text-dark text-center">No Bus for today.</h3>
     @endif
 
     <!-- #0d6efd blue color as button primary color-->
