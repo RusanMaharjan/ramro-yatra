@@ -51,11 +51,11 @@
 
 
     <!-- Today's Bus slider-->
-    <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
     @if ($buses->count() > 0 && $buses->date = Carbon\Carbon::now())        
-        <div class="wrap">
-            <div class="wrapper">
-                <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
+    <div class="wrap">
+        <div class="wrapper">
+            <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
+            <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-4" />
                 <div class="carousel owl-carousel">
                     @foreach ($today_bus as $tb)
                         <div class="card card-1">
