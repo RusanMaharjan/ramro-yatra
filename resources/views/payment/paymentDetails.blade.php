@@ -49,7 +49,7 @@
                             <td>{{ $payment->email }}</td>
                             <td>{{ $payment->phone }}</td>
                             <td>{{ $payment->selected_seat }}</td>
-                            <td>Rs. {{ $payment->total_price }}</td>
+                            <td>{{ $payment->total_price }}</td>
                             <td>{{ $payment->bus_name }}</td>
                             <td>{{ $payment->from }}</td>
                             <td>{{ $payment->to }}</td>
