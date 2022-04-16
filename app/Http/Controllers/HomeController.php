@@ -21,12 +21,12 @@ class HomeController extends Controller
         //get all record of route
         $routes = DB::table('routes')->select('from', 'to', 'created_at')->orderBy('created_at', 'desc')->limit(9)->get();
         $count_route = DB::table('routes')->count();
-
-        //get all record of operators
-        $operators = Operator::all();
         
         //count users
         $count_users = DB::table('users')->count();
+
+        //get all record of operators
+        $operators = Operator::all();
 
         //get record of current date
         $today_bus = Bus::whereDate('date', date('Y-m-d'))->get();
