@@ -5,17 +5,20 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="/">
-                        ramroYatra
-                    </a>
+                    <a href="{{ route('home') }}" class="navbar-brand font"><img src="{{ url('frontend/img/Anonymous-Bus1.svg') }}"
+                    alt="" width="80px" height="50px"></a>
                 </div>
 
                 <!-- Navigation Links -->
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
-                </div> --}}
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex pt-5">
+                    <a href="{{ route('home') }}" class="navbar-brand font"><span style="font-weight: bold;
+                        font-family: cursive;
+                        font-size: 1.4em;" class="ramro">ramro</span>
+                        <span style="font-weight: bold;
+                        font-family: sans-serif;
+                        color: #0072bc;
+                        font-size: 1.6em;" class="y">Yatra</span></a>
+                </div>
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
