@@ -39,6 +39,12 @@
                     />
                 </div>
 
+                @error('bus_name')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Facilities</label>
                     <input
@@ -51,6 +57,12 @@
                     />
                 </div>
 
+                @error('facilities')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Location</label>
                     <select class="form-select" name="route_id" aria-label="Default select example" aria-valuetext="{{ $bus->route->from }} - {{ $bus->route->to }}">
@@ -61,6 +73,12 @@
                     </select>
                 </div>
 
+                @error('route_id')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Operator</label>
                     <select class="form-select" name="operator_id" aria-label="Default select example">
@@ -70,6 +88,12 @@
                         @endforeach
                     </select>
                 </div>
+
+                @error('operator_id')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Time</label>
@@ -83,6 +107,12 @@
                     />
                 </div>
 
+                @error('time')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Seat</label>
                     <input
@@ -95,6 +125,12 @@
                     />
                 </div>
 
+                @error('seat')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Date</label>
                     <input
@@ -105,6 +141,12 @@
                     value="{{ $bus->date }}"
                     />
                 </div>
+
+                @error('date')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Price</label>
@@ -117,6 +159,12 @@
                     value="{{ $bus->price }}"
                     />
                 </div>
+
+                @error('price')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Bus Image</label>
@@ -140,6 +188,12 @@
                     />
                 </div>
 
+                @error('driver_name')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Bus Number</label>
                     <input
@@ -151,6 +205,13 @@
                     value="{{ $bus->bus_number }}"
                     />
                 </div>
+
+                @error('bus_number')
+                    <div class="text-danger pb-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+
                 <div class="btnAdmin">
                     <button type="submit" class="btn btn-success">Update Bus &rarr;</button>
                 </div>
