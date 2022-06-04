@@ -44,11 +44,14 @@ class SeatController extends Controller
         $bus->save();
         return back()->with('message', 'Seat details added to your record successfully.');
     }
-    
-    //function to cancel seat
+
     public function cancelSeat($seat_id) {
-        Seat::where('seat_id',$seat_id)->delete();
-        return back()->with('cancelled', 'Seat Cancelled.');
+        $seats = Seat::findorfail($seat_id);
+        $bus = Bus::where('bus_id', $seats->bus_id)->first();
+        $bus->seat = $bus->seat + $seats->selected_seat;
+        $bus->save();
+        Seat::destroy($seat_id);
+        return back()->with('cancelled', 'Seat Cancelled');  
     }
 
     //function to go to payment page

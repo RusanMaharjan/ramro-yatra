@@ -10,11 +10,6 @@ use Illuminate\Support\Facades\Auth;
 
 class InvoiceController extends Controller
 {
-    // public function index() {
-    //     $seats = Seat::all();
-    //     $users = User::all();
-    //     return view('payment.payment', compact('seats', 'users'));
-    // }
 
     public function createPayment(Request $request) {
         $request->validate([
