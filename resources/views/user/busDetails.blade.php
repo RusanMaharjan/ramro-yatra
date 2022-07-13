@@ -41,7 +41,7 @@
                                             <i class="fas fa-bus-school fs-5 pb-2">&nbsp; &nbsp;<span
                                                     class="location-span">{{ $bus->bus_number }}</span></i>
                                         </div>
-                                    </div>
+                                    </div iv>
                                 </div>
 
                                 <div class="flex-price col-lg-3">

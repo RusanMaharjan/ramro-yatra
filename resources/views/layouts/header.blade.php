@@ -52,8 +52,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                         class="y">Yatra</span></a>
                 <a href="{{ route('home') }}" class="navbar-brand font"><img src="{{ url('frontend/img/Anonymous-Bus1.svg') }}"
                         alt="" width="80px" height="50px"></a>
-            </div>
-
+            </div>  
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
