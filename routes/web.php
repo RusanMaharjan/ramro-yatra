@@ -36,33 +36,33 @@ Route::get('cancel-seat/{seat_id}',[SeatController::class, 'cancelSeat'])->name(
 
 //Admin Routes
 //Bus Management
-Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus')->middleware('authadmin');
-Route::post('create-bus',[BusController::class, 'createBus'])->name('admin.createBus')->middleware('authadmin');
-Route::get('get-bus',[BusController::class, 'getBus'])->name('admin.getBus')->middleware('authadmin');
-Route::get('edit-bus/{bus_id}',[BusController::class, 'editBus'])->name('admin.editBus')->middleware('authadmin');
-Route::post('update-bus', [BusController::class, 'updateBus'])->name('admin.updateBus')->middleware('authadmin');
-Route::get('delete-bus/{bus_id}',[BusController::class, 'deleteBus'])->name('admin.deleteBus')->middleware('authadmin');
+Route::get('add-bus',[BusController::class, 'addBus'])->name('admin.addBus')->middleware('auth', 'verified');
+Route::post('create-bus',[BusController::class, 'createBus'])->name('admin.createBus')->middleware('auth', 'verified');
+Route::get('get-bus',[BusController::class, 'getBus'])->name('admin.getBus')->middleware('auth', 'verified');
+Route::get('edit-bus/{bus_id}',[BusController::class, 'editBus'])->name('admin.editBus')->middleware('auth', 'verified');
+Route::post('update-bus', [BusController::class, 'updateBus'])->name('admin.updateBus')->middleware('auth', 'verified');
+Route::get('delete-bus/{bus_id}',[BusController::class, 'deleteBus'])->name('admin.deleteBus')->middleware('auth', 'verified');
 
 //Operator Management
-Route::get('add-Operator',[OperatorController::class, 'addOperator'])->name('admin.addOperator')->middleware('authadmin');
-Route::post('create-Operator',[OperatorController::class, 'createOperator'])->name('admin.createOperator')->middleware('authadmin');
-Route::get('get-Operator',[OperatorController::class, 'getOperator'])->name('admin.getOperator')->middleware('authadmin');
-Route::get('edit-Operator/{operator_id}',[OperatorController::class, 'editOperator'])->name('admin.editOperator')->middleware('authadmin');
-Route::post('update-operator',[OperatorController::class, 'updateOperator'])->name('admin.updateOperator')->middleware('authadmin');
-Route::get('delete-Operator/{operator_id}',[OperatorController::class, 'deleteOperator'])->name('admin.deleteOperator')->middleware('authadmin');
+Route::get('add-Operator',[OperatorController::class, 'addOperator'])->name('admin.addOperator')->middleware('auth', 'verified');
+Route::post('create-Operator',[OperatorController::class, 'createOperator'])->name('admin.createOperator')->middleware('auth', 'verified');
+Route::get('get-Operator',[OperatorController::class, 'getOperator'])->name('admin.getOperator')->middleware('auth', 'verified');
+Route::get('edit-Operator/{operator_id}',[OperatorController::class, 'editOperator'])->name('admin.editOperator')->middleware('auth', 'verified');
+Route::post('update-operator',[OperatorController::class, 'updateOperator'])->name('admin.updateOperator')->middleware('auth', 'verified');
+Route::get('delete-Operator/{operator_id}',[OperatorController::class, 'deleteOperator'])->name('admin.deleteOperator')->middleware('auth', 'verified');
 
 //Route Management
-Route::get('add-route',[RouteController::class, 'addRoute'])->name('admin.addRoute')->middleware('authadmin');
-Route::post('create-route',[RouteController::class, 'createRoute'])->name('admin.createRoute')->middleware('authadmin');
-Route::get('get-route',[RouteController::class, 'getRoute'])->name('admin.getRoute')->middleware('authadmin');
-Route::get('edit-route/{route_id}',[RouteController::class, 'editRoute'])->name('admin.editRoute')->middleware('authadmin');
-Route::post('update-route',[RouteController::class, 'updateRoute'])->name('admin.updateRoute')->middleware('authadmin');
-Route::get('delete-route/{route_id}',[RouteController::class, 'deleteRoute'])->name('admin.deleteRoute')->middleware('authadmin');
+Route::get('add-route',[RouteController::class, 'addRoute'])->name('admin.addRoute')->middleware('auth', 'verified');
+Route::post('create-route',[RouteController::class, 'createRoute'])->name('admin.createRoute')->middleware('auth', 'verified');
+Route::get('get-route',[RouteController::class, 'getRoute'])->name('admin.getRoute')->middleware('auth', 'verified');
+Route::get('edit-route/{route_id}',[RouteController::class, 'editRoute'])->name('admin.editRoute')->middleware('auth', 'verified');
+Route::post('update-route',[RouteController::class, 'updateRoute'])->name('admin.updateRoute')->middleware('auth', 'verified');
+Route::get('delete-route/{route_id}',[RouteController::class, 'deleteRoute'])->name('admin.deleteRoute')->middleware('auth', 'verified');
 
 //user Management
-Route::get('get-users',[EditUserController::class, 'getUsers'])->name('admin.getUsers')->middleware('authadmin');
-Route::get('edit-Users/{id}',[EditUserController::class, 'editUser'])->name('admin.editUsers')->middleware('authadmin');
-Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admin.updateUser')->middleware('authadmin');
+Route::get('get-users',[EditUserController::class, 'getUsers'])->name('admin.getUsers')->middleware('auth', 'verified');
+Route::get('edit-Users/{id}',[EditUserController::class, 'editUser'])->name('admin.editUsers')->middleware('auth', 'verified');
+Route::post('update-user',[EditUserController::class, 'updateUser'])->name('admin.updateUser')->middleware('auth', 'verified');
 
 //payment management
 Route::get('payment/{seat_id}',[SeatController::class, 'goToPayment'])->name('user.payment')->middleware('auth', 'verified');

@@ -9,7 +9,7 @@ class EditUserController extends Controller
 {
     //function for getting all users
     public function getUsers() {
-        $users = User::orderBy('id', 'Asc')->get();
+        $users = User::where('roles', '=', 'USR')->orderBy('id', 'ASC')->get();
         return view('admin.users.allUser', compact('users'));
     }
 
