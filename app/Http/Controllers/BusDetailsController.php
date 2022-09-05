@@ -14,6 +14,4 @@ class BusDetailsController extends Controller
         $bus = Bus::where('bus_id',$this->bus_id)->first();
         return view('user.busDetails', ['bus'=>$bus]);
     }
-
-    
 }
