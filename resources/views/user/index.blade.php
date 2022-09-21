@@ -37,21 +37,33 @@
             <div class="carousel owl-carousel">
                 @foreach ($buses as $bus)
                     <div class="card card-1">
-                        <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1" height="250px">
-                        <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} -
-                            {{ $bus->route->to }}</i>
-                        <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
-                        <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}"
-                            class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                        @if (Carbon\Carbon::today()->ne($bus->date))
+                            <h5 class="bus-expired">Bus date expired</h5>
+                            <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1"
+                                height="250px">
+                            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} -
+                                {{ $bus->route->to }}</i>
+                            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
+                            <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}"
+                                class="text-light text-decoration-none btn btn-primary pointer-event"> View Bus</a>
+                        @else
+                            <img class="slider-img" src="{{ url('img') }}/{{ $bus->img }}" alt="img1"
+                                height="250px">
+                            <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->route->from }} -
+                                {{ $bus->route->to }}</i>
+                            <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $bus->date }}</i>
+                            <a href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}"
+                                class="text-light text-decoration-none btn btn-primary"> View Bus</a>
+                        @endif
                     </div>
                 @endforeach
             </div>
         </div>
-    </div>    
+    </div>
 
 
     <!-- Today's Bus slider-->
-    @if ($buses->count() > 0 && $buses->date = Carbon\Carbon::today())
+    @if ($buses->count() > 0 && ($buses->date = Carbon\Carbon::today()))
         <div class="wrap">
             <div class="wrapper">
                 <h2 class="text-center mt-2" id="allBus">Today's Buses</h2>
@@ -59,7 +71,8 @@
                 <div class="carousel owl-carousel">
                     @foreach ($today_bus as $tb)
                         <div class="card card-1">
-                            <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1" height="250px">
+                            <img class="slider-img" src="{{ url('img') }}/{{ $tb->img }}" alt="img1"
+                                height="250px">
                             <i class="fas fa-location fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->route->from }} -
                                 {{ $tb->route->to }}</i>
                             <i class="fas fa-calendar fs-5 pt-2 pb-2 text-light">&nbsp;&nbsp;{{ $tb->date }}</i>
