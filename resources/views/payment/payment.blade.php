@@ -23,6 +23,7 @@
                         <div class="flex">
                             <input type="hidden" class="user_id" name="user_id" value="{{ Auth::user()->id }}">
                             <input type="hidden" class="seat_id" name="seat_id" value="{{ $seat->seat_id }}">
+                            <input type="hidden" class="payment_id" name="payment_id">
                             <div class="mb-3 right">
                                 <label for="exampleFormControlInput1" class="form-label">Name</label>
                                 <input type="text" class="form-control name" id="exampleFormControlInput1" name="name"
@@ -44,9 +45,9 @@
                             </div>
 
                             <div class="mb-3 left">
-                                <label for="exampleFormControlInput1" class="form-label">PaymentId</label>
+                                <label for="exampleFormControlInput1" class="form-label">Bus Number</label>
                                 <input type="text" class="form-control address" id="exampleFormControlInput1"
-                                    name="payment_id" readonly />
+                                    value="{{ $seat->bus->bus_number }}" readonly />
                             </div>
                         </div>
 
@@ -86,20 +87,20 @@
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Bus Name</label>
                             <input type="text" class="form-control bus_name" id="exampleFormControlInput1" name="bus_name"
-                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}" />
+                                placeholder="Enter bus name.." value="{{ $seat->bus_name }}" readonly/>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Selected Seat</label>
                             <input type="text" class="form-control selected_seat" id="exampleFormControlInput1"
-                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}" />
+                                name="selected_seat" placeholder="Enter seat.." value="{{ $seat->selected_seat }}" readonly/>
                         </div>
 
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Total Price</label>
                             <input type="text" class="form-control total_price" id="exampleFormControlInput1"
                                 name="total_price" placeholder="Enter total price.."
-                                value="Rs. {{ $seat->total_price }}" />
+                                value="Rs. {{ $seat->total_price }}" readonly/>
                         </div>
 
                         <div class="mb-3">
