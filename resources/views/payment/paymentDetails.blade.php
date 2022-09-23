@@ -5,13 +5,13 @@
     <!-- all payment Page -->
     <div class="route pt-5 pb-5">
         <div class="fs-2 text-center mt-5">All Payment Details</div>
-        <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-5" />
+        <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-1" />
 
         
         
 
-        <div class="container">
-            <div class="route-hb d-flex justify-content-between pt-4">
+        <div class="container-fluid">
+            <div class="route-hb d-flex justify-content-between">
                 <div class="heading fs-3">
                     All Payments
                 </div>
