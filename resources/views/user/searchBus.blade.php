@@ -63,6 +63,51 @@
                     <div class="bus-lists col-lg-7 col-md-6">
                         @if ($buses->count() > 0)
                             @foreach ($buses as $bus)
+                            @if (Carbon\Carbon::today()->ne($bus->date))
+                                <div class="list-of-bus mb-4">
+                                    <div class="priceFlex">
+                                        <div class="bus-des">
+                                            <div class="row">
+                                                <div class="bus-image col-lg-9">
+                                                    <div class="row">
+                                                        <div class="image col-lg-3">
+                                                            <img src="{{ url('img') }}/{{ $bus->img }}" alt="bus"
+                                                                width="100px" height="100px" />
+                                                        </div>
+                                                        <div class="desc col-lg-9">
+                                                            <h4>Tourist Bus By {{ $bus->bus_name }} <span class="text-danger">(Date Expired)</span></h4>
+                                                            <h5>Facilities:</h5>
+                                                            {{ $bus->facilities }}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="flex-price col-lg-3">
+                                                    <h4>Price</h4>
+                                                    <h5 class="mb-3">Rs. {{ $bus->price }}</h5>
+                                                    <button type="button" class="btn btn-primary mb-3">
+                                                        <a class="btnBus pointer-event"
+                                                            href="{{ route('busDetails', ['bus_id' => $bus->bus_id]) }}">Select
+                                                            &rarr;</a>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-desc">
+                                        <i class="fas fa-location fs-5 pb-2">&nbsp; &nbsp;<span
+                                                class="location-span">{{ $bus->route->from }} -
+                                                {{ $bus->route->to }}</span></i>
+                                        <br />
+                                        <i class="fas fa-clock fs-5 pb-2">&nbsp; &nbsp;<span
+                                                class="location-span">{{ $bus->time }}</span></i>
+                                        <br />
+                                        <i class="fas fa-chair-office fs-5">&nbsp; &nbsp;<span
+                                                class="location-span">{{ $bus->seat }} Available
+                                                Seats</span></i>
+                                    </div>
+                                </div>
+                            @else
                                 <div class="list-of-bus mb-4">
                                     <div class="priceFlex">
                                         <div class="bus-des">
@@ -106,6 +151,7 @@
                                                 Seats</span></i>
                                     </div>
                                 </div>
+                            @endif
                             @endforeach
                         @else
                             <div class="alert alert-danger text-center" role="alert">
