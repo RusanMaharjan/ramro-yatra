@@ -7,8 +7,8 @@
         <div class="fs-2 text-center mt-5">All Payment Details</div>
         <hr style="width: 20%; margin: auto; color: #000; height: 3px" class="mb-1" />
 
-        
-        
+
+
 
         <div class="container-fluid">
             <div class="route-hb d-flex justify-content-between">
@@ -42,26 +42,31 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($payments as $payment)                        
-                        <tr>
-                            <td>{{ $payment->invoice_id }}</td>
-                            <td>{{ $payment->name }}</td>
-                            <td>{{ $payment->email }}</td>
-                            <td>{{ $payment->phone }}</td>
-                            <td>{{ $payment->selected_seat }}</td>
-                            <td>{{ $payment->total_price }}</td>
-                            <td>{{ $payment->bus_name }}</td>
-                            <td>{{ $payment->from }}</td>
-                            <td>{{ $payment->to }}</td>
-                            <td>{{ $payment->date }}</td>
-                            <td>{{ $payment->operator }}</td>
-                            <td>{{ $payment->created_at }}</td>
-                            <td>
-                                <a href="{{ url('/getTicket', ['invoice_id' => $payment->invoice_id]) }}" class="admin-a-action btn btn-primary">Get Ticket<i
-                                        class="fas fa-edit admin-fa"></i></a>
-                            </td>
-                        </tr>
-                    @endforeach
+                    @if ($payments->count() > 0)
+                        @foreach ($payments as $payment)
+                            <tr>
+                                <td>{{ $payment->invoice_id }}</td>
+                                <td>{{ $payment->name }}</td>
+                                <td>{{ $payment->email }}</td>
+                                <td>{{ $payment->phone }}</td>
+                                <td>{{ $payment->selected_seat }}</td>
+                                <td>{{ $payment->total_price }}</td>
+                                <td>{{ $payment->bus_name }}</td>
+                                <td>{{ $payment->from }}</td>
+                                <td>{{ $payment->to }}</td>
+                                <td>{{ $payment->date }}</td>
+                                <td>{{ $payment->operator }}</td>
+                                <td>{{ $payment->created_at }}</td>
+                                <td>
+                                    <a href="{{ url('/getTicket', ['invoice_id' => $payment->invoice_id]) }}"
+                                        class="admin-a-action btn btn-primary">Get Ticket<i
+                                            class="fas fa-edit admin-fa"></i></a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    @else
+                        <div class="alert alert-danger">No payment has been done</div>
+                    @endif
                 </tbody>
 
             </table>
